@@ -1,0 +1,10 @@
+11-17-17
+
+Downloading data from Tony's account using wget
+
+downloaded supernova as per website description and ran sitecheck and testrun
+
+11-21-17
+
+Downloaded trimmomatic-0.36 in the program subfolder
+Starting to trim the original raw reads

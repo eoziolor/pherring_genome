@@ -1,0 +1,14 @@
+==========================================
+SLURM_JOB_ID = 17499330
+SLURM_NODELIST = c8-69
+==========================================
+Module slurm/16.05.8 loaded 
+Module openmpi/2.0.1 loaded 
+Module JAVA 1.8 Loaded.
+TrimmomaticPE: Started with arguments:
+ -phred33 /home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008_R1_001.fastq.gz /home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008_R2_001.fastq.gz /home/eoziolor/phgenome/data/trim/PH_forward_paired.fastq.gz /home/eoziolor/phgenome/data/trim/PH_forward_unpaired.fastq.gz /home/eoziolor/phgenome/data/trim/PH_reverse_paired.fastq.gz /home/eoziolor/phgenome/data/trim/PH_reverse_unpaired.fastq.gz ILLUMINACLIP:/home/eoziolor/program/Trimmomatic-0.36/adapters/ph_adapters.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 HEADCROP:9
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'GTTCAGAGTTCTACAGTCCGACGATC'
+Using Long Clipping Sequence: 'CCACTACGCCTCCGCTTTCCTCTCTATGGGCAGTCGGTGAT'
+ILLUMINACLIP: Using 0 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
