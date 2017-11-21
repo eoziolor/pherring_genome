@@ -12,3 +12,27 @@ Using Long Clipping Sequence: 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTC
 Using Long Clipping Sequence: 'GTTCAGAGTTCTACAGTCCGACGATC'
 Using Long Clipping Sequence: 'CCACTACGCCTCCGCTTTCCTCTCTATGGGCAGTCGGTGAT'
 ILLUMINACLIP: Using 0 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 385803758 Both Surviving: 351969136 (91.23%) Forward Only Surviving: 27978674 (7.25%) Reverse Only Surviving: 4411438 (1.14%) Dropped: 1444510 (0.37%)
+TrimmomaticPE: Completed successfully
+
+===========================================================================
+Job Finished
+
+Name                : phgenome_trim
+User                : eoziolor
+Partition           : med
+Nodes               : c8-69
+Cores               : 23
+State               : COMPLETED
+Submit              : 2017-11-20T08:31:20
+Start               : 2017-11-20T08:31:21
+End                 : 2017-11-21T01:40:22
+Reserved walltime   : 1-00:00:00
+Used walltime       :   17:09:01
+Used CPU time       :   15:34:40
+% User (Computation): 99.01%
+% System (I/O)      :  0.99%
+Mem reserved        : 60000M/node
+Max Mem used        : 609.45M (c8-69)
+Max Disk Write      : 48.49G (c8-69)
+Max Disk Read       : 68.31G (c8-69)

@@ -8,3 +8,9 @@ downloaded supernova as per website description and ran sitecheck and testrun
 
 Downloaded trimmomatic-0.36 in the program subfolder
 Starting to trim the original raw reads
+
+11-22-17
+
+Finished trimming - statistics can be found in /scripts/trim/phgenome_trim.output
+
+Started fastqc (version 0.11) to look at the quality of output
