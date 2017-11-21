@@ -1,0 +1,15 @@
+==========================================
+SLURM_JOB_ID = 17501558
+SLURM_NODELIST = c9-[76-77,86-87]
+==========================================
+Module slurm/16.05.8 loaded 
+Module openmpi/2.0.1 loaded 
+supernova run (1.2.2)
+Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - 1.2.2-2.2.2
+Running preflight checks (please wait)...
+2017-11-21 15:49:42 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
+2017-11-21 15:49:45 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
+2017-11-21 15:49:45 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS.fork0.chnk0.main

@@ -14,3 +14,8 @@ Starting to trim the original raw reads
 Finished trimming - statistics can be found in /scripts/trim/phgenome_trim.output
 
 Started fastqc (version 0.11) to look at the quality of output
+
+FastQC looks fine, but files are unrecognizeable by supernova after trimming. Thus, I will assemble using raw reads.
+
+Started assembly with supernova (script in /scirpts/assembly/ directory)
+

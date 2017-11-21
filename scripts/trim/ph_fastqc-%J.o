@@ -1,0 +1,66 @@
+
+===========================================================================
+Job Finished
+
+Name                : ph_fastqc
+User                : eoziolor
+Partition           : med
+Nodes               : c8-66
+Cores               : 23
+State               : CANCELLED,TIMEOUT
+Submit              : 2017-11-21T07:52:06
+Start               : 2017-11-21T07:52:06
+End                 : 2017-11-21T09:52:15
+Reserved walltime   : 02:00:00
+Used walltime       : 02:00:09
+Used CPU time       : 01:57:29
+% User (Computation): 98.51%
+% System (I/O)      :  1.49%
+Mem reserved        : 60000M/node
+Max Mem used        : 288.17M (c8-66)
+Max Disk Write      : 2.00M (c8-66)
+Max Disk Read       : 44.70G (c8-66)
+
+===========================================================================
+Job Finished
+
+Name                : allocation
+User                : eoziolor
+Partition           : 
+Nodes               : c8-71
+Cores               : 23
+State               : COMPLETED
+Submit              : 2017-11-21T10:16:59
+Start               : 2017-11-21T10:16:59
+End                 : 2017-11-21T10:17:00
+Reserved walltime   : --
+Used walltime       : 00:00:01
+Used CPU time       : --
+% User (Computation): 87.32%
+% System (I/O)      : 12.68%
+Mem reserved        : 0/node
+Max Mem used        : 0.00  (c8-71)
+Max Disk Write      : 0.00  (c8-71)
+Max Disk Read       : 0.00  (c8-71)
+
+===========================================================================
+Job Finished
+
+Name                : ph_fastqc
+User                : eoziolor
+Partition           : med
+Nodes               : c8-71
+Cores               : 23
+State               : COMPLETED
+Submit              : 2017-11-21T10:19:05
+Start               : 2017-11-21T10:19:06
+End                 : 2017-11-21T11:25:07
+Reserved walltime   : 03:00:00
+Used walltime       : 01:06:01
+Used CPU time       : 01:02:17
+% User (Computation): 98.37%
+% System (I/O)      :  1.63%
+Mem reserved        : 60000M/node
+Max Mem used        : 290.43M (c8-71)
+Max Disk Write      : 1.00M (c8-71)
+Max Disk Read       : 23.75G (c8-71)

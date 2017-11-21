@@ -1,0 +1,49 @@
+==========================================
+SLURM_JOB_ID = 17500781
+SLURM_NODELIST = c8-71
+==========================================
+Module slurm/16.05.8 loaded 
+Module openmpi/2.0.1 loaded 
+Module fastqc/0.11.5 loaded 
+Started analysis of PH_reverse_paired.fastq.gz
+Approx 5% complete for PH_reverse_paired.fastq.gz
+Approx 10% complete for PH_reverse_paired.fastq.gz
+Approx 15% complete for PH_reverse_paired.fastq.gz
+Approx 20% complete for PH_reverse_paired.fastq.gz
+Approx 25% complete for PH_reverse_paired.fastq.gz
+Approx 30% complete for PH_reverse_paired.fastq.gz
+Approx 35% complete for PH_reverse_paired.fastq.gz
+Approx 40% complete for PH_reverse_paired.fastq.gz
+Approx 45% complete for PH_reverse_paired.fastq.gz
+Approx 50% complete for PH_reverse_paired.fastq.gz
+Approx 55% complete for PH_reverse_paired.fastq.gz
+Approx 60% complete for PH_reverse_paired.fastq.gz
+Approx 65% complete for PH_reverse_paired.fastq.gz
+Approx 70% complete for PH_reverse_paired.fastq.gz
+Approx 75% complete for PH_reverse_paired.fastq.gz
+Approx 80% complete for PH_reverse_paired.fastq.gz
+Approx 85% complete for PH_reverse_paired.fastq.gz
+Approx 90% complete for PH_reverse_paired.fastq.gz
+Approx 95% complete for PH_reverse_paired.fastq.gz
+Analysis complete for PH_reverse_paired.fastq.gz
+Started analysis of PH_reverse_unpaired.fastq.gz
+Approx 5% complete for PH_reverse_unpaired.fastq.gz
+Approx 10% complete for PH_reverse_unpaired.fastq.gz
+Approx 15% complete for PH_reverse_unpaired.fastq.gz
+Approx 20% complete for PH_reverse_unpaired.fastq.gz
+Approx 25% complete for PH_reverse_unpaired.fastq.gz
+Approx 30% complete for PH_reverse_unpaired.fastq.gz
+Approx 35% complete for PH_reverse_unpaired.fastq.gz
+Approx 40% complete for PH_reverse_unpaired.fastq.gz
+Approx 45% complete for PH_reverse_unpaired.fastq.gz
+Approx 50% complete for PH_reverse_unpaired.fastq.gz
+Approx 55% complete for PH_reverse_unpaired.fastq.gz
+Approx 60% complete for PH_reverse_unpaired.fastq.gz
+Approx 65% complete for PH_reverse_unpaired.fastq.gz
+Approx 70% complete for PH_reverse_unpaired.fastq.gz
+Approx 75% complete for PH_reverse_unpaired.fastq.gz
+Approx 80% complete for PH_reverse_unpaired.fastq.gz
+Approx 85% complete for PH_reverse_unpaired.fastq.gz
+Approx 90% complete for PH_reverse_unpaired.fastq.gz
+Approx 95% complete for PH_reverse_unpaired.fastq.gz
+Analysis complete for PH_reverse_unpaired.fastq.gz
