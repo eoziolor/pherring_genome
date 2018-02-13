@@ -19,3 +19,13 @@ FastQC looks fine, but files are unrecognizeable by supernova after trimming. Th
 
 Started assembly with supernova (script in /scirpts/assembly/ directory)
 
+11-29-17
+
+Starting run of the assembly on Mike Miller's bigmem node
+
+srun -A millermrgrp -p bigmemh -t 5 hostname
+
+2-12-18
+
+Downloaded phgenome3 (assembly with 56x coverage) of Pacific herring genome
+Used mkoutput to create a fasta file with bubble information in it (megabubble). Found in scripts/fasta/

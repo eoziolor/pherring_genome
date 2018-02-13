@@ -1,0 +1,59 @@
+==========================================
+SLURM_JOB_ID = 18359687
+SLURM_NODELIST = c8-62
+==========================================
+supernova mkoutput (2.0.0)
+Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Mon Feb 12 13:46:57 2018 on c8-62, pid=23958 [Jan 10 2018 18:00:04 7fba7b4]
+MakeFasta OUT_HEAD=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome       \
+          DIR=/home/eoziolor/phgenome/data/assembly3/outs/assembly/a.base/gang \
+          /micro/final FLAVOR=megabubbles MINSIZE=1000 ABBREV=False
+--------------------------------------------------------------------------------
+
+version=1.9 style=2
+Mon Feb 12 13:46:57 2018: loading assembly files
+Mon Feb 12 13:47:54 2018: cell reinsertion
+Mon Feb 12 13:48:23 2018: missing dpaths counts file.. generating
+Mon Feb 12 13:48:23 2018:	loading dpaths...
+Mon Feb 12 13:49:07 2018:	loading dpaths index...
+Mon Feb 12 13:49:15 2018:	calculating counts
+17.9932% of edges in D are not in read paths
+Mon Feb 12 13:49:22 2018: building lines-of-lines
+Mon Feb 12 13:49:24 2018: forming lines of lines
+Mon Feb 12 13:49:28 2018: found 746531 lines, and 740183 lines of lines
+Mon Feb 12 13:49:30 2018: writing the FASTA portion of output to /home/eoziolor/phgenome/data/assembly3/fasta/phgenome.fasta
+writing 100 dots in 10 groups of 10:
+.......... .......... .......... .......... ..........
+.......... .......... .......... .......... ..........
+writing gzipped object
+Mon Feb 12 13:55:04 2018: graph info
+final graph has 4181634 edges
+reinserted cells start at edge 3598714
+4 cell(s) at dead-ends
+completed conversion in 8.12 minutes
+
+===========================================================================
+Job Finished
+
+Name                : fastagen
+User                : eoziolor
+Partition           : med
+Nodes               : c8-62
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-02-12T13:46:55
+Start               : 2018-02-12T13:46:56
+End                 : 2018-02-12T13:55:16
+Reserved walltime   : 7-00:00:00
+Used walltime       :   00:08:20
+Used CPU time       :   01:32:00
+% User (Computation): 94.31%
+% System (I/O)      :  5.70%
+Mem reserved        : 60000M/node
+Max Mem used        : 25.21G (c8-62)
+Max Disk Write      : 2.22G (c8-62)
+Max Disk Read       : 12.69G (c8-62)

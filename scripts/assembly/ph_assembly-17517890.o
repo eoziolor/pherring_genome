@@ -1,0 +1,33 @@
+==========================================
+SLURM_JOB_ID = 17517890
+SLURM_NODELIST = bigmem4
+==========================================
+Module slurm/16.05.8 loaded 
+Module openmpi/2.0.1 loaded 
+supernova run (1.2.2)
+Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+[error] localmem must be >= 128
+
+===========================================================================
+Job Finished
+
+Name                : phgenome_assembly
+User                : eoziolor
+Partition           : bigmemh
+Nodes               : bigmem4
+Cores               : 40
+State               : FAILED
+Submit              : 2017-11-29T15:12:55
+Start               : 2017-11-29T21:32:38
+End                 : 2017-11-29T21:32:41
+Reserved walltime   : 7-00:00:00
+Used walltime       :   00:00:03
+Used CPU time       : --
+% User (Computation): 52.76%
+% System (I/O)      : 47.24%
+Mem reserved        : 312.50G/node
+Max Mem used        : 0.00  (bigmem4)
+Max Disk Write      : 0.00  (bigmem4)
+Max Disk Read       : 0.00  (bigmem4)

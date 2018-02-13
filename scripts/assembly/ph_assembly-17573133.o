@@ -1,0 +1,40 @@
+==========================================
+SLURM_JOB_ID = 17573133
+SLURM_NODELIST = bigmem8
+==========================================
+Module slurm/16.05.8 loaded 
+Module openmpi/2.0.1 loaded 
+supernova run (1.2.2)
+Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - 1.2.2-2.2.2
+2017-12-15 16:51:25 [runtime] Reattaching in local mode.
+2017-12-15 16:51:26 [runtime] (reset-partial)   ID.phgenome1.ASSEMBLER_CS._ASSEMBLER.ASSEMBLER_MC.fork0.chnk0
+2017-12-15 16:51:26 [runtime] Found orphaned local stage: ID.phgenome1.ASSEMBLER_CS._ASSEMBLER.ASSEMBLER_MC
+2017-12-15 16:51:27 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER.ASSEMBLER_MC
+2017-12-15 16:51:27 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER.ASSEMBLER_MC.fork0.chnk0.main
+slurmstepd: error: *** JOB 17573133 ON bigmem8 CANCELLED AT 2017-12-22T16:51:50 DUE TO TIME LIMIT ***
+Caught signal terminated
+
+===========================================================================
+Job Finished
+
+Name                : phgenome_assembly
+User                : eoziolor
+Partition           : bigmemh
+Nodes               : bigmem8
+Cores               : 57
+State               : TIMEOUT
+Submit              : 2017-12-15T16:51:23
+Start               : 2017-12-15T16:51:23
+End                 : 2017-12-22T16:51:50
+Reserved walltime   : 7-00:00:00
+Used walltime       : 7-00:00:27
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 450G/node
+Max Mem used        : 0.00  ()
+Max Disk Write      : 0.00  ()
+Max Disk Read       : 0.00  ()

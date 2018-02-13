@@ -13,3 +13,206 @@ Running preflight checks (please wait)...
 2017-11-21 15:49:42 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
 2017-11-21 15:49:45 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
 2017-11-21 15:49:45 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS.fork0.chnk0.main
+2017-11-21 15:53:30 [runtime] (chunks_complete) ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
+2017-11-21 15:53:33 [runtime] (join_complete)   ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SETUP_CHUNKS
+2017-11-21 15:53:39 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS
+2017-11-21 15:53:39 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS.fork0.split
+2017-11-21 15:53:42 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS
+2017-11-21 15:53:42 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS.fork0.chnk0.main
+2017-11-21 19:12:35 [runtime] (chunks_complete) ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS
+2017-11-21 19:12:35 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS.fork0.join
+2017-11-21 19:38:55 [runtime] (join_complete)   ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.BUCKET_FASTQS
+2017-11-21 19:39:01 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS
+2017-11-21 19:39:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.split
+2017-11-21 19:39:04 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS
+2017-11-21 19:39:04 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk0.main
+2017-11-21 19:39:04 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk1.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk2.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk3.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk4.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk5.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk6.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk7.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk8.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk9.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk10.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk11.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk12.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk13.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk14.main
+2017-11-21 19:39:05 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.chnk15.main
+2017-11-21 21:28:44 [runtime] (chunks_complete) ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS
+2017-11-21 21:28:44 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS.fork0.join
+2017-11-21 21:28:47 [runtime] (join_complete)   ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP._FASTQ_PREP_NEW.SORT_FASTQS
+2017-11-21 21:28:57 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP
+2017-11-21 21:28:57 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.split
+2017-11-21 21:28:57 [runtime] (ready)           ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP
+2017-11-21 21:28:57 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.split
+2017-11-21 21:29:00 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk0.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk1.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk2.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk3.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk4.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk5.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk6.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk7.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk8.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk9.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk10.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk11.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk12.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk13.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk14.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk15.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk16.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk17.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk18.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk19.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk20.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk21.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk22.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk23.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk24.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk25.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk26.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk27.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk28.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk29.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk30.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk31.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk32.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk33.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk34.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk35.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk36.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk37.main
+2017-11-21 21:29:00 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk38.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk39.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk40.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk41.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk42.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk43.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk44.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk45.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk46.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk47.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk48.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk49.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk50.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk51.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk52.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk53.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk54.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk55.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk56.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk57.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk58.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk59.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk60.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk61.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk62.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk63.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk64.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk65.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk66.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk67.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk68.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk69.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk70.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk71.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk72.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk73.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk74.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk75.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk76.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk77.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk78.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk79.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk80.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk81.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk82.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk83.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk84.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk85.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk86.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk87.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk88.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk89.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk90.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk91.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk92.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk93.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk94.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk95.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk96.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk97.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk98.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk99.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk100.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk101.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk102.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk103.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk104.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk105.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk106.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk107.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk108.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk109.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk110.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk111.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk112.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk113.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk114.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk115.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk116.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk117.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk118.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk119.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk120.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk121.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk122.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk123.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk124.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk125.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk126.main
+2017-11-21 21:29:01 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASSEMBLER_PREP.FASTQ_TO_FASTBQUALP.fork0.chnk127.main
+2017-11-21 21:38:51 [runtime] (split_complete)  ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk0.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk1.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk2.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk3.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk4.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk5.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk6.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk7.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk8.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk9.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk10.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk11.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk12.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk13.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk14.main
+2017-11-21 21:38:51 [runtime] (run:local)       ID.phgenome1.ASSEMBLER_CS._ASSEMBLER._ASM_SN.MSP.fork0.chnk15.main
+slurmstepd: error: Job 17501558 exceeded memory limit (61835560 > 61440000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** JOB 17501558 ON c9-76 CANCELLED AT 2017-11-21T22:03:24 ***
+bly
+User                : eoziolor
+Partition           : med
+Nodes               : c9-[76-77,86-87]
+Cores               : 92
+State               : CANCELLED by 0
+Submit              : 2017-11-21T15:49:23
+Start               : 2017-11-21T15:49:23
+End                 : 2017-11-21T22:03:24
+Reserved walltime   : 7-00:00:00
+Used walltime       :   06:14:01
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  ()
+Max Disk Write      : 0.00  ()
+Max Disk Read       : 0.00  ()
+Caught signal terminated
