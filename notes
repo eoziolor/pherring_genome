@@ -29,3 +29,8 @@ srun -A millermrgrp -p bigmemh -t 5 hostname
 
 Downloaded phgenome3 (assembly with 56x coverage) of Pacific herring genome
 Used mkoutput to create a fasta file with bubble information in it (megabubble). Found in scripts/fasta/
+
+2-27-18
+
+converted .gz to .bgz with bgzip
+indexing genome to find true size of assembly including smaller scaffolds
