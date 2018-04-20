@@ -1,0 +1,31 @@
+==========================================
+SLURM_JOB_ID = 18803800
+SLURM_NODELIST = c8-62
+==========================================
+
+gzip: stdout: No space left on device
+
+gzip: stdout: No space left on device
+cat: write error: No space left on device
+
+===========================================================================
+Job Finished
+
+Name                : sub70x
+User                : eoziolor
+Partition           : med
+Nodes               : c8-62
+Cores               : 23
+State               : FAILED
+Submit              : 2018-03-30T15:28:26
+Start               : 2018-03-30T15:28:27
+End                 : 2018-03-30T16:52:41
+Reserved walltime   : 7-00:00:00
+Used walltime       :   01:24:14
+Used CPU time       :   01:33:29
+% User (Computation): 97.65%
+% System (I/O)      :  2.35%
+Mem reserved        : 60000M/node
+Max Mem used        : 3.46M (c8-62)
+Max Disk Write      : 94.82G (c8-62)
+Max Disk Read       : 95.61G (c8-62)

@@ -1,0 +1,30 @@
+==========================================
+SLURM_JOB_ID = 18803796
+SLURM_NODELIST = c8-75
+==========================================
+head: cannot open ‘000’ for reading: No such file or directory
+head: cannot open ‘000’ for reading: No such file or directory
+head: cannot open ‘000’ for reading: No such file or directory
+head: cannot open ‘000’ for reading: No such file or directory
+
+===========================================================================
+Job Finished
+
+Name                : allocation
+User                : eoziolor
+Partition           : 
+Nodes               : c8-75
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-03-30T15:19:11
+Start               : 2018-03-30T15:19:12
+End                 : 2018-03-30T15:19:12
+Reserved walltime   : --
+Used walltime       : --
+Used CPU time       : --
+% User (Computation): 53.85%
+% System (I/O)      : 46.15%
+Mem reserved        : 0/node
+Max Mem used        : 0.00  (c8-75)
+Max Disk Write      : 0.00  (c8-75)
+Max Disk Read       : 0.00  (c8-75)

@@ -1,0 +1,7 @@
+#SBATCH -J 55xsub
+#SBATCH -o /home/eoziolor/phgenome/scripts/subset/phg_55x_%j.o
+#SBATCH -e /home/eoziolor/phgenome/scripts/subset/phg_55x_%j.o
+#SBATCH --time=-00:00
+#SBATCH --mem=60000
+
+

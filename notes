@@ -34,3 +34,28 @@ Used mkoutput to create a fasta file with bubble information in it (megabubble).
 
 converted .gz to .bgz with bgzip
 indexing genome to find true size of assembly including smaller scaffolds
+
+3-30-18
+
+Subsetted the genome using cat of the number of reads we need divided by 2 for each of the R1 and R2.
+Number of reads calculated by coverage for the following:
+55x - 340 000 000
+70x - 433 000 000
+85x - 526 000 000
+100x - 618 000 000
+128x - 771 607 516
+
+Then I concatenate the resulting files and run custom python script on them to determine # of unique kmers
+
+4-20-18
+
+used anaconda3 module: module load anaconda3
+
+created an environment in phgenome:
+conda create -n phgenome python=3.6
+
+should activate with: source activate phgenome
+
+Need to install pip in the environment (otherwise it uses global pip)
+
+conda install -n phgenome pip

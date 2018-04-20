@@ -1,0 +1,26 @@
+==========================================
+SLURM_JOB_ID = 18803803
+SLURM_NODELIST = c9-73
+==========================================
+
+===========================================================================
+Job Finished
+
+Name                : sub128x
+User                : eoziolor
+Partition           : med
+Nodes               : c9-73
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-03-30T15:35:49
+Start               : 2018-03-30T15:35:49
+End                 : 2018-03-30T15:57:45
+Reserved walltime   : 7-00:00:00
+Used walltime       :   00:21:56
+Used CPU time       :   00:02:12
+% User (Computation):  0.94%
+% System (I/O)      : 99.06%
+Mem reserved        : 60000M/node
+Max Mem used        : 2.04M (c9-73)
+Max Disk Write      : 67.02G (c9-73)
+Max Disk Read       : 67.02G (c9-73)
