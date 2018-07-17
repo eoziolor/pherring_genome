@@ -1,0 +1,9 @@
+==========================================
+SLURM_JOB_ID = 23576697
+SLURM_NODELIST = c8-96
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+PROCESS	NOTE	Finished reading in barcode whitelist
+PROCESS	FILES	/home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008_R1_001.fastq.gz,/home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008_R2_001.fastq.gz

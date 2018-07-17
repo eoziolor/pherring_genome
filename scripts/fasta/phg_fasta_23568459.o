@@ -1,0 +1,54 @@
+==========================================
+SLURM_JOB_ID = 23568459
+SLURM_NODELIST = c10-74
+==========================================
+supernova mkoutput (2.0.0)
+Copyright (c) 2017 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Tue Jul 17 03:05:09 2018 on c10-74, pid=1489  [Jan 10 2018 18:00:04 7fba7b4]
+MakeFasta OUT_HEAD=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome       \
+          DIR=/home/eoziolor/phgenome/data/assembly3/outs/assembly/a.base/gang \
+          /micro/final FLAVOR=pseudohap MINSIZE=1000 ABBREV=False
+--------------------------------------------------------------------------------
+
+version=1.9 style=3
+Tue Jul 17 03:05:09 2018: loading assembly files
+Tue Jul 17 03:05:48 2018: cell reinsertion
+Tue Jul 17 03:06:14 2018: building lines-of-lines
+Tue Jul 17 03:06:16 2018: forming lines of lines
+Tue Jul 17 03:06:20 2018: found 746531 lines, and 740183 lines of lines
+Tue Jul 17 03:06:21 2018: writing the FASTA portion of output to /home/eoziolor/phgenome/data/assembly3/fasta/phgenome.fasta
+writing 100 dots in 10 groups of 10:
+.......... .......... .......... .......... ..........
+.......... .......... .......... .......... ..........
+writing gzipped object
+Tue Jul 17 03:09:36 2018: graph info
+final graph has 4181634 edges
+reinserted cells start at edge 3598714
+4 cell(s) at dead-ends
+completed conversion in 4.44 minutes
+
+===========================================================================
+Job Finished
+
+Name                : fastagen
+User                : eoziolor
+Partition           : med
+Nodes               : c10-74
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-07-16T16:04:11
+Start               : 2018-07-17T03:05:08
+End                 : 2018-07-17T03:09:46
+Reserved walltime   : 01:00:00
+Used walltime       : 00:04:38
+Used CPU time       : 00:58:07
+% User (Computation): 93.19%
+% System (I/O)      :  6.81%
+Mem reserved        : 60000M/node
+Max Mem used        : 13.74G (c10-74)
+Max Disk Write      : 1.77G (c10-74)
+Max Disk Read       : 7.84G (c10-74)

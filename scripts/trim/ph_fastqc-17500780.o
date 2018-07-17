@@ -1,8 +1,0 @@
-==========================================
-SLURM_JOB_ID = 17500780
-SLURM_NODELIST = c8-71
-==========================================
-Module slurm/16.05.8 loaded 
-Module openmpi/2.0.1 loaded 
-Module fastqc/0.11.5 loaded 
-Skipping '/home/eoziolor/phgenome/data/trim//PH_revers' which didn't exist, or couldn't be read

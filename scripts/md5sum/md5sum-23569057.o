@@ -1,0 +1,29 @@
+==========================================
+SLURM_JOB_ID = 23569057
+SLURM_NODELIST = c10-74
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+
+===========================================================================
+Job Finished
+
+Name                : md5check
+User                : eoziolor
+Partition           : med
+Nodes               : c10-74
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-07-16T16:27:20
+Start               : 2018-07-17T03:10:08
+End                 : 2018-07-17T03:17:58
+Reserved walltime   : 01:00:00
+Used walltime       : 00:07:50
+Used CPU time       : 00:05:00
+% User (Computation): 77.25%
+% System (I/O)      : 22.75%
+Mem reserved        : 60000M/node
+Max Mem used        : 4.96M (c10-74)
+Max Disk Write      : 0.00  (c10-74)
+Max Disk Read       : 67.93G (c10-74)
