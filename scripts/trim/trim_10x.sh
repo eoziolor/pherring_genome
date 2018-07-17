@@ -4,7 +4,7 @@
 #SBATCH -e pytrimmer-%j.o
 #SBATCH -N 1
 #SBATCH -n 8
-#SBATCH --time=0-02:00
+#SBATCH --time=2-00:00
 #SBATCH --mem=60000
 
 #programs and files
