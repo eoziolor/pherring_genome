@@ -1,0 +1,18 @@
+==========================================
+SLURM_JOB_ID = 23728530
+SLURM_NODELIST = c8-66
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+Serving UI at http://c8-66:46684?auth=7o3TAGuCc2vw2ZbgA3spWFBG59mWzvxzW2woatHYfAM
+
+Running preflight checks (please wait)...
+2018-07-19 12:53:28 [runtime] (ready)           ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.SETUP_CHUNKS
+2018-07-19 12:53:31 [runtime] (split_complete)  ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.SETUP_CHUNKS
+2018-07-19 12:53:31 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.SETUP_CHUNKS.fork0.chnk0.main

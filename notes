@@ -59,3 +59,7 @@ should activate with: source activate phgenome
 Need to install pip in the environment (otherwise it uses global pip)
 
 conda install -n phgenome pip
+
+6-18-18
+--------
+trying long ranger basic for filtering and creating a bam file out of the fastqs
