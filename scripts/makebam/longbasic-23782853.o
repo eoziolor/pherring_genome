@@ -1,0 +1,17 @@
+==========================================
+SLURM_JOB_ID = 23782853
+SLURM_NODELIST = c8-66
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+2018-07-20 16:15:00 [runtime] Reattaching in local mode.
+2018-07-20 16:15:00 [runtime] Found orphaned stage: ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+Serving UI at http://c8-66:44968?auth=3hVJh2HWh7Vw0uRaw6mDRcn4i_tzkJXWABlxFg9Y_Gc
+
+2018-07-20 16:15:01 [runtime] Found orphaned local stage: ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT

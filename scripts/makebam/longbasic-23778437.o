@@ -1,0 +1,126 @@
+==========================================
+SLURM_JOB_ID = 23778437
+SLURM_NODELIST = c9-68
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+2018-07-20 13:53:41 [runtime] Reattaching in local mode.
+Serving UI at http://c9-68:38496?auth=sxtDZiQRJZJqQF_C7hk5IJYpoKiN_o9jEZwa8PLxRnc
+
+2018-07-20 13:53:41 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk090
+2018-07-20 13:53:41 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk091
+2018-07-20 13:53:41 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk092
+2018-07-20 13:53:41 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk093
+2018-07-20 13:53:42 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk094
+2018-07-20 13:53:42 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk095
+2018-07-20 13:53:42 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk096
+2018-07-20 13:53:42 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk097
+2018-07-20 13:53:42 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk098
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk099
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk100
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk101
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk102
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk103
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk104
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk105
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk106
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk107
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk108
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk109
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk110
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk111
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk112
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk113
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk114
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk115
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk116
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk117
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk118
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk119
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk120
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk121
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk122
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk123
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk124
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk125
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk126
+2018-07-20 13:53:42 [runtime] (reset-running)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk127
+2018-07-20 13:53:42 [runtime] Found orphaned local stage: ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 13:53:43 [runtime] (split_complete)  ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk090.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk091.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk092.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk093.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk094.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk095.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk096.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk097.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk098.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk099.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk100.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk101.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk102.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk103.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk104.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk105.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk106.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk107.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk108.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk109.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk110.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk111.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk112.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk113.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk114.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk115.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk116.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk117.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk118.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk119.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk120.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk121.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk122.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk123.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk124.main
+2018-07-20 13:53:43 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk125.main
+2018-07-20 13:53:44 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk126.main
+2018-07-20 13:53:44 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk127.main
+2018-07-20 13:59:44 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (90/128 completed)
+2018-07-20 14:05:00 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (99/128 completed)
+2018-07-20 14:11:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (99/128 completed)
+2018-07-20 14:16:17 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (108/128 completed)
+2018-07-20 14:23:12 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (108/128 completed)
+2018-07-20 14:43:19 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (117/128 completed)
+2018-07-20 14:48:44 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (118/128 completed)
+2018-07-20 15:03:24 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (126/128 completed)
+2018-07-20 15:31:34 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (126/128 completed)
+2018-07-20 15:33:37 [runtime] (chunks_complete) ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 15:33:37 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+
+===========================================================================
+Job Finished
+
+Name                : longbasic
+User                : eoziolor
+Partition           : med
+Nodes               : c9-68
+Cores               : 23
+State               : CANCELLED,CANCELLED by 1391591
+Submit              : 2018-07-20T13:42:47
+Start               : 2018-07-20T13:53:36
+End                 : 2018-07-20T16:07:08
+Reserved walltime   : 1-00:00:00
+Used walltime       :   02:13:32
+Used CPU time       :   00:00:21
+% User (Computation): 33.49%
+% System (I/O)      : 66.51%
+Mem reserved        : 60000M/node
+Max Mem used        : 735.79M (c9-68)
+Max Disk Write      : 107.72G (c9-68)
+Max Disk Read       : 105.84G (c9-68)

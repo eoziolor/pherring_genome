@@ -6,6 +6,8 @@
 #SBATCH -n 16
 #SBATCH --time=2-00:00
 #SBATCH --mem=60000
+#SBATCH --no-requeue
+#SBATCH -p high
 
 #programs and files
 long=/home/eoziolor/program/longranger-2.2.2/longranger

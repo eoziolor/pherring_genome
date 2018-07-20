@@ -149,3 +149,373 @@ Running preflight checks (please wait)...
 2018-07-19 17:34:51 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (18/78 completed)
 2018-07-19 17:39:51 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (19/78 completed)
 2018-07-19 17:44:51 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (34/78 completed)
+2018-07-19 17:49:54 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (36/78 completed)
+2018-07-19 17:54:59 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (36/78 completed)
+2018-07-19 17:59:59 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (43/78 completed)
+2018-07-19 18:06:59 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (43/78 completed)
+2018-07-19 18:12:08 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (54/78 completed)
+2018-07-19 18:17:18 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (54/78 completed)
+2018-07-19 18:22:26 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-19 18:27:32 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (71/78 completed)
+2018-07-19 18:32:45 [runtime] (chunks_complete) ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-19 18:32:46 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.join
+2018-07-19 18:32:49 [runtime] (join_complete)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-19 18:32:52 [runtime] (ready)           ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-19 18:32:52 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.split
+2018-07-19 18:32:55 [runtime] (split_complete)  ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk000.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk001.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk002.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk003.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk004.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk005.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk006.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk007.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk008.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk009.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk010.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk011.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk012.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk013.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk014.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk015.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk016.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk017.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk018.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk019.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk020.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk021.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk022.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk023.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk024.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk025.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk026.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk027.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk028.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk029.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk030.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk031.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk032.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk033.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk034.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk035.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk036.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk037.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk038.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk039.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk040.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk041.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk042.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk043.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk044.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk045.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk046.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk047.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk048.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk049.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk050.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk051.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk052.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk053.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk054.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk055.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk056.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk057.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk058.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk059.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk060.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk061.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk062.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk063.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk064.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk065.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk066.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk067.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk068.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk069.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk070.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk071.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk072.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk073.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk074.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk075.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk076.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk077.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk078.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk079.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk080.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk081.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk082.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk083.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk084.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk085.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk086.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk087.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk088.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk089.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk090.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk091.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk092.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk093.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk094.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk095.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk096.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk097.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk098.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk099.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk100.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk101.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk102.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk103.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk104.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk105.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk106.main
+2018-07-19 18:32:55 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk107.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk108.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk109.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk110.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk111.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk112.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk113.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk114.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk115.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk116.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk117.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk118.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk119.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk120.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk121.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk122.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk123.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk124.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk125.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk126.main
+2018-07-19 18:32:56 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk127.main
+2018-07-19 18:38:56 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-19 18:44:56 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-19 19:04:12 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (18/128 completed)
+2018-07-19 19:21:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (18/128 completed)
+2018-07-19 19:39:22 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (18/128 completed)
+2018-07-19 19:45:20 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (18/128 completed)
+2018-07-19 19:58:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (36/128 completed)
+2018-07-19 20:05:03 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (36/128 completed)
+2018-07-19 20:11:04 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (36/128 completed)
+2018-07-19 20:29:27 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (54/128 completed)
+2018-07-19 21:21:05 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (54/128 completed)
+2018-07-19 21:26:52 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (54/128 completed)
+2018-07-19 21:49:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (54/128 completed)
+2018-07-19 21:54:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (71/128 completed)
+2018-07-19 22:04:22 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (72/128 completed)
+2018-07-19 22:20:31 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (72/128 completed)
+2018-07-19 22:38:05 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (72/128 completed)
+2018-07-19 22:44:03 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (72/128 completed)
+2018-07-19 23:48:15 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (89/128 completed)
+2018-07-20 00:29:42 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (90/128 completed)
+2018-07-20 00:45:54 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (90/128 completed)
+2018-07-20 00:51:54 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (90/128 completed)
+2018-07-20 01:29:08 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (90/128 completed)
+2018-07-20 01:45:41 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (90/128 completed)
+2018-07-20 01:50:57 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 02:07:15 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 02:42:19 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 02:47:57 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 02:54:24 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 03:11:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 03:41:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (108/128 completed)
+2018-07-20 03:46:52 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (111/128 completed)
+2018-07-20 04:06:00 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (126/128 completed)
+2018-07-20 04:11:57 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (126/128 completed)
+2018-07-20 04:13:40 [runtime] (chunks_complete) ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-20 04:13:40 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.join
+2018-07-20 04:13:43 [runtime] (join_complete)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-20 04:13:58 [runtime] (ready)           ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 04:13:58 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.split
+2018-07-20 04:14:05 [runtime] (split_complete)  ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk000.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk001.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk002.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk003.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk004.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk005.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk006.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk007.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk008.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk009.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk010.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk011.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk012.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk013.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk014.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk015.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk016.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk017.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk018.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk019.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk020.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk021.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk022.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk023.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk024.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk025.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk026.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk027.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk028.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk029.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk030.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk031.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk032.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk033.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk034.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk035.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk036.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk037.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk038.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk039.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk040.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk041.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk042.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk043.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk044.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk045.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk046.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk047.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk048.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk049.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk050.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk051.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk052.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk053.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk054.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk055.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk056.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk057.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk058.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk059.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk060.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk061.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk062.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk063.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk064.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk065.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk066.main
+2018-07-20 04:14:05 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk067.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk068.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk069.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk070.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk071.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk072.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk073.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk074.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk075.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk076.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk077.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk078.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk079.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk080.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk081.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk082.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk083.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk084.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk085.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk086.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk087.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk088.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk089.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk090.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk091.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk092.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk093.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk094.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk095.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk096.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk097.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk098.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk099.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk100.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk101.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk102.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk103.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk104.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk105.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk106.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk107.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk108.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk109.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk110.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk111.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk112.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk113.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk114.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk115.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk116.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk117.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk118.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk119.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk120.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk121.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk122.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk123.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk124.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk125.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk126.main
+2018-07-20 04:14:06 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk127.main
+2018-07-20 04:47:08 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 05:03:41 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 05:19:50 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 05:37:24 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 05:53:58 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 06:27:04 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-20 06:33:02 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (1/128 completed)
+2018-07-20 06:39:03 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (9/128 completed)
+2018-07-20 06:44:49 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (18/128 completed)
+2018-07-20 06:50:51 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (18/128 completed)
+2018-07-20 06:58:28 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (18/128 completed)
+2018-07-20 07:19:06 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (27/128 completed)
+2018-07-20 07:25:04 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (27/128 completed)
+2018-07-20 07:30:14 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (36/128 completed)
+2018-07-20 07:46:28 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (36/128 completed)
+2018-07-20 07:54:50 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (45/128 completed)
+2018-07-20 08:05:57 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (45/128 completed)
+2018-07-20 08:11:35 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (54/128 completed)
+2018-07-20 08:30:31 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (54/128 completed)
+2018-07-20 08:47:05 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (54/128 completed)
+2018-07-20 09:03:13 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (54/128 completed)
+2018-07-20 09:13:09 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (54/128 completed)
+2018-07-20 09:32:43 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (60/128 completed)
+2018-07-20 10:05:25 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (61/128 completed)
+2018-07-20 10:38:32 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (62/128 completed)
+2018-07-20 10:50:43 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (63/128 completed)
+2018-07-20 11:08:52 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (63/128 completed)
+2018-07-20 11:25:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (63/128 completed)
+2018-07-20 11:45:11 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (71/128 completed)
+2018-07-20 11:50:33 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (72/128 completed)
+2018-07-20 11:56:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (80/128 completed)
+2018-07-20 12:31:20 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (81/128 completed)
+2018-07-20 12:42:52 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (81/128 completed)
+2018-07-20 12:48:00 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (90/128 completed)
+
+===========================================================================
+Job Finished
+
+Name                : longbasic
+User                : eoziolor
+Partition           : med
+Nodes               : c8-66
+Cores               : 23
+State               : TIMEOUT
+Submit              : 2018-07-19T12:53:02
+Start               : 2018-07-19T12:53:04
+End                 : 2018-07-20T12:53:15
+Reserved walltime   : 1-00:00:00
+Used walltime       : 1-00:00:11
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  ()
+Max Disk Write      : 0.00  ()
+Max Disk Read       : 0.00  ()
+slurmstepd: error: *** JOB 23728530 ON c8-66 CANCELLED AT 2018-07-20T12:53:15 DUE TO TIME LIMIT ***
+slurmstepd: error: Munge decode failed: Expired credential
+slurmstepd: error: Verifying authentication credential: Expired credential
+2018-07-20 13:06:24 Caught signal terminated

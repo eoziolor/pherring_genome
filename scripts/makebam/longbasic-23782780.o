@@ -1,0 +1,43 @@
+==========================================
+SLURM_JOB_ID = 23782780
+SLURM_NODELIST = c8-66
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+
+RuntimeError: pipestance 'PH-Sitka-93_S1_L008' already exists and is locked by another Martian instance. If you are sure no other Martian instance is running, delete the _lock file in /home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008 and start Martian again.
+
+2018-07-20 16:12:21 Shutting down.
+Saving pipestance info to PH-Sitka-93_S1_L008/PH-Sitka-93_S1_L008.mri.tgz
+For assistance, upload this file to 10x Genomics by running:
+
+longranger upload <your_email> PH-Sitka-93_S1_L008/PH-Sitka-93_S1_L008.mri.tgz
+
+
+===========================================================================
+Job Finished
+
+Name                : longbasic
+User                : eoziolor
+Partition           : high
+Nodes               : c8-66
+Cores               : 23
+State               : RUNNING
+Submit              : 2018-07-20T16:12:17
+Start               : 2018-07-20T16:12:17
+End                 : --
+Reserved walltime   : 1-00:00:00
+Used walltime       :   00:00:06
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  ()
+Max Disk Write      : 0.00  ()
+Max Disk Read       : 0.00  ()

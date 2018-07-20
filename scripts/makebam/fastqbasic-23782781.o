@@ -1,0 +1,44 @@
+==========================================
+SLURM_JOB_ID = 23782781
+SLURM_NODELIST = c8-94
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+2018-07-20 16:12:22 [jobmngr] WARNING: configured to use 56GB of local memory, but only 35.1GB is currently available.
+
+RuntimeError: pipestance 'NewFastq' already exists and is locked by another Martian instance. If you are sure no other Martian instance is running, delete the _lock file in /home/eoziolor/phgenome/data/raw/NewFastq and start Martian again.
+
+2018-07-20 16:12:24 Shutting down.
+Saving pipestance info to NewFastq/NewFastq.mri.tgz
+For assistance, upload this file to 10x Genomics by running:
+
+longranger upload <your_email> NewFastq/NewFastq.mri.tgz
+
+
+===========================================================================
+Job Finished
+
+Name                : fastqbasic
+User                : eoziolor
+Partition           : high
+Nodes               : c8-94
+Cores               : 23
+State               : FAILED,RUNNING
+Submit              : 2018-07-20T16:12:20
+Start               : 2018-07-20T16:12:20
+End                 : --
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:06
+Used CPU time       :   00:00:02
+% User (Computation): 85.17%
+% System (I/O)      : 14.83%
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  (c8-94)
+Max Disk Write      : 0.00  (c8-94)
+Max Disk Read       : 0.00  (c8-94)
