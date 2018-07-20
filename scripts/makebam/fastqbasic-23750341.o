@@ -1,0 +1,19 @@
+==========================================
+SLURM_JOB_ID = 23750341
+SLURM_NODELIST = c8-95
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+2018-07-19 17:42:58 [jobmngr] WARNING: configured to use 56GB of local memory, but only 47.1GB is currently available.
+Serving UI at http://c8-95:46872?auth=Sa2ocSjXHyvq_F5YJkBayNQhbFBSO1CsldWHeA4zKlU
+
+Running preflight checks (please wait)...
+2018-07-19 17:43:43 [runtime] (ready)           ID.NewFastq.BASIC_CS.BASIC.SETUP_CHUNKS
+2018-07-19 17:43:46 [runtime] (split_complete)  ID.NewFastq.BASIC_CS.BASIC.SETUP_CHUNKS
+2018-07-19 17:43:46 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.SETUP_CHUNKS.fork0.chnk0.main
