@@ -63,3 +63,14 @@ conda install -n phgenome pip
 6-18-18
 --------
 trying long ranger basic for filtering and creating a bam file out of the fastqs
+
+7-23-18
+--------
+I silenced the following lines from the LINKS run file:
+
+#use lib "$FindBin::Bin/./lib/bloomfilter/swig";
+#use BloomFilter;
+
+as per recommendation from the author, since I am only using links with ARKS
+
+https://github.com/bcgsc/LINKS/issues/15
