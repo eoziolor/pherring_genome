@@ -113,3 +113,524 @@ Serving UI at http://c8-94:40121?auth=8t7sn7qzbh7Wvkcb8Zq04Yb9x6RxEO57zzmnnHevaH
 2018-07-20 16:15:20 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk75.main
 2018-07-20 16:15:20 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk76.main
 2018-07-20 16:15:20 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk77.main
+2018-07-20 16:35:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 16:54:22 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 17:13:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 17:15:23 [runtime] (failed)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-20 17:15:26 [runtime] Reattaching in local mode.
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk15
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk16
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk17
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk18
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk19
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk20
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk21
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk22
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk23
+2018-07-20 17:15:27 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk24
+2018-07-20 17:15:28 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk25
+2018-07-20 17:15:28 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk26
+2018-07-20 17:15:28 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk27
+2018-07-20 17:15:28 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk28
+2018-07-20 17:15:28 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk29
+2018-07-20 17:15:31 [runtime] (split_complete)  ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk15.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk16.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk17.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk18.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk19.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk20.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk21.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk22.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk23.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk24.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk25.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk26.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk27.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk28.main
+2018-07-20 17:15:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.chnk29.main
+2018-07-20 17:35:27 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 17:49:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 18:07:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 18:23:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 18:38:33 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 18:43:37 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 18:59:37 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 19:32:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 19:50:51 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 20:08:00 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 20:30:51 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 20:47:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 20:55:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 21:12:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 21:17:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (15/78 completed)
+2018-07-20 21:22:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (27/78 completed)
+2018-07-20 21:40:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (27/78 completed)
+2018-07-20 22:01:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (27/78 completed)
+2018-07-20 22:20:30 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (27/78 completed)
+2018-07-20 22:39:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (28/78 completed)
+2018-07-20 22:58:18 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (28/78 completed)
+2018-07-20 23:04:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (28/78 completed)
+2018-07-20 23:10:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (32/78 completed)
+2018-07-20 23:29:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (32/78 completed)
+2018-07-20 23:46:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (32/78 completed)
+2018-07-21 00:03:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (32/78 completed)
+2018-07-21 00:41:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (41/78 completed)
+2018-07-21 00:57:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (41/78 completed)
+2018-07-21 01:14:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (41/78 completed)
+2018-07-21 01:33:50 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (41/78 completed)
+2018-07-21 02:03:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (41/78 completed)
+2018-07-21 02:25:02 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (42/78 completed)
+2018-07-21 02:44:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (43/78 completed)
+2018-07-21 03:00:22 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (43/78 completed)
+2018-07-21 03:16:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (43/78 completed)
+2018-07-21 03:50:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (45/78 completed)
+2018-07-21 04:07:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (45/78 completed)
+2018-07-21 04:24:00 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (46/78 completed)
+2018-07-21 04:39:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (46/78 completed)
+2018-07-21 04:55:53 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (46/78 completed)
+2018-07-21 05:02:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (46/78 completed)
+2018-07-21 05:21:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (47/78 completed)
+2018-07-21 05:38:47 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (47/78 completed)
+2018-07-21 05:54:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (47/78 completed)
+2018-07-21 06:00:50 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (55/78 completed)
+2018-07-21 06:05:54 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (57/78 completed)
+2018-07-21 06:24:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (58/78 completed)
+2018-07-21 07:15:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (60/78 completed)
+2018-07-21 07:20:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 09:44:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 10:18:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 10:35:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 10:52:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 11:09:02 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (62/78 completed)
+2018-07-21 11:28:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (63/78 completed)
+2018-07-21 11:47:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (63/78 completed)
+2018-07-21 12:04:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (64/78 completed)
+2018-07-21 12:21:09 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (64/78 completed)
+2018-07-21 12:41:27 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (71/78 completed)
+2018-07-21 12:57:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (71/78 completed)
+2018-07-21 13:05:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (74/78 completed)
+2018-07-21 13:23:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (74/78 completed)
+2018-07-21 13:30:01 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (76/78 completed)
+2018-07-21 13:36:15 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0 chunks running (76/78 completed)
+2018-07-21 13:37:05 [runtime] (chunks_complete) ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-21 13:37:05 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC.fork0.join
+2018-07-21 13:37:08 [runtime] (join_complete)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.BUCKET_FASTQ_BY_BC
+2018-07-21 13:37:11 [runtime] (ready)           ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-21 13:37:11 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.split
+2018-07-21 13:37:14 [runtime] (split_complete)  ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk000.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk001.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk002.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk003.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk004.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk005.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk006.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk007.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk008.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk009.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk010.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk011.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk012.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk013.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk014.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk015.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk016.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk017.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk018.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk019.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk020.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk021.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk022.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk023.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk024.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk025.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk026.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk027.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk028.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk029.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk030.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk031.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk032.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk033.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk034.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk035.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk036.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk037.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk038.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk039.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk040.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk041.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk042.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk043.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk044.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk045.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk046.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk047.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk048.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk049.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk050.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk051.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk052.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk053.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk054.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk055.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk056.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk057.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk058.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk059.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk060.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk061.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk062.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk063.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk064.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk065.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk066.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk067.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk068.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk069.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk070.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk071.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk072.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk073.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk074.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk075.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk076.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk077.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk078.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk079.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk080.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk081.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk082.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk083.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk084.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk085.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk086.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk087.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk088.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk089.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk090.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk091.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk092.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk093.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk094.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk095.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk096.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk097.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk098.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk099.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk100.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk101.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk102.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk103.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk104.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk105.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk106.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk107.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk108.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk109.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk110.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk111.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk112.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk113.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk114.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk115.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk116.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk117.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk118.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk119.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk120.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk121.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk122.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk123.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk124.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk125.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk126.main
+2018-07-21 13:37:15 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.chnk127.main
+2018-07-21 13:59:37 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-21 14:18:42 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-21 14:33:12 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-21 14:50:17 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (0/128 completed)
+2018-07-21 14:55:24 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (14/128 completed)
+2018-07-21 15:04:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (14/128 completed)
+2018-07-21 15:25:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (14/128 completed)
+2018-07-21 15:42:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (14/128 completed)
+2018-07-21 15:49:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (14/128 completed)
+2018-07-21 15:55:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (22/128 completed)
+2018-07-21 16:09:53 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 16:26:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 16:35:52 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 17:09:32 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 17:15:51 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 17:36:04 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 17:55:12 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (28/128 completed)
+2018-07-21 18:01:15 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (42/128 completed)
+2018-07-21 18:29:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (42/128 completed)
+2018-07-21 19:02:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (42/128 completed)
+2018-07-21 19:09:09 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (42/128 completed)
+2018-07-21 19:15:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (42/128 completed)
+2018-07-21 19:20:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (48/128 completed)
+2018-07-21 19:37:38 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (55/128 completed)
+2018-07-21 19:50:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (56/128 completed)
+2018-07-21 19:56:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (56/128 completed)
+2018-07-21 20:02:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (57/128 completed)
+2018-07-21 20:19:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (60/128 completed)
+2018-07-21 20:25:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (70/128 completed)
+2018-07-21 20:30:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (70/128 completed)
+2018-07-21 20:46:50 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (70/128 completed)
+2018-07-21 20:52:51 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (70/128 completed)
+2018-07-21 20:57:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (78/128 completed)
+2018-07-21 21:03:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (84/128 completed)
+2018-07-21 21:08:50 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (84/128 completed)
+2018-07-21 21:16:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (84/128 completed)
+2018-07-21 21:22:17 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (85/128 completed)
+2018-07-21 21:27:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (98/128 completed)
+2018-07-21 21:41:05 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (98/128 completed)
+2018-07-21 21:59:59 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (98/128 completed)
+2018-07-21 22:10:05 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (98/128 completed)
+2018-07-21 22:45:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (101/128 completed)
+2018-07-21 22:50:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (112/128 completed)
+2018-07-21 23:06:22 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (112/128 completed)
+2018-07-21 23:23:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (112/128 completed)
+2018-07-21 23:41:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (112/128 completed)
+2018-07-21 23:47:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (113/128 completed)
+2018-07-21 23:54:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (126/128 completed)
+2018-07-22 00:00:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0 chunks running (126/128 completed)
+2018-07-22 00:02:14 [runtime] (chunks_complete) ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-22 00:02:14 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC.fork0.join
+2018-07-22 00:02:17 [runtime] (join_complete)   ID.NewFastq.BASIC_CS.BASIC._SORT_FASTQ_BY_BARCODE.SORT_FASTQ_BY_BC
+2018-07-22 00:02:31 [runtime] (ready)           ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-22 00:02:31 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.split
+2018-07-22 00:03:09 [runtime] (split_complete)  ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk000.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk001.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk002.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk003.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk004.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk005.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk006.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk007.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk008.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk009.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk010.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk011.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk012.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk013.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk014.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk015.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk016.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk017.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk018.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk019.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk020.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk021.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk022.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk023.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk024.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk025.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk026.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk027.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk028.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk029.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk030.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk031.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk032.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk033.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk034.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk035.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk036.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk037.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk038.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk039.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk040.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk041.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk042.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk043.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk044.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk045.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk046.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk047.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk048.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk049.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk050.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk051.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk052.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk053.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk054.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk055.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk056.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk057.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk058.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk059.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk060.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk061.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk062.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk063.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk064.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk065.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk066.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk067.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk068.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk069.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk070.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk071.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk072.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk073.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk074.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk075.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk076.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk077.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk078.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk079.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk080.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk081.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk082.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk083.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk084.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk085.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk086.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk087.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk088.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk089.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk090.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk091.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk092.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk093.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk094.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk095.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk096.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk097.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk098.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk099.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk100.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk101.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk102.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk103.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk104.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk105.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk106.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk107.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk108.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk109.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk110.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk111.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk112.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk113.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk114.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk115.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk116.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk117.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk118.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk119.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk120.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk121.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk122.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk123.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk124.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk125.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk126.main
+2018-07-22 00:03:10 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.chnk127.main
+2018-07-22 00:20:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (0/128 completed)
+2018-07-22 00:53:52 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (7/128 completed)
+2018-07-22 01:18:25 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (7/128 completed)
+2018-07-22 02:07:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (7/128 completed)
+2018-07-22 02:29:09 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (14/128 completed)
+2018-07-22 02:36:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (21/128 completed)
+2018-07-22 02:46:01 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (28/128 completed)
+2018-07-22 02:52:04 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (35/128 completed)
+2018-07-22 03:03:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (49/128 completed)
+2018-07-22 03:08:34 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (50/128 completed)
+2018-07-22 03:28:00 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (56/128 completed)
+2018-07-22 03:33:01 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (60/128 completed)
+2018-07-22 03:41:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (63/128 completed)
+2018-07-22 03:48:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (70/128 completed)
+2018-07-22 04:10:09 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (70/128 completed)
+2018-07-22 04:41:42 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (77/128 completed)
+2018-07-22 04:53:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (78/128 completed)
+2018-07-22 05:15:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (84/128 completed)
+2018-07-22 05:22:52 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (84/128 completed)
+2018-07-22 05:35:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (91/128 completed)
+2018-07-22 05:50:09 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (91/128 completed)
+2018-07-22 06:06:24 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (92/128 completed)
+2018-07-22 06:57:33 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (99/128 completed)
+2018-07-22 07:37:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 08:32:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 08:50:15 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 09:11:21 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 09:48:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 10:19:32 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 10:33:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 11:13:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 14:34:32 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 15:08:37 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 15:33:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 16:04:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 16:25:47 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 16:36:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (103/128 completed)
+2018-07-22 17:01:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (104/128 completed)
+2018-07-22 17:08:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (105/128 completed)
+2018-07-22 17:28:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (105/128 completed)
+2018-07-22 17:38:52 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (107/128 completed)
+2018-07-22 17:55:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (109/128 completed)
+2018-07-22 19:04:34 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (109/128 completed)
+2018-07-22 19:21:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (111/128 completed)
+2018-07-22 19:53:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (111/128 completed)
+2018-07-22 20:26:10 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (115/128 completed)
+2018-07-22 21:03:10 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (115/128 completed)
+2018-07-22 21:28:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (115/128 completed)
+2018-07-22 21:46:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (115/128 completed)
+2018-07-22 21:51:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (121/128 completed)
+2018-07-22 22:15:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (121/128 completed)
+2018-07-22 22:33:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (121/128 completed)
+2018-07-22 22:41:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 chunks running (125/128 completed)
+2018-07-22 22:42:28 [runtime] (chunks_complete) ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-22 22:42:29 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+2018-07-22 22:49:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 22:56:10 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:15:22 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:22:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:29:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:36:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:43:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:50:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-22 23:57:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 00:06:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 00:12:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 00:18:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 00:24:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 00:46:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:03:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:19:49 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:27:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:34:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:53:24 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 01:58:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 02:15:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 02:31:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 02:48:15 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 02:54:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 03:00:16 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 03:19:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 03:37:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:12:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:18:27 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:24:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:30:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:36:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:42:30 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 04:48:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 05:09:34 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 05:16:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 05:34:58 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 05:52:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 06:09:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 06:27:15 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 06:35:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 06:49:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 07:12:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 07:26:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 07:35:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 07:48:05 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 07:55:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 08:06:10 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 08:21:17 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running

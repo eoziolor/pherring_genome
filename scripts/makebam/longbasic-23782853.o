@@ -15,3 +15,58 @@ Martian Runtime - '2.2.2-2.3.2'
 Serving UI at http://c8-66:44968?auth=3hVJh2HWh7Vw0uRaw6mDRcn4i_tzkJXWABlxFg9Y_Gc
 
 2018-07-20 16:15:01 [runtime] Found orphaned local stage: ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 17:15:01 [runtime] (failed)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 17:15:05 [runtime] Reattaching in local mode.
+2018-07-20 17:15:07 [runtime] (reset-partial)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+2018-07-20 17:15:10 [runtime] (chunks_complete) ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-20 17:15:10 [runtime] (run:local)       ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+2018-07-20 17:34:12 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 17:49:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 18:08:19 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 18:24:55 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 18:41:28 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 18:47:19 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 19:01:05 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 19:17:39 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 19:33:48 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 19:51:07 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 20:08:31 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 20:29:46 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 20:45:55 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 20:53:27 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 21:01:23 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 21:23:01 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 21:39:13 [runtime] (update)          ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-20 21:40:06 [runtime] (join_complete)   ID.PH-Sitka-93_S1_L008.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+
+Outputs:
+- Run summary:             /home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008/outs/summary.csv
+- FASTQ barcoded:          null
+- BAM barcoded, unaligned: /home/eoziolor/phgenome/data/raw/PH-Sitka-93_S1_L008/outs/barcoded_unaligned.bam
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+Saving pipestance info to PH-Sitka-93_S1_L008/PH-Sitka-93_S1_L008.mri.tgz
+
+===========================================================================
+Job Finished
+
+Name                : longbasic
+User                : eoziolor
+Partition           : high
+Nodes               : c8-66
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-07-20T16:14:56
+Start               : 2018-07-20T16:14:57
+End                 : 2018-07-20T21:40:41
+Reserved walltime   : 1-00:00:00
+Used walltime       :   05:25:44
+Used CPU time       :   00:02:25
+% User (Computation): 14.18%
+% System (I/O)      : 85.82%
+Mem reserved        : 60000M/node
+Max Mem used        : 137.77M (c8-66)
+Max Disk Write      : 70.23G (c8-66)
+Max Disk Read       : 70.31G (c8-66)
