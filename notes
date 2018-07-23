@@ -74,3 +74,13 @@ I silenced the following lines from the LINKS run file:
 as per recommendation from the author, since I am only using links with ARKS
 
 https://github.com/bcgsc/LINKS/issues/15
+
+
+SUPER IMPORTANT #2 of the day
+
+I added:
+
+SHELL := /bin/bash
+
+and created a new arks-make file, now called arks-make2. This defintes the shell script for the file to be bash rather than sh. sh has an issue:
+it doesn't recognize "|$" to place standard error in a file, so I'm testing it out.
