@@ -1,86 +1,225 @@
-11-17-17
+Pacific herring genome
+===
+_Coding notes_
 
-Downloading data from Tony's account using wget
+Nov 17, 2017
+---
 
-downloaded supernova as per website description and ran sitecheck and testrun
+* Downloading data from Tony's account using wget
 
-11-21-17
+* downloaded supernova as per website description and ran sitecheck and testrun
 
-Downloaded trimmomatic-0.36 in the program subfolder
-Starting to trim the original raw reads
+Nov 21, 2017
+---
 
-11-22-17
+* Downloaded trimmomatic-0.36 in the program subfolder
+* Starting to trim the original raw reads
 
-Finished trimming - statistics can be found in /scripts/trim/phgenome_trim.output
+Nov 22 2017
+---
 
-Started fastqc (version 0.11) to look at the quality of output
+* Finished trimming - statistics can be found in ```/scripts/trim/phgenome_trim.output```
 
-FastQC looks fine, but files are unrecognizeable by supernova after trimming. Thus, I will assemble using raw reads.
+* Started fastqc (version 0.11) to look at the quality of output
 
-Started assembly with supernova (script in /scirpts/assembly/ directory)
+* FastQC looks fine, but files are unrecognizeable by supernova after trimming. Thus, I will assemble using raw reads.
 
-11-29-17
+* Started assembly with supernova (script in /scirpts/assembly/ directory)
 
-Starting run of the assembly on Mike Miller's bigmem node
+Nov 29 2017
+---
 
-srun -A millermrgrp -p bigmemh -t 5 hostname
+* Starting run of the assembly on Mike Miller's bigmem node
 
-2-12-18
+```srun -A millermrgrp -p bigmemh -t 5 hostname```
 
-Downloaded phgenome3 (assembly with 56x coverage) of Pacific herring genome
-Used mkoutput to create a fasta file with bubble information in it (megabubble). Found in scripts/fasta/
+Nov-Feb
+---
+* Ran supernova assembly on XSEDE cluster because it had 2TB Ram. Code for assembly was
 
-2-27-18
+```
+/pylon5/bi4ifup/eoziolor/program/supernova-2.0.0/supernova-cs/2.0.0/bin/run \
+--id phgenome3 \
+--maxreads 340000000 \
+--fastqs /pylon5/bi4ifup/eoziolor/phgenome/data/raw/ \
+--localcores=28 
+```
 
-converted .gz to .bgz with bgzip
-indexing genome to find true size of assembly including smaller scaffolds
+Feb 12 2018
+---
 
-3-30-18
+* Downloaded phgenome3 (assembly with 56x coverage) of Pacific herring genome
+* Used mkoutput to create a fasta file with bubble information in it (megabubble). Found in 
+```
+#!/bin/bash
 
-Subsetted the genome using cat of the number of reads we need divided by 2 for each of the R1 and R2.
-Number of reads calculated by coverage for the following:
+#SBATCH -J fastagen
+#SBATCH -o /home/eoziolor/phgenome/scripts/fasta/phg_fasta_%j.o
+#SBATCH -e /home/eoziolor/phgenome/scripts/fasta/phg_fasta_%j.o
+#SBATCH --time=7-00:00
+#SBATCH --mem=60000
+
+my_super=/home/eoziolor/program/supernova-2.0.0/supernova
+my_out=/home/eoziolor/phgenome/data/assembly3/outs/assembly
+my_fasta=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome
+
+$my_super mkoutput \
+--asmdir=$my_out \
+--outprefix=$my_fasta \
+--style=megabubbles \
+--headers=full
+```
+
+Feb 27, 2018
+---
+
+* converted .gz to .bgz with bgzip
+* indexing genome to find true size of assembly including smaller scaffolds
+
+Mar 30, 2018
+---
+
+* Subsetted the genome using cat of the number of reads we need divided by 2 for each of the R1 and R2.
+* Number of reads calculated by coverage for the following:
 55x - 340 000 000
 70x - 433 000 000
 85x - 526 000 000
 100x - 618 000 000
 128x - 771 607 516
 
-Then I concatenate the resulting files and run custom python script on them to determine # of unique kmers
+* Then I concatenate the resulting files and run custom python script on them to determine # of unique kmers
+    * did not work, but I am moving onto the ARKS pathway
 
-4-20-18
+Apr 20 2018
+---
 
-used anaconda3 module: module load anaconda3
+* used anaconda3 module: module load anaconda3
 
-created an environment in phgenome:
+* created an environment in phgenome:
+```
 conda create -n phgenome python=3.6
+```
 
-should activate with: source activate phgenome
+* should activate with: 
 
-Need to install pip in the environment (otherwise it uses global pip)
+```
+source activate phgenome
+```
 
+* Need to install pip in the environment (otherwise it uses global pip)
+
+```
 conda install -n phgenome pip
+```
 
-6-18-18
+Jun 18 2018
 --------
-trying long ranger basic for filtering and creating a bam file out of the fastqs
+### Re-scaffolding genome
+* Going to use the [ARKS pipeline](https://github.com/bcgsc/arks) to create a better assembly from the simple (pseudohaploid) fasta that I created:
 
-7-23-18
+```
+#!/bin/bash
+
+#SBATCH -J fastagen
+#SBATCH -o /home/eoziolor/phgenome/scripts/fasta/phg_fasta_%j.o
+#SBATCH -e /home/eoziolor/phgenome/scripts/fasta/phg_fasta_%j.o
+#SBATCH --time=0-01:00
+#SBATCH --mem=60000
+
+my_super=/home/eoziolor/program/supernova-2.0.0/supernova
+my_out=/home/eoziolor/phgenome/data/assembly3/outs/assembly
+my_fasta=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome
+
+$my_super mkoutput \
+--asmdir=$my_out \
+--outprefix=$my_fasta \
+--style=pseudohap \
+--headers=full
+```
+* Plus interleaved read file containing all of the reads I have
+* trying long ranger basic for filtering and creating a bam file out of the fastqs
+
+```
+#!/bin/bash -l
+#SBATCH -J longbasic
+#SBATCH -o longbasic-%j.o
+#SBATCH -e longbasic-%j.o
+#SBATCH -N 1
+#SBATCH -n 8
+#SBATCH --time=1-00:00
+#SBATCH --mem=60000
+#SBATCH --no-requeue
+#SBATCH -p high
+
+#programs and files
+long=/home/eoziolor/program/longranger-2.2.2/longranger
+path=/home/eoziolor/phgenome/data/raw/
+id=PH-Sitka-93_S1_L008
+
+cd /home/eoziolor/phgenome/data/raw/
+#code
+$long basic \
+--id=$id \
+--fastqs=$path \
+--bam
+```
+
+* Found out that ARKS only takes FASTQ interleaved files; using longranger basic to do that:
+
+```
+#!/bin/bash -l
+#SBATCH -J fastqbasic
+#SBATCH -o fastqbasic-%j.o
+#SBATCH -e fastqbasic-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --time=2-00:00
+#SBATCH --mem=60000
+#SBATCH --no-requeue
+#SBATCH -p high
+
+#programs and files
+long=/home/eoziolor/program/longranger-2.2.2/longranger
+path=/home/eoziolor/phgenome/data/raw/
+id=NewFastq
+
+cd /home/eoziolor/phgenome/data/raw/
+#code
+$long basic \
+--id=$id \
+--fastqs=$path
+```
+
+Jul 23 2018
 --------
-I silenced the following lines from the LINKS run file:
+* Links is having issues with the python5 environment when trying to create a BloomFilt
+    * I silenced the following lines from the LINKS run file:
 
+```
 #use lib "$FindBin::Bin/./lib/bloomfilter/swig";
 #use BloomFilter;
-
-as per recommendation from the author, since I am only using links with ARKS
+```
+* as per recommendation from the author, since I am only using links with ARKS
 
 https://github.com/bcgsc/LINKS/issues/15
 
+### SUPER IMPORTANT #2 of the day
 
-SUPER IMPORTANT #2 of the day
+* I added:
 
-I added:
-
+```
 SHELL := /bin/bash
+```
 
-and created a new arks-make file, now called arks-make2. This defintes the shell script for the file to be bash rather than sh. sh has an issue:
-it doesn't recognize "|$" to place standard error in a file, so I'm testing it out.
+* and created a new arks-make file, now called arks-make2. This defintes the shell script for the file to be bash rather than sh. sh has an issue:
+* it doesn't recognize "|$" to place standard error in a file, so I'm testing it out.
+
+Jul 24, 2018
+---
+* Waiting for the fastq interleaved file to be created - it takes forever!
+
+## Genome annotation
+* in the meantime I will install the software from the steps outlined [here](https://uswest.ensembl.org/Astyanax_mexicanus/Info/Annotation) to begin annotation as soon as I have a better genome
+
+### Repeat masker installation
+

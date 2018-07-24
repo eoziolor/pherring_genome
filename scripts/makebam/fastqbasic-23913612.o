@@ -1,0 +1,75 @@
+==========================================
+SLURM_JOB_ID = 23913612
+SLURM_NODELIST = c8-63
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+longranger basic (2.2.2)
+Copyright (c) 2018 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Martian Runtime - '2.2.2-2.3.2'
+2018-07-23 22:41:52 [runtime] Reattaching in local mode.
+Serving UI at http://c8-63:43516?auth=XmOUhF2osJwIzBdZKy1mz4nlGiJEV8-8T-te_5fJWNU
+
+2018-07-23 22:41:53 [runtime] (reset-partial)   ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+2018-07-23 22:41:53 [runtime] Found orphaned local stage: ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-23 22:41:54 [runtime] (chunks_complete) ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+2018-07-23 22:41:54 [runtime] (run:local)       ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0.join
+2018-07-23 22:47:54 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 22:53:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 22:59:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 23:16:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 23:22:33 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-23 23:41:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 00:01:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 00:07:42 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 00:24:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 00:41:53 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 00:59:26 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 01:15:35 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 01:31:43 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 02:04:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 02:21:59 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 02:27:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 02:33:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 02:50:34 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 03:09:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 03:15:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 03:21:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 03:38:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:02:05 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:08:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:14:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:20:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:26:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:32:08 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:51:23 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 04:57:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 05:13:32 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 05:24:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 05:30:00 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 05:50:38 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 06:06:47 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 06:25:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 06:42:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 06:48:27 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 07:05:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 07:22:12 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 07:39:45 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 07:58:54 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 08:19:04 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 08:25:01 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 08:44:38 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 08:50:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 08:56:36 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 09:16:49 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 09:50:54 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 10:07:06 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 10:43:49 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 10:49:47 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 11:09:59 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 11:26:33 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 11:47:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 12:03:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
