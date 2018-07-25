@@ -256,10 +256,180 @@ scp -P 2022 ~/Downloads/trf409.linux64 farm:/home/eoziolor/program/
 
 July 25, 2018
 ---
-## Genome annotation
-* So the RMBlast package is just not working out for installation, I will try another of the 4 packages
-
-
 ## Genome re-assembly
 * Finally the interleaved fastq file was created
-    * I now have to create a csv file with barcode multiplicities using a perl script from the ARKS pipeline.
+* Now I just need to run arks-make2 in order to try and run this pipeline
+    * the stupid pipeline doesn't run with a gzipped file
+```
+gzip phgenome.hap.fasta.gz > phgenome.hap.fa
+```
+
+
+* Created links to the files into the same directory because the program needs to be run from one directory with the files.
+
+```
+ln -s /home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fa /home/eoziolor/phgenome/data/arks/
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/
+```
+
+* First attempt at running the arks script
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks
+#SBATCH -o runarks-%j.o
+#SBATCH -e runarks-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/
+
+#files
+my_fasta=phgenome.hap
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-6000 \
+a=0.9 \
+o=3 \
+threads=16 
+```
+
+## Genome annotation
+* So the RMBlast package is just not working out for installation, I will try another of the 4 packages
+* Starting with HMMER:
+    * installation
+
+```
+wget http://eddylab.org/software/hmmer/hmmer-3.2.1.tar.gz
+tar xf hmmer-3.2.1.tar.gz
+cd hmmer-3.2.1
+./configure --prefix=/home/eoziolor/program/hmmer-3.2.1
+make
+make check
+```
+* Well that was freaking fantastic. Worked like butter on toast. Ok sticking with HMMER for the dependency search engine for RepeatMasker
+    * added a path to ~/.bashrc to make these executed by name
+
+```
+export PATH=/home/eoziolor/program/hmmer-3.2.1/src:$PATH
+```
+
+* Ok, it's time to download and install RepeatMasker itself:
+
+```
+curl -O http://www.repeatmasker.org/RepeatMasker-open-4-0-7.tar.gz
+tar -xvzf RepeatMasker-open-4-0-7.tar.gz 
+```
+
+* I registered for the RepeatMasker edition of RepBase. Once I have it, I can put the library into the RepeatMasker/Libraries folder
+* Checking for updates of Dfam-hmm.gz - none
+* Configure the RepeatMasker program - reconfigure after you add any library
+
+```
+cd RepeatMasker
+perl ./configure
+```
+
+* RepeatMasker successfully installed with configured Hmmer as search engine
+* Got registration permission for RepBase: download to computer and then install
+
+```
+cd /home/eoziolor/program/RepeatMasker
+tar xvzf RepBaseRepeatMaskerEdition-20170127.tar.gz
+```
+* reconfigured with RepBase database included
+
+### Beginning installation of RepeatModeler
+
+#### Dependencies:
+1. Perl - check
+2. RepeatMasker + Libraries - check
+3. RECON - De Novo Repeat Finder
+
+```
+curl -O http://www.repeatmasker.org/RepeatModeler/RECON-1.08.tar.gz
+tar -xvzf RECON-1.08.tar.gz 
+cd RECON-1.08/scripts/
+nano recon.pl
+# script "recon.pl" in the scripts directory -- on the third line, add
+#the path to the binaries (the bin directory here) between the double quotes
+#line: /home/eoziolor/program/RECON-1.08/bin/
+cd ../src/
+make
+make install
+```
+
+4. RepeatScout - De Novo Repeat Finder, Price A.L., Jones N.C. and Pevzner P.A.
+
+```
+curl -O http://www.repeatmasker.org/RepeatScout-1.0.5.tar.gz
+tar -xvzf RepeatScout-1.0.5.tar.gz
+make
+```
+   
+5. TRF - check
+
+```
+mv trf409.linux64 trf
+```
+* reconfigured RepeatMasker to work with this new file name instead with the old one
+
+6. NSEG - Low complexity sequence identification
+
+```
+wget --no-parent -r ftp://ftp.ncbi.nih.gov/pub/seg/nseg
+mv ftp.ncbi.nih.gov/pub/seg/nseg .
+make
+```
+7. Search engine that I can't install...let's see if we can do this with HMMER
+
+#### Installing RepeatModeler
+
+```
+curl -O http://www.repeatmasker.org/RepeatModeler/RepeatModeler-open-1.0.11.tar.gz
+tar -xvzf RepeatModeler-open-1.0.11.tar.gz
+cd RepeatModeler-open-1.0.11
+#To load the latest 5.26 perl with JSON module do:
+module load perl
+perl ./configure
+```
+* guess what...the program doesn't work with HMMER...suprise surprise. Ok let's give RMBlast another go
+
+* RMBlast - trying previous binaries 
+
+```
+curl -O ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/ncbi-rmblastn-2.2.28-x64-linux.tar.gz
+curl -O ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/ncbi-blast-2.2.28+-x64-linux.tar.gz
+
+tar zxvf ncbi-blast-2.2.28+-x64-linux.tar.gz
+tar zxvf ncbi-rmblastn-2.2.28-x64-linux.tar.gz
+
+cp ncbi-rmblastn-2.2.28/* ncbi-blast-2.2.28+/
+cp ncbi-rmblastn-2.2.28/bin/* ncbi-blast-2.2.28+/bin/
+
+rm -rf ncbi-rmblastn-2.2.28
+mv ncbi-blast-2.2.28+ rmblast-2.2.28
+```
+
+### Reconfiguring RepeatMasker before configuring RepeatModeler
+
+```
+module load perl
+
+cd /home/eoziolor/program/RepeatMasker/
+perl ./configure
+
+cd /home/eoziolor/program/RepeatModeler-open-1.0.11/
+perl ./configure
+```
