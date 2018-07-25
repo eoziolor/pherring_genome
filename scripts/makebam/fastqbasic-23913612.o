@@ -73,3 +73,89 @@ Serving UI at http://c8-63:43516?auth=XmOUhF2osJwIzBdZKy1mz4nlGiJEV8-8T-te_5fJWN
 2018-07-24 11:26:33 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
 2018-07-24 11:47:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
 2018-07-24 12:03:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 12:36:48 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:11:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:30:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:40:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:46:38 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:52:39 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 13:58:39 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 14:18:54 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 14:39:07 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 14:55:41 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 15:12:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 15:28:24 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 15:44:57 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 16:01:31 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 16:19:04 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 16:51:44 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 17:07:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 17:25:04 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 17:44:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 18:01:46 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 18:18:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 18:34:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 18:52:02 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 19:11:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 19:27:20 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 19:33:17 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 19:54:30 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 20:11:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 20:17:01 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 20:34:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 20:53:21 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 20:59:19 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 21:15:56 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 21:21:53 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 21:32:29 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 21:53:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 22:09:11 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 22:26:21 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 22:43:40 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:05:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:11:12 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:17:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:23:13 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:29:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:35:14 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:41:12 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:47:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-24 23:53:55 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:10:30 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:16:28 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:34:05 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:40:03 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:56:18 [runtime] (update)          ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT.fork0 join_running
+2018-07-25 00:58:09 [runtime] (join_complete)   ID.NewFastq.BASIC_CS.BASIC.MAKE_UNALIGNED_OUTPUT
+
+Outputs:
+- Run summary:             /home/eoziolor/phgenome/data/raw/NewFastq/outs/summary.csv
+- FASTQ barcoded:          /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz
+- BAM barcoded, unaligned: null
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+Saving pipestance info to NewFastq/NewFastq.mri.tgz
+
+===========================================================================
+Job Finished
+
+Name                : fastqbasic
+User                : eoziolor
+Partition           : high
+Nodes               : c8-63
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-07-23T22:41:48
+Start               : 2018-07-23T22:41:49
+End                 : 2018-07-25T00:58:46
+Reserved walltime   : 2-00:00:00
+Used walltime       : 1-02:16:57
+Used CPU time       :   06:07:32
+% User (Computation): 96.28%
+% System (I/O)      :  3.72%
+Mem reserved        : 60000M/node
+Max Mem used        : 130.16M (c8-63)
+Max Disk Write      : 307.58G (c8-63)
+Max Disk Read       : 494.02G (c8-63)
