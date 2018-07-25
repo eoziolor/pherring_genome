@@ -1,27 +1,28 @@
 #!/bin/bash -l
 
-#SBATCH -J runarks1
-#SBATCH -o runarks1-%j.o
-#SBATCH -e runarks1-%j.o
+#SBATCH -J runarks
+#SBATCH -o runarks-%j.o
+#SBATCH -e runarks-%j.o
 #SBATCH -N 1
 #SBATCH -n 16
-#SBATCH --time=2-00:00
 #SBATCH --mem=60000
+#SBATCH --time=2-00:00
 #SBATCH --no-requeue
 #SBATCH -p high
 
-source /home/eoziolor/.bashrc
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/
 
 #files
-my_arks=/home/eoziolor/program/arks/Examples/arks-make
-my_fasta=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fasta.gz
-my_reads=/home/eoziolor/phgenome/raw/NewFastq/outs/UNFINISHEEEEDDDDDDDDDDDDDDDD
+my_fasta=phgenome.hap
+my_reads=barcoded
 
 #code
-
-$my_arks arks-tigmint \
+arks-make2 arks \
 draft=$my_fasta \
 reads=$my_reads \
-t=16 \
-threads=16 \
-
+m=50-6000 \
+a=0.9 \
+o=3 \
+threads=16 
