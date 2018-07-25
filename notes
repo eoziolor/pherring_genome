@@ -223,3 +223,43 @@ Jul 24, 2018
 
 ### Repeat masker installation
 
+* Downloading and installing the dependency RMBlast Source Package and Patch File
+
+```
+curl -O ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.6.0/ncbi-blast-2.6.0+-src.tar.gz
+curl -O http://www.repeatmasker.org/isb-2.6.0+-changes-vers2.patch.gz
+
+tar -zxvf ncbi-blast-2.6.0+-src.tar.gz
+gunzip isb-2.6.0+-changes-vers2.patch.gz
+
+cd ncbi-blast-2.6.0+-src
+patch -p1 < ../isb-2.6.0+-changes-vers2.patch
+
+cd c++
+./configure --with-mt --prefix=/home/eoziolor/program/ncbi-blast-2.6.0+-src/ --without-debug
+make
+make install
+```
+This last step takes FOREVER!
+
+* Throws an error, so I'll try installing without the patch.
+
+
+
+
+* Downloaded Tandem Repeats Finder from [here](http://tandem.bu.edu/trf/trf409.linux64.download.html)
+* moved it to farm with
+
+```
+scp -P 2022 ~/Downloads/trf409.linux64 farm:/home/eoziolor/program/
+```
+
+July 25, 2018
+---
+## Genome annotation
+* So the RMBlast package is just not working out for installation, I will try another of the 4 packages
+
+
+## Genome re-assembly
+* Finally the interleaved fastq file was created
+    * I now have to create a csv file with barcode multiplicities using a perl script from the ARKS pipeline.
