@@ -548,3 +548,50 @@ l=3 \
 z=250 \
 threads=16 
 ```
+* Find the ARKS paper [here](https://academic.oup.com/bioinformatics/article/34/5/725/4562503)
+
+### ARKS run4
+
+* Time to focus on some of the smaller contigs and bring them up: I will alter the e value down to 10000 in order to focus on the shorter contigs and try to re-stitch those together
+
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks3/arks2_c3_m50-10000_k30_r0.1_e30000_z250_l3_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks4/arks3.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks4/
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks4
+#SBATCH -o runarks4-%j.o
+#SBATCH -e runarks4-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks4/
+
+#files
+my_fasta=arks3
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+o=3 \
+c=3 \
+e=10000 \
+r=0.1 \
+l=3 \
+z=250 \
+threads=16 
+```
