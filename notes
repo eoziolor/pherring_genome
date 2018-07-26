@@ -433,3 +433,57 @@ perl ./configure
 cd /home/eoziolor/program/RepeatModeler-open-1.0.11/
 perl ./configure
 ```
+## Genome re-assembly cont'd
+
+* Moving all of the output files into the akrs1 directory for the first iteration of the arks
+* Starting second iterations
+
+```
+cd /home/eoziolor/phgenome/data/arks/
+mkdir arks1
+mv * akrs1
+mkdir arks2
+```
+
+* creating symlinks to the necessary files
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks1/phgenome.hap_c5_m50-6000_k30_r0.05_e30000_z500_l5_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks2/arks1.fa
+
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks2/
+
+```
+
+* Running second iteration of ARKS = arks2
+    * running with default parameters this time.
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks2
+#SBATCH -o runarks2-%j.o
+#SBATCH -e runarks2-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks2/
+
+#files
+my_fasta=arks1
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.3 \
+o=3 \
+threads=16 
+```
