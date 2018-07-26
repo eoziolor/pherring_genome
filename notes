@@ -487,3 +487,64 @@ a=0.3 \
 o=3 \
 threads=16 
 ```
+
+Jul 26, 2018
+---
+
+## Genome re-assembly
+* second iteration of ARKS was less than exciting - 10kb increase in N50.
+* About to try playing with parameters
+    * See Supplementary table 4 for recommended ranges of parameters that are found acceptable by authors
+* switching a from 0.3 to 0.9 (suggested in paper for larger max scaffold and n50 contiguity). That's the LINKS maximum link ratio
+* leaving -e to 30000, to consider slightly longer contigs. Don't understand this parameter fully. Need to ask further. __Consider changing in future iterations__.
+* dropping minimum number of read pairs with barcode from 5 to 4 (-c=3)
+* since reads get thrown out for multiplicity range, I want to check why. Downloading multiplicity csv file to look at distribution
+    * see code in R (combined.Rmd)
+    * Turns out we have a bunch of reads that only have 1 pair with a barcode...super unhelpful for a large assembly
+    * also makes it meaningless to change multiplicity range because the ones below 50 are pretty much lone pairs and there are non above 10 000 - Good to know!
+* Moving p-value to 0.1 because 0.05 is a strange parameter anyways (r=0.1). Also paper suggests that this is acceptable.
+* Moving links parameter l, to match the minimum number of pairs we specified to arks - 3 pairs for each node (l=3), paper suggests this as the minimum parameter.
+* allowing LINKS to consider lower sequence length as well. Paper suggests 250 is ok, while default is 500 (z=250)
+
+
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks2/arks1_c5_m50-10000_k30_r0.05_e30000_z500_l5_a0.3.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks3/arks2.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks3/
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks3
+#SBATCH -o runarks3-%j.o
+#SBATCH -e runarks3-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks3/
+
+#files
+my_fasta=arks2
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+o=3 \
+c=3 \
+e=30000 \
+r=0.1 \
+l=3 \
+z=250 \
+threads=16 
+```
