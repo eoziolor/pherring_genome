@@ -595,3 +595,96 @@ l=3 \
 z=250 \
 threads=16 
 ```
+### ARKS run5
+
+* Let's alter the e parameter up slightly to fix some of the now bigger scaffolds e=20000
+
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks4/arks3_c3_m50-10000_k30_r0.1_e10000_z250_l3_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks5/arks4.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks5/
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks5
+#SBATCH -o runarks5-%j.o
+#SBATCH -e runarks5-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks5/
+
+#files
+my_fasta=arks4
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+o=3 \
+c=3 \
+e=20000 \
+r=0.1 \
+l=3 \
+z=250 \
+threads=16 
+```
+
+### ARKS run6
+
+* Let's alter the e parameter up slightly to fix some of the now bigger scaffolds e=30000
+* Returning the parameters to slightly more stringent.
+* c=5;l=5;r=0.05
+
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks5/arks4_c3_m50-10000_k30_r0.1_e20000_z250_l3_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks6/arks5.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks6/
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks6
+#SBATCH -o runarks6-%j.o
+#SBATCH -e runarks6-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks6/
+
+#files
+my_fasta=arks5
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+o=3 \
+c=5 \
+e=30000 \
+r=0.05 \
+l=5 \
+z=250 \
+threads=16 
+```
