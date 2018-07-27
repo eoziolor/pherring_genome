@@ -688,3 +688,51 @@ l=5 \
 z=250 \
 threads=16 
 ```
+
+### ARKS run7
+
+* Keeping stringent parameters, even though we only get about 100kb increase in N50 at a time, I think at this point that's necessary. When scaffolding the shorter fragments, it may be alright to relax them as in shorter scaffolds you get less read pairs to put them together.
+* I want to go back in e value back to 10000 and focus on the small scaffolds. I will keep the rest of the values the same, to see the effect of just e.
+
+
+
+```
+ln -s /home/eoziolor/phgenome/data/arks/arks6/arks5_c5_m50-10000_k30_r0.05_e30000_z250_l5_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/arks/arks7/arks6.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/arks/arks7/
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks7
+#SBATCH -o runarks7-%j.o
+#SBATCH -e runarks7-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/arks/arks7/
+
+#files
+my_fasta=arks6
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+o=3 \
+c=5 \
+e=10000 \
+r=0.05 \
+l=5 \
+z=250 \
+threads=16 
+```
