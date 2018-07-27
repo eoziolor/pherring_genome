@@ -736,3 +736,57 @@ l=5 \
 z=250 \
 threads=16 
 ```
+## Genome re-assembly
+### ARKS pipeline re-start
+
+* Spoke to the author of the paper and he suggested that I run tigmint before the first iteration of the assembly, but run as I have from there on.
+    * This is mostly to correct for any misassemblies that could have happened to the scaffolds in the initial supernova assembly
+* Tigmint is already installed, just have to make sure that python3 is loaded when script starts
+* Start by creating the symlinks in a new directory called tigarks
+
+```
+ln -s /home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fa /home/eoziolor/phgenome/data/tigarks/arks1/supernova.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks1/
+```
+* Now let's run arks
+    * putting parameters as relatively stringent
+    * adding kmer size of 42 due to Titus recommendations
+    * Let's see how it goes
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks1
+#SBATCH -o runarks1-%j.o
+#SBATCH -e runarks1-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+module load python3
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks1/
+
+#files
+my_fasta=supernova
+my_reads=barcoded
+
+#code
+arks-make2 arks-tigmint \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=10000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=42 \
+threads=16 \
+t=16
+```
