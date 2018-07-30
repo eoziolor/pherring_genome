@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 24128004
+SLURM_NODELIST = c8-62
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module python3/3.6.1 loaded 
+mktemp: invalid template, ‘/home/eoziolor/phgenome/data/tigarks/arks1/supernova.barcoded.sortbx.bam.XXXXXX’, contains directory separator
+[E::hts_open_format] Failed to open file supernova.barcoded.sortbx.bam
+samtools sort: can't open "supernova.barcoded.sortbx.bam": No such file or directory
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 1155236 sequences (160000186 bp)...
+[M::process] 0 single-end sequences; 1155236 paired-end sequences
+[M::process] read 1155236 sequences (160000186 bp)...
+slurmstepd: error: *** JOB 24128004 ON c8-62 CANCELLED AT 2018-07-28T18:09:34 ***
+
+===========================================================================
+Job Finished
+
+Name                : bamcreate
+User                : eoziolor
+Partition           : high
+Nodes               : c8-62
+Cores               : 23
+State               : CANCELLED,CANCELLED by 1391591
+Submit              : 2018-07-28T18:08:00
+Start               : 2018-07-28T18:08:02
+End                 : 2018-07-28T18:09:34
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:01:32
+Used CPU time       :   00:20:56
+% User (Computation): 97.85%
+% System (I/O)      :  2.15%
+Mem reserved        : 60000M/node
+Max Mem used        : 5.05G (c8-62)
+Max Disk Write      : 1.89M (c8-62)
+Max Disk Read       : 1.50G (c8-62)

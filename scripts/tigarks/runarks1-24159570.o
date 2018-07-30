@@ -1,0 +1,83 @@
+==========================================
+SLURM_JOB_ID = 24159570
+SLURM_NODELIST = c8-69
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+/usr/bin/time -v tigmint tigmint draft=supernova reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16 |& tee supernova_tigmint.log
+make[1]: Entering directory '/home/eoziolor/phgenome/data/tigarks/arks1'
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+/home/eoziolor/program/tigmint/bin/tigmint-molecule -a0.65 -n5 -q0 -d50000 -s2000 supernova.barcoded.sortbx.bam | sort -k1,1 -k2,2n -k3,3n >supernova.barcoded.as0.65.nm5.molecule.size2000.bed
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Traceback (most recent call last):
+  File "/home/eoziolor/program/tigmint/bin/tigmint-molecule", line 13, in <module>
+    import pysam
+  File "/share/apps/pysam-0.9.0/lib/python2.7/site-packages/pysam-0.9.0-py2.7-linux-x86_64.egg/pysam/__init__.py", line 4, in <module>
+    from pysam.libchtslib import *
+ImportError: /share/apps/pysam-0.9.0/lib/python2.7/site-packages/pysam-0.9.0-py2.7-linux-x86_64.egg/pysam/libchtslib.so: undefined symbol: PyString_InternFromString
+/home/eoziolor/program/tigmint/bin/tigmint-make:172: recipe for target 'supernova.barcoded.as0.65.nm5.molecule.size2000.bed' failed
+make[1]: *** [supernova.barcoded.as0.65.nm5.molecule.size2000.bed] Error 1
+make[1]: *** Deleting file 'supernova.barcoded.as0.65.nm5.molecule.size2000.bed'
+make[1]: Leaving directory '/home/eoziolor/phgenome/data/tigarks/arks1'
+Command exited with non-zero status 2
+	Command being timed: "tigmint tigmint draft=supernova reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16"
+	User time (seconds): 0.41
+	System time (seconds): 0.12
+	Percent of CPU this job got: 56%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12908
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 48
+	Minor (reclaiming a frame) page faults: 14597
+	Voluntary context switches: 921
+	Involuntary context switches: 1130
+	Swaps: 0
+	File system inputs: 16656
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2
+perl -ne 'chomp; if(/>/){$ct+=1; print ">$ct\n";}else{print "$_\n";} ' < supernova.tigmint.fa > supernova.tigmint.renamed.fa 
+/bin/bash: supernova.tigmint.fa: No such file or directory
+/home/eoziolor/program/arks/Examples/arks-make2:135: recipe for target 'supernova.tigmint.renamed.fa' failed
+make: *** [supernova.tigmint.renamed.fa] Error 1
+
+===========================================================================
+Job Finished
+
+Name                : runarks1
+User                : eoziolor
+Partition           : high
+Nodes               : c8-69
+Cores               : 23
+State               : FAILED
+Submit              : 2018-07-30T08:12:24
+Start               : 2018-07-30T08:12:27
+End                 : 2018-07-30T08:12:28
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:01
+Used CPU time       : --
+% User (Computation): 76.54%
+% System (I/O)      : 23.46%
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  (c8-69)
+Max Disk Write      : 0.00  (c8-69)
+Max Disk Read       : 0.00  (c8-69)
