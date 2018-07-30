@@ -11,6 +11,7 @@
 #SBATCH -p high
 
 #source ~/.bashrc
+
 export PATH=/home/eoziolor/program/tigmint/bin:$PATH
 export PATH=/home/eoziolor/program/arks/Examples:$PATH
 export PATH=/home/eoziolor/program/arks/Arks:$PATH

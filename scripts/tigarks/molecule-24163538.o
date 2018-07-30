@@ -1,0 +1,30 @@
+==========================================
+SLURM_JOB_ID = 24163538
+SLURM_NODELIST = c11-93
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+
+===========================================================================
+Job Finished
+
+Name                : molecule
+User                : eoziolor
+Partition           : high
+Nodes               : c11-93
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-07-30T11:39:16
+Start               : 2018-07-30T11:39:17
+End                 : 2018-07-30T13:32:58
+Reserved walltime   : 1-00:00:00
+Used walltime       :   01:53:41
+Used CPU time       :   01:43:30
+% User (Computation): 99.07%
+% System (I/O)      :  0.94%
+Mem reserved        : 60000M/node
+Max Mem used        : 38.46M (c11-93)
+Max Disk Write      : 2.18G (c11-93)
+Max Disk Read       : 95.36G (c11-93)

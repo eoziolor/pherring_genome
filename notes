@@ -790,3 +790,113 @@ k=42 \
 threads=16 \
 t=16
 ```
+July 28, 2018
+===
+
+* So the Tigmint has been failing at creating a new .bam file because for some reason the script of samtools is forcing it to write into a /tmp directory. I will try to run that script separately, altered for directory, and then feed tigmint the bamfile.
+
+```
+#!/bin/bash -l
+
+#SBATCH -J bamcreate
+#SBATCH -o bamcreate-%j.o
+#SBATCH -e bamcreate-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+module load python3
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks1/
+
+#files
+my_fasta=supernova
+my_reads=barcoded
+
+#code
+bwa mem -t16 -pC supernova.fa barcoded.fq.gz |\
+samtools view -u -F4 |\
+samtools sort -@16 -tBX \
+-o supernova.barcoded.sortbx.bam
+```
+
+July 30, 2018
+===
+* So the script for bwa and samtools to create a barcoded aligned .bam worked just fine. I am copying it to another directory (just in case). Now I will run the tigmint+arks pipeline, hoping it will recognize the bam and not try to recreate it again.
+
+* I am having issues with tigmint-molecule loading pysam from the general environment rather than the pysam that I want it to. This is why I am running that line separately and loading the bio3 environment which has a pysam that is dependent on python3, not the python2 old version of pysam that is on the general module list
+
+```
+#!/bin/bash -l
+
+#SBATCH -J molecule
+#SBATCH -o molecule-%j.o
+#SBATCH -e molecule-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+module load bio3
+
+cd /home/eoziolor/phgenome/data/tigarks/arks1/
+
+#files
+my_bam=supernova.barcoded.sortbx.bam
+my_reads=barcoded
+my_tigm=/home/eoziolor/program/tigmint/bin/tigmint-molecule
+
+#code
+$my_tigm $my_bam | sort -k1,1 -k2,2n -k3,3n >supernova.reads.molecule.bed
+```
+* this works just fine. Now I will finish off the process with:
+
+```
+ #!/bin/bash -l
+
+#SBATCH -J runarks1
+#SBATCH -o runarks1-%j.o
+#SBATCH -e runarks1-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+#source ~/.bashrc
+export PATH=/home/eoziolor/program/tigmint/bin:$PATH
+export PATH=/home/eoziolor/program/arks/Examples:$PATH
+export PATH=/home/eoziolor/program/arks/Arks:$PATH
+module load bio3
+
+cd /home/eoziolor/phgenome/data/tigarks/arks1/
+
+#files
+my_fasta=supernova
+my_reads=barcoded
+
+#code
+arks-make2 arks-tigmint \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=10000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=42 \
+threads=16 \
+t=16
+```
+
+* I can probably run this last bit isntead of all the middle parts. Oh well, for the next iterations I'll only have to run arks without tigmint.
+
