@@ -900,3 +900,93 @@ t=16
 
 * I can probably run this last bit isntead of all the middle parts. Oh well, for the next iterations I'll only have to run arks without tigmint.
 
+
+* Ok, there's more dependencies that I need for this, so I'm just going to install conda and run from there
+
+```
+module load conda3
+conda create -n phgenome
+source activate phgenome
+
+conda config --add channels r
+conda config --add channels bioconda
+
+conda install pysam
+conda install -c bioconda pybedtools
+conda install -c conda-forge intervaltree
+conda install -c conda-forge statistics 
+conda install cython
+conda install -c bioconda bedtools htslib
+```
+
+* Trying new environment
+```
+conda create -n pybed_phgenome -c daler pybedtools bedtools python=3
+```
+
+* Ok so initially that didn't work because it was giving me issues with __init__.py. So I found [this article](http://python-notes.curiousefficiency.org/en/latest/python_concepts/import_traps.html) that helps understand how that is an issue. I went into
+
+```
+/home/eoziolor/.conda/envs/pybed_phgenome/lib/python3.6/site-packages/pybedtools
+mv __init__.py __changedinit__.py
+```
+
+* Fucking works. Let's try it again.
+
+```
+conda install pysam
+conda install -c bioconda pybedtools
+conda install -c conda-forge intervaltree
+conda install -c conda-forge statistics 
+conda install cython
+conda install -c bioconda bedtools htslib
+```
+
+July 31, 2018
+===
+
+* Ok that's a bust.
+
+* Bill was able to install the dependencies in the bio3 package, so I am running the script below again
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks1
+#SBATCH -o runarks1-%j.o
+#SBATCH -e runarks1-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+export PATH=/home/eoziolor/program/tigmint/bin:$PATH
+export PATH=/home/eoziolor/program/arks/Examples:$PATH
+export PATH=/home/eoziolor/program/arks/Arks:$PATH
+
+module load bio3
+
+cd /home/eoziolor/phgenome/data/tigarks/arks1/
+
+#files
+my_fasta=supernova
+my_reads=barcoded
+
+#code
+arks-make2 arks-tigmint \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=10000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=42 \
+threads=16 \
+t=16
+```
+

@@ -14,8 +14,8 @@
 export PATH=/home/eoziolor/program/tigmint/bin:$PATH
 export PATH=/home/eoziolor/program/arks/Examples:$PATH
 export PATH=/home/eoziolor/program/arks/Arks:$PATH
-module load conda3
-source /home/eoziolor/.conda/envs/phgenome/bin/activate
+
+module load bio3
 
 cd /home/eoziolor/phgenome/data/tigarks/arks1/
 

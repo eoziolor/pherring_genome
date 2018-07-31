@@ -1,0 +1,26 @@
+==========================================
+SLURM_JOB_ID = 24263287
+SLURM_NODELIST = c8-94
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+/usr/bin/time -v tigmint tigmint draft=supernova reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16 |& tee supernova_tigmint.log
+make[1]: Entering directory '/home/eoziolor/phgenome/data/tigarks/arks1'
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+/home/eoziolor/program/tigmint/bin/tigmint-cut -p16 -w1000 -n20 -t0 -o supernova.barcoded.as0.65.nm5.molecule.size2000.trim0.window1000.span20.breaktigs.fa supernova.fa supernova.barcoded.as0.65.nm5.molecule.size2000.bed
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Started at: 2018-07-31 08:25:22.964736
+Reading contig lengths...
+Finding breakpoints...
