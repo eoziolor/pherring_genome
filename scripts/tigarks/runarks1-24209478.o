@@ -1,29 +1,15 @@
 ==========================================
-SLURM_JOB_ID = 24178456
-SLURM_NODELIST = c9-89
+SLURM_JOB_ID = 24209478
+SLURM_NODELIST = c8-66
 ==========================================
 Module slurm/17.11.5 loaded 
 Module openmpi/3.0.1 loaded 
 Module gcc/7.3.0 loaded 
-Module bio3/1.0 loaded 
 /usr/bin/time -v tigmint tigmint draft=supernova reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16 |& tee supernova_tigmint.log
 make[1]: Entering directory '/home/eoziolor/phgenome/data/tigarks/arks1'
 Module slurm/17.11.5 loaded 
 Module openmpi/3.0.1 loaded 
 Module gcc/7.3.0 loaded 
-Module slurm/17.11.5 loaded 
-Module openmpi/3.0.1 loaded 
-Module gcc/7.3.0 loaded 
-Module slurm/17.11.5 loaded 
-Module openmpi/3.0.1 loaded 
-Module gcc/7.3.0 loaded 
-/home/eoziolor/program/tigmint/bin/tigmint-molecule -a0.65 -n5 -q0 -d50000 -s2000 supernova.barcoded.sortbx.bam | sort -k1,1 -k2,2n -k3,3n >supernova.barcoded.as0.65.nm5.molecule.size2000.bed
-Module slurm/17.11.5 loaded 
-Module openmpi/3.0.1 loaded 
-Module gcc/7.3.0 loaded 
-time user=14765.28s system=107.47s elapsed=15039.59s cpu=98% memory=24 job=
-time user=88.97s system=5.13s elapsed=15075.71s cpu=0% memory=10 job=
-samtools faidx supernova.fa
 Module slurm/17.11.5 loaded 
 Module openmpi/3.0.1 loaded 
 Module gcc/7.3.0 loaded 
@@ -37,29 +23,45 @@ Module gcc/7.3.0 loaded
 Traceback (most recent call last):
   File "/home/eoziolor/program/tigmint/bin/tigmint-cut", line 12, in <module>
     import pybedtools
-ModuleNotFoundError: No module named 'pybedtools'
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/__init__.py", line 17, in <module>
+    from .bedtool import BedTool
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/bedtool.py", line 380, in <module>
+    class BedTool(object):
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/bedtool.py", line 1580, in BedTool
+    @_wraps(prog='bed12ToBed6', implicit='i', bam=None, other=None)
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/bedtool.py", line 159, in _wraps
+    p = subprocess.Popen(helpers._version_2_15_plus_names(prog) + ['-h'],
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/helpers.py", line 209, in _version_2_15_plus_names
+    _check_for_bedtools()
+  File "/home/eoziolor/.conda/envs/phgenome/lib/python3.6/site-packages/pybedtools/helpers.py", line 40, in _check_for_bedtools
+    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  File "/share/apps/conda3/miniconda3/lib/python3.6/subprocess.py", line 707, in __init__
+    restore_signals, start_new_session)
+  File "/share/apps/conda3/miniconda3/lib/python3.6/subprocess.py", line 1260, in _execute_child
+    restore_signals, start_new_session, preexec_fn)
+TypeError: fork_exec() argument 4 must be tuple, not list
 /home/eoziolor/program/tigmint/bin/tigmint-make:202: recipe for target 'supernova.barcoded.as0.65.nm5.molecule.size2000.trim0.window1000.span20.breaktigs.fa' failed
 make[1]: *** [supernova.barcoded.as0.65.nm5.molecule.size2000.trim0.window1000.span20.breaktigs.fa] Error 1
 make[1]: Leaving directory '/home/eoziolor/phgenome/data/tigarks/arks1'
 Command exited with non-zero status 2
 	Command being timed: "tigmint tigmint draft=supernova reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16"
-	User time (seconds): 14867.02
-	System time (seconds): 113.65
-	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:11:33
+	User time (seconds): 0.29
+	System time (seconds): 0.06
+	Percent of CPU this job got: 34%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.05
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 25120
+	Maximum resident set size (kbytes): 21988
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 168
-	Minor (reclaiming a frame) page faults: 845645
-	Voluntary context switches: 108721
-	Involuntary context switches: 12615766
+	Major (requiring I/O) page faults: 132
+	Minor (reclaiming a frame) page faults: 15513
+	Voluntary context switches: 1052
+	Involuntary context switches: 2464
 	Swaps: 0
-	File system inputs: 199305504
-	File system outputs: 4484832
+	File system inputs: 39672
+	File system outputs: 0
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
@@ -76,18 +78,18 @@ Job Finished
 Name                : runarks1
 User                : eoziolor
 Partition           : high
-Nodes               : c9-89
+Nodes               : c8-66
 Cores               : 23
-State               : FAILED,RUNNING
-Submit              : 2018-07-30T15:49:23
-Start               : 2018-07-30T15:49:24
-End                 : --
+State               : FAILED
+Submit              : 2018-07-30T21:11:50
+Start               : 2018-07-30T21:11:50
+End                 : 2018-07-30T21:11:55
 Reserved walltime   : 2-00:00:00
-Used walltime       :   04:11:34
-Used CPU time       :   04:09:40
-% User (Computation): 99.25%
-% System (I/O)      :  0.76%
+Used walltime       :   00:00:05
+Used CPU time       :   00:00:02
+% User (Computation): 88.19%
+% System (I/O)      : 11.81%
 Mem reserved        : 60000M/node
-Max Mem used        : 51.06M (c9-89)
-Max Disk Write      : 2.85G (c9-89)
-Max Disk Read       : 96.65G (c9-89)
+Max Mem used        : 0.00  (c8-66)
+Max Disk Write      : 0.00  (c8-66)
+Max Disk Read       : 0.00  (c8-66)
