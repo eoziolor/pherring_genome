@@ -14,6 +14,7 @@
 export PATH=/home/eoziolor/program/tigmint/bin:$PATH
 export PATH=/home/eoziolor/program/arks/Examples:$PATH
 export PATH=/home/eoziolor/program/arks/Arks:$PATH
+export PATH=/home/eoziolor/program/links_v1.8.6:$PATH
 
 module load bio3
 

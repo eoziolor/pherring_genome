@@ -1,0 +1,13 @@
+==========================================
+SLURM_JOB_ID = 24281661
+SLURM_NODELIST = c8-94
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+/var/spool/slurmd/job24281661/slurm_script: line 28: arks-make2: command not found
+
+===========================================================================
+Job Finished
+

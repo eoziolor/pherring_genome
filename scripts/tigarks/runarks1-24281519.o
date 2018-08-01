@@ -1,0 +1,31 @@
+==========================================
+SLURM_JOB_ID = 24281519
+SLURM_NODELIST = c8-94
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+/var/spool/slurmd/job24281519/slurm_script: line 28: arks-make2: command not found
+
+===========================================================================
+Job Finished
+
+Name                : runarks1
+User                : eoziolor
+Partition           : high
+Nodes               : c8-94
+Cores               : 23
+State               : FAILED
+Submit              : 2018-07-31T12:00:01
+Start               : 2018-07-31T12:00:04
+End                 : 2018-07-31T12:00:04
+Reserved walltime   : 2-00:00:00
+Used walltime       : --
+Used CPU time       : --
+% User (Computation): 100.00%
+% System (I/O)      :  0.00%
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  (c8-94)
+Max Disk Write      : 0.00  (c8-94)
+Max Disk Read       : 0.00  (c8-94)
