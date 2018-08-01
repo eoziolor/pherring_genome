@@ -990,3 +990,185 @@ threads=16 \
 t=16
 ```
 
+* This actually yields a lower assembly than the original. I think it's mostly because of scaffolding errors being fixed from previous pipeline. Let's re-run
+
+### ARKS run 2
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks1/supernova.tigmint_c5_m50-10000_k42_r0.05_e10000_z250_l5_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks2/arks1.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks2/
+```
+* Changing kmer size to 30 (default) and pushing e from 10 to 15k
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks2
+#SBATCH -o runarks2-%j.o
+#SBATCH -e runarks2-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks2/
+
+#files
+my_fasta=arks1
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=15000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=30 \
+threads=16 
+```
+
+### ARKS run 3
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks2/arks1_c5_m50-10000_k30_r0.05_e15000_z250_l5_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks3/arks2.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks3/
+```
+* Changing e value to 20k
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks3
+#SBATCH -o runarks3-%j.o
+#SBATCH -e runarks3-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks3/
+
+#files
+my_fasta=arks2
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=20000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=30 \
+threads=16 
+```
+
+### ARKS run 4
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks3/arks2_c5_m50-10000_k30_r0.05_e20000_z250_l5_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks4/arks3.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks4/
+```
+* Changing e value to 25k
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks4
+#SBATCH -o runarks4-%j.o
+#SBATCH -e runarks4-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks4/
+
+#files
+my_fasta=arks3
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=25000 \
+r=0.05 \
+l=5 \
+z=250 \
+k=30 \
+threads=16 
+```
+
+August 1, 2018
+===
+
+### ARKS run 5
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks4/arks3_c5_m50-10000_k30_r0.05_e25000_z250_l5_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks5/arks4.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks5/
+```
+* Changing e value to 35k
+* Changing c and l to 3 (suggested as acceptable in ARCS paper)
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks5
+#SBATCH -o runarks5-%j.o
+#SBATCH -e runarks5-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks5/
+
+#files
+my_fasta=arks4
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=35000 \
+r=0.05 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
+
