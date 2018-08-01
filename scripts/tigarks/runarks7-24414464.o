@@ -1,0 +1,11 @@
+==========================================
+SLURM_JOB_ID = 24414464
+SLURM_NODELIST = c8-67
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+touch empty.fof
+ln -s barcoded.fastq.gz barcoded.fq.gz
+echo barcoded.fq.gz > barcoded.fof
+/home/eoziolor/program/arks/Examples/../bin/calcBarcodeMultiplicities.pl barcoded.fof > barcoded_multiplicities.csv

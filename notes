@@ -1172,3 +1172,98 @@ k=30 \
 threads=16 
 ```
 
+### ARKS run 6
+
+* Ok I feel like we are running into the limit here, let's loosen the beast
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks5/arks4_c3_m50-10000_k30_r0.05_e35000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks6/arks5.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks6/
+```
+* Changing e value to 10k
+* Changing r to 0.1
+
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks6
+#SBATCH -o runarks6-%j.o
+#SBATCH -e runarks6-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks6/
+
+#files
+my_fasta=arks5
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=10000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
+
+### ARKS run 7
+
+* LOOOSEN ITTTT
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks6/arks5_c3_m50-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks7/arks6.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks7/
+```
+* Changing e value to 30k
+* Changing a to 0.9
+
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks7
+#SBATCH -o runarks7-%j.o
+#SBATCH -e runarks7-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks7/
+
+#files
+my_fasta=arks6
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+c=3 \
+e=30000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
