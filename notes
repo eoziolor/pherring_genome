@@ -1458,3 +1458,51 @@ z=250 \
 k=30 \
 threads=16 
 ```
+### Arks Run 7b
+
+* I've decided to run another set of iterations with relatively tight parameters and see how things go. I didn't loosen parameters until arks7, so now I will repeat the process with the same other parameters, but not reducing "a", which is important for misassembly prevention.
+
+```
+mkdir /home/eoziolor/phgenome/data/altarks/arks7b
+
+ln -s /home/eoziolor/phgenome/data/tigarks/arks6/arks5_c3_m50-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/altarks/arks7b/arks6.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/altarks/arks7b/
+```
+* Now running arks with e=30k, but not changing a value.
+* returning r to 0.05
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks7b
+#SBATCH -o runarks7b-%j.o
+#SBATCH -e runarks7b-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/altarks/arks7b/
+
+#files
+my_fasta=arks6
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=30000 \
+r=0.05 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
