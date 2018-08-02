@@ -1412,3 +1412,49 @@ z=250 \
 k=30 \
 threads=16 
 ```
+### ARKS run 11
+
+* Beast has been unleashed, let's iterate
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks10/arks9_c5_m50-10000_k30_r0.05_e60000_z250_l5_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks11/arks10.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks11/
+```
+* Changing e value to 10k
+* Bringing a back down to 0.5
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks11
+#SBATCH -o runarks11-%j.o
+#SBATCH -e runarks11-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks11/
+
+#files
+my_fasta=arks10
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=5 \
+e=10000 \
+r=0.1 \
+l=5 \
+z=250 \
+k=30 \
+threads=16 
+```
