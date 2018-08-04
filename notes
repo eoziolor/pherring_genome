@@ -1791,3 +1791,100 @@ z=250 \
 k=30 \
 threads=16 
 ```
+Aug 4, 2018
+===
+
+### ARKS run 15
+
+* Iterating with loose parameters one more time to see if everything is ready
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks14/arks13_c3_m50-10000_k30_r0.1_e30000_z250_l3_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks15/arks14.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks15/
+```
+* e is back to 30k
+* a is back to 0.9
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks15
+#SBATCH -o runarks15-%j.o
+#SBATCH -e runarks15-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/tigarks/arks15/
+
+#files
+my_fasta=arks14
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.9 \
+c=3 \
+e=30000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
+
+### ARKS run 11b
+
+* Beast has been unleashed, let's iterate
+
+```
+ln -s /home/eoziolor/phgenome/data/altarks/arks10b/arks9b_c3_m50-10000_k30_r0.1_e50000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/altarks/arks11b/arks10b.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/altarks/arks11b/
+```
+* Changing e value to 50k
+* Change c and l back to 5 for the longer scaffolds
+
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks11b
+#SBATCH -o runarks11b-%j.o
+#SBATCH -e runarks11b-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/altarks/arks11b/
+
+#files
+my_fasta=arks10b
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=10000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 
+```
