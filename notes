@@ -1888,3 +1888,103 @@ z=250 \
 k=30 \
 threads=16 
 ```
+
+### ARKS run 16
+
+* Ok this could go on forever, but I have no idea if this is actually building a meaningful genome. I am going to run tigmint again on this one and see the result. I will assemble with conservative outcome
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks15/arks14_c3_m50-10000_k30_r0.1_e30000_z250_l3_a0.9.scaffolds.fa /home/eoziolor/phgenome/data/tigarks/arks16/arks15.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/tigarks/arks16/
+```
+* e is back to 30k
+* a is back to 0.5
+
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks16
+#SBATCH -o runarks16-%j.o
+#SBATCH -e runarks16-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+export PATH=/home/eoziolor/program/tigmint/bin:$PATH
+export PATH=/home/eoziolor/program/arks/Examples:$PATH
+export PATH=/home/eoziolor/program/arks/Arks:$PATH
+export PATH=/home/eoziolor/program/links_v1.8.6:$PATH
+
+module load bio3
+
+cd /home/eoziolor/phgenome/data/tigarks/arks16/
+
+#files
+my_fasta=arks15
+my_reads=barcoded
+
+#code
+arks-make2 arks-tigmint \
+draft=$my_fasta \
+reads=$my_reads \
+m=8-10000 \
+a=0.5 \
+c=3 \
+e=10000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=30 \
+threads=16 \
+t=16
+```
+
+### ARKS run 12b
+
+* So I think we are maxing out at 0.65 Mb at the strict parameters. One thing that I want to troubleshoot is k. I am going to increase it to 60 as they've done in the paper and see if there is a change.
+
+```
+ln -s /home/eoziolor/phgenome/data/altarks/arks11b/arks10b_c3_m50-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/altarks/arks12b/arks11b.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/altarks/arks12b/
+```
+* Changing e value to 30k
+* Change k to 60
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks12b
+#SBATCH -o runarks12b-%j.o
+#SBATCH -e runarks12b-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/altarks/arks12b/
+
+#files
+my_fasta=arks11b
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=10000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=60 \
+threads=16 
+```
+

@@ -1,0 +1,31 @@
+==========================================
+SLURM_JOB_ID = 24721061
+SLURM_NODELIST = c8-62
+==========================================
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module bio3/1.0 loaded 
+ln -s barcoded.fastq.gz barcoded.fq.gz
+/usr/bin/time -v tigmint tigmint draft=arks15 reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16 |& tee arks15_tigmint.log
+make[1]: Entering directory '/home/eoziolor/phgenome/data/tigarks/arks16'
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+bwa index arks15.fa
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+[bwa_index] Pack FASTA... 10.21 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=1596314124, availableWord=124322264
+[BWTIncConstructFromPacked] 10 iterations done. 99999996 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 199999996 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 299999996 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 399999996 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 499999996 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 599999996 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 699999996 characters processed.
