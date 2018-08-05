@@ -2036,3 +2036,48 @@ z=250 \
 k=60 \
 threads=16 
 ```
+### ARKS run 13b
+
+* Changing the k to 60 improved assembly when e was at 30. Changing it to 40k to see if that improves longer scaffolds.
+
+```
+ln -s /home/eoziolor/phgenome/data/altarks/arks13b/arks12b_c3_m50-10000_k60_r0.1_e30000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/altarks/arks14b/arks13b.fa
+ln -s /home/eoziolor/phgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/eoziolor/phgenome/data/altarks/arks14b/
+```
+* Changing e value to 40k
+* Keep k to 60
+```
+#!/bin/bash -l
+
+#SBATCH -J runarks14b
+#SBATCH -o runarks14b-%j.o
+#SBATCH -e runarks14b-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+cd /home/eoziolor/phgenome/data/altarks/arks14b/
+
+#files
+my_fasta=arks13b
+my_reads=barcoded
+
+#code
+arks-make2 arks \
+draft=$my_fasta \
+reads=$my_reads \
+m=50-10000 \
+a=0.5 \
+c=3 \
+e=40000 \
+r=0.1 \
+l=3 \
+z=250 \
+k=60 \
+threads=16 
+```
