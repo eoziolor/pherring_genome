@@ -18107,3 +18107,422 @@ Module gcc/7.3.0 loaded
 Module slurm/17.11.5 loaded 
 Module openmpi/3.0.1 loaded 
 Module gcc/7.3.0 loaded 
+time user=14982.35s system=126.90s elapsed=15266.62s cpu=98% memory=26 job=
+time user=202.25s system=9.11s elapsed=15343.53s cpu=1% memory=12 job=
+samtools faidx arks15.fa
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+/home/eoziolor/program/tigmint/bin/tigmint-cut -p16 -w1000 -n20 -t0 -o arks15.barcoded.as0.65.nm5.molecule.size2000.trim0.window1000.span20.breaktigs.fa arks15.fa arks15.barcoded.as0.65.nm5.molecule.size2000.bed
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+Started at: 2018-08-06 10:21:56.807763
+Reading contig lengths...
+Finding breakpoints...
+Cutting assembly at breakpoints...
+DONE!
+Ended at: 2018-08-06 10:48:45.284118
+ln -sf arks15.barcoded.as0.65.nm5.molecule.size2000.trim0.window1000.span20.breaktigs.fa arks15.tigmint.fa
+Module slurm/17.11.5 loaded 
+Module openmpi/3.0.1 loaded 
+Module gcc/7.3.0 loaded 
+make[1]: Leaving directory '/home/eoziolor/phgenome/data/tigarks/arks16'
+	Command being timed: "tigmint tigmint draft=arks15 reads=barcoded minsize=2000 as=0.65 nm=5 dist=50000 mapq=0 trim=0 span=20 window=1000 t=16"
+	User time (seconds): 1681178.69
+	System time (seconds): 21884.34
+	Percent of CPU this job got: 1125%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 42:02:46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14166320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 345
+	Minor (reclaiming a frame) page faults: 9627754149
+	Voluntary context switches: 226089231
+	Involuntary context switches: 63644403
+	Swaps: 0
+	File system inputs: 494877400
+	File system outputs: 430585896
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+touch empty.fof
+echo barcoded.fq.gz > barcoded.fof
+/home/eoziolor/program/arks/Examples/../bin/calcBarcodeMultiplicities.pl barcoded.fof > barcoded_multiplicities.csv
+perl -ne 'chomp; if(/>/){$ct+=1; print ">$ct\n";}else{print "$_\n";} ' < arks15.tigmint.fa > arks15.tigmint.renamed.fa 
+/usr/bin/time -v arks -p full -v -f arks15.tigmint.renamed.fa -a barcoded_multiplicities.csv -c 3 -t 16 -j 0.55 -o 0 -m 8-10000 -k 30 -r 0.1 -e 10000 -z 250 -d 0 -b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250 barcoded.fq.gz |& tee arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_arks.log
+Reading user inputs...
+Finished reading user inputs...entering runArks()...
+Entered runArks()...
+Running: arks 1.0.2
+ pid 30787
+ -p full
+ -f arks15.tigmint.renamed.fa
+ -a barcoded_multiplicities.csv
+ -q 
+ -w 
+ -i 
+ -o 0
+ -c 3
+ -k 30
+ -g 1
+ -j 0.55
+ -l 0
+ -z 250
+ -b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250
+ Min index multiplicity: 8
+ Max index multiplicity: 10000
+ -d 0
+ -e 10000
+ -r 0.1
+ -t 16
+ -v 1
+
+---We are using KMER method.---
+
+
+=>Preprocessing: Gathering barcode multiplicity information...Mon Aug  6 11:39:56 2018
+Saw 2583815 barcodes and keeping 710283828 read pairs out of 710283828
+
+=>Preprocessing: Gathering draft information...Mon Aug  6 11:40:01 2018
+
+Number of contigs:81005
+Size of Contig Array:162011
+
+----Full ARKS----
+
+
+=>Storing Kmers from Contig ends... Mon Aug  6 11:40:06 2018
+
+Finished 1000 Contigs...
+Finished 2000 Contigs...
+Finished 3000 Contigs...
+Finished 4000 Contigs...
+Finished 5000 Contigs...
+Finished 6000 Contigs...
+Finished 7000 Contigs...
+Finished 8000 Contigs...
+Finished 9000 Contigs...
+Finished 10000 Contigs...
+Finished 11000 Contigs...
+Finished 12000 Contigs...
+Finished 13000 Contigs...
+Finished 14000 Contigs...
+Finished 15000 Contigs...
+Finished 16000 Contigs...
+Finished 17000 Contigs...
+Finished 18000 Contigs...
+Finished 19000 Contigs...
+Finished 20000 Contigs...
+Finished 21000 Contigs...
+Finished 22000 Contigs...
+Finished 23000 Contigs...
+Finished 24000 Contigs...
+Finished 25000 Contigs...
+Finished 26000 Contigs...
+Finished 27000 Contigs...
+Finished 28000 Contigs...
+Finished 29000 Contigs...
+Finished 30000 Contigs...
+Finished 31000 Contigs...
+Finished 32000 Contigs...
+Finished 33000 Contigs...
+Finished 34000 Contigs...
+Finished 35000 Contigs...
+Finished 36000 Contigs...
+Finished 37000 Contigs...
+Finished 38000 Contigs...
+Finished 39000 Contigs...
+Finished 40000 Contigs...
+Finished 41000 Contigs...
+Finished 42000 Contigs...
+Finished 43000 Contigs...
+Finished 44000 Contigs...
+Finished 45000 Contigs...
+Finished 46000 Contigs...
+Finished 47000 Contigs...
+Finished 48000 Contigs...
+Finished 49000 Contigs...
+Finished 50000 Contigs...
+Finished 51000 Contigs...
+Finished 52000 Contigs...
+Finished 53000 Contigs...
+Finished 54000 Contigs...
+Finished 55000 Contigs...
+Finished 56000 Contigs...
+Finished 57000 Contigs...
+Finished 58000 Contigs...
+Finished 59000 Contigs...
+Finished 60000 Contigs...
+Finished 61000 Contigs...
+Finished 62000 Contigs...
+Finished 63000 Contigs...
+Finished 64000 Contigs...
+Finished 65000 Contigs...
+Finished 66000 Contigs...
+Finished 67000 Contigs...
+Finished 68000 Contigs...
+Finished 69000 Contigs...
+Finished 70000 Contigs...
+Finished 71000 Contigs...
+Finished 72000 Contigs...
+Finished 73000 Contigs...
+Finished 74000 Contigs...
+Finished 75000 Contigs...
+Finished 76000 Contigs...
+Finished 77000 Contigs...
+Finished 78000 Contigs...
+Finished 79000 Contigs...
+Finished 80000 Contigs...
+Finished 81000 Contigs...
+Total number of contigs in draft genome:  81758
+Total valid contigs:  81005
+Total skipped contigs:  753
+Total number of Kmers:  284802748
+Number Null Kmers:  365621
+Number Kmers Recorded:  173635119
+Number Kmer Collisions:  111167629
+Number Times Kmers Removed (since duplicate in different contig):  109234373
+Number of unique kmers (only one contig):  137197706
+
+=>Reading Chromium FASTQ file(s)... Mon Aug  6 11:50:17 2018
+
+Reading chrom barcoded.fq.gz
+File barcoded.fq.gz opened.
+Processed 10000000 read pairs.
+Processed 20000000 read pairs.
+Processed 30000000 read pairs.
+Processed 40000000 read pairs.
+Processed 50000000 read pairs.
+Processed 60000000 read pairs.
+Processed 70000000 read pairs.
+Processed 80000000 read pairs.
+Processed 90000000 read pairs.
+Processed 100000000 read pairs.
+Processed 110000000 read pairs.
+Processed 120000000 read pairs.
+Processed 130000000 read pairs.
+Processed 140000000 read pairs.
+Processed 150000000 read pairs.
+Processed 160000000 read pairs.
+Processed 170000000 read pairs.
+Processed 180000000 read pairs.
+Processed 190000000 read pairs.
+Processed 200000000 read pairs.
+Processed 210000000 read pairs.
+Processed 220000000 read pairs.
+Processed 230000000 read pairs.
+Processed 240000000 read pairs.
+Processed 250000000 read pairs.
+Processed 260000000 read pairs.
+Processed 270000000 read pairs.
+Processed 280000000 read pairs.
+Processed 290000000 read pairs.
+Processed 300000000 read pairs.
+Processed 310000000 read pairs.
+Processed 320000000 read pairs.
+Processed 330000000 read pairs.
+Processed 340000000 read pairs.
+Processed 350000000 read pairs.
+Processed 360000000 read pairs.
+Processed 370000000 read pairs.
+Processed 380000000 read pairs.
+Processed 390000000 read pairs.
+Processed 400000000 read pairs.
+Processed 410000000 read pairs.
+Processed 420000000 read pairs.
+Processed 430000000 read pairs.
+Processed 440000000 read pairs.
+Processed 450000000 read pairs.
+Processed 460000000 read pairs.
+Processed 470000000 read pairs.
+Processed 480000000 read pairs.
+Processed 490000000 read pairs.
+Processed 500000000 read pairs.
+Processed 510000000 read pairs.
+Processed 520000000 read pairs.
+Processed 530000000 read pairs.
+Processed 540000000 read pairs.
+Processed 550000000 read pairs.
+Processed 560000000 read pairs.
+Processed 570000000 read pairs.
+Processed 580000000 read pairs.
+Processed 590000000 read pairs.
+Processed 600000000 read pairs.
+Processed 610000000 read pairs.
+Processed 620000000 read pairs.
+Processed 630000000 read pairs.
+Processed 640000000 read pairs.
+Processed 650000000 read pairs.
+Processed 660000000 read pairs.
+Processed 670000000 read pairs.
+Processed 680000000 read pairs.
+Processed 690000000 read pairs.
+Processed 700000000 read pairs.
+Processed 710000000 read pairs.
+Processed 720000000 read pairs.
+Processed 730000000 read pairs.
+Processed 740000000 read pairs.
+Processed 750000000 read pairs.
+Processed 760000000 read pairs.
+Processed 770000000 read pairs.
+Stored read pairs: 24416234
+Skipped invalid read pairs: 227422
+Skipped unpaired reads: 0
+Skipped reads pairs without a good contig: 330725680
+Total valid kmers: 410202412
+Number invalid kmers: 6660008
+Number of kmers found in ContigKmap: 2811668908
+Number of kmers recorded in Ktrack: 1651914042
+Number of kmers found in ContigKmap but duplicate: 1159754866
+Number of reads passing jaccard threshold: 77451933
+Number of reads failing jaccard threshold: 610918915
+WARNING:: Your chromium read file has 30661844 read pairs that have barcodes not in the barcode multiplicity file.Cumulative memory usage: 9098584
+
+=>Starting pairing of scaffolds... Mon Aug  6 15:27:08 2018
+
+=>Starting to create graph... Mon Aug  6 15:30:06 2018
+
+=>Starting to write graph file... Mon Aug  6 15:30:09 2018
+
+      Max Degree (-d) set to: 0. Will not delete any verticies from graph.
+      Writting graph file to arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_original.gv...
+
+=>Outputting desired checkpoint files... Mon Aug  6 15:30:15 2018
+
+
+=>Done. Mon Aug  6 15:30:15 2018
+
+	Command being timed: "arks -p full -v -f arks15.tigmint.renamed.fa -a barcoded_multiplicities.csv -c 3 -t 16 -j 0.55 -o 0 -m 8-10000 -k 30 -r 0.1 -e 10000 -z 250 -d 0 -b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250 barcoded.fq.gz"
+	User time (seconds): 191660.67
+	System time (seconds): 10311.86
+	Percent of CPU this job got: 1459%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:50:42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10464492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 18
+	Minor (reclaiming a frame) page faults: 4946849501
+	Voluntary context switches: 2110961
+	Involuntary context switches: 13016398
+	Swaps: 0
+	File system inputs: 127082680
+	File system outputs: 64456
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+python /home/eoziolor/program/arks/Examples/../Examples/makeTSVfile.py arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_original.gv arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250.tigpair_checkpoint.tsv arks15.tigmint.renamed.fa 
+ln -s arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250.tigpair_checkpoint.tsv arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.tigpair_checkpoint.tsv
+/usr/bin/time -v LINKS -f arks15.tigmint.renamed.fa -s empty.fof -b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5 -l 3 -a 0.5 -z 250 |& tee arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5_links.log
+
+Running: /home/eoziolor/program/links_v1.8.6/LINKS [v1.8.6]
+-f arks15.tigmint.renamed.fa
+-s empty.fof
+-m 
+-d 4000
+-k 15
+-e 0.1
+-l 3
+-a 0.5
+-t 2
+-o 0
+-z 250
+-b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5
+-r 
+-p 0.001
+-x 0
+
+----------------- Verifying files -----------------
+
+Checking sequence target file arks15.tigmint.renamed.fa...ok
+
+
+Scaffolding mid-point files:
+arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.tigpair_checkpoint.tsv
+arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.simplepair_checkpoint.tsv
+detected; LINKS will skip contig pairing and use info from files instead : Mon Aug  6 15:31:02 PDT 2018
+
+Reading sequences from arks15.tigmint.renamed.fa : Mon Aug  6 15:31:02 PDT 2018
+
+done.
+Reading sequence pairs from arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.tigpair_checkpoint.tsv : Mon Aug  6 15:31:06 PDT 2018
+
+done.
+Building scaffolds : Mon Aug  6 15:31:30 PDT 2018
+
+done.
+Building .gv graph : Mon Aug  6 15:31:37 PDT 2018
+
+
+=>Scaffolding ended : Mon Aug  6 15:31:39 PDT 2018
+Scaffolds layout in: arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds
+Scaffold graph in: arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.gv
+
+
+=>Making FASTA file : Mon Aug  6 15:31:39 PDT 2018
+Scaffolds FASTA in : arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds.fa
+
+
+=>Wrote correspondence file tracking LINKScontigID <=> OriginalContigNames : arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.assembly_correspondence.tsv
+
+Scaffolding executed normally Mon Aug  6 15:31:45 PDT 2018
+/home/eoziolor/program/links_v1.8.6/LINKS [v1.8.6] terminated successfully on Mon Aug  6 15:31:45 PDT 2018
+	Command being timed: "LINKS -f arks15.tigmint.renamed.fa -s empty.fof -b arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5 -l 3 -a 0.5 -z 250"
+	User time (seconds): 37.25
+	System time (seconds): 5.14
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:45.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2573204
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38
+	Minor (reclaiming a frame) page faults: 2396377
+	Voluntary context switches: 50398
+	Involuntary context switches: 99053
+	Swaps: 0
+	File system inputs: 9112
+	File system outputs: 1575152
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+rm arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.tigpair_checkpoint.tsv
+
+===========================================================================
+Job Finished
+
+Name                : runarks16
+User                : eoziolor
+Partition           : high
+Nodes               : c8-62
+Cores               : 23
+State               : RUNNING
+Submit              : 2018-08-04T16:45:55
+Start               : 2018-08-04T16:45:56
+End                 : --
+Reserved walltime   : 2-00:00:00
+Used walltime       : 1-22:45:52
+Used CPU time       : 22-02:43:00
+% User (Computation): 98.30%
+% System (I/O)      :  1.70%
+Mem reserved        : 60000M/node
+Max Mem used        : 26.03G (c8-62)
+Max Disk Write      : 1.09T (c8-62)
+Max Disk Read       : 1.29T (c8-62)
