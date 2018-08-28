@@ -2173,3 +2173,72 @@ z=250 \
 k=100 \
 threads=16 
 ```
+
+## Aug. 28, 2018
+
+### Running BUSCO 2.0 on the loosely assembled genome
+
+* Linking the genome to a new folder for ease of access
+
+```
+ln -s /home/eoziolor/phgenome/data/tigarks/arks16/arks15.tigmint_c3_m8-10000_k30_r0.1_e10000_z250_l3_a0.5.scaffolds.fa /home/eoziolor/phgenome/data/genome/phgenome_arks.fasta
+```
+
+* Downloading the eukaryota specific lineage set for busco
+
+```
+mkdir /home/eoziolor/phgenome/data/busco/
+cd /home/eoziolor/phgenome/data/busco/
+
+curl -O https://busco.ezlab.org/datasets/eukaryota_odb9.tar.gz
+tar -xvzf eukaryota_odb9.tar.gz
+```
+
+* Actually instead I will download the actinopterygii specific dataset as per the documentation from BUSCO
+
+```
+wget http://busco.ezlab.org/v2/datasets/actinopterygii_odb9.tar.gz
+tar -xvzf actinopterygii_odb9.tar.gz 
+```
+
+* Copying augustus directory into my own files
+
+```
+cp -r /share/apps/augustus-3.2.3/config /home/eoziolor/phgenome/data/busco/
+```
+
+* BUSCO run attempt 1
+
+```
+#!/bin/bash -l
+
+#SBATCH -J arks_busco
+#SBATCH -o arks_busco-%j.o
+#SBATCH -e arks_busco-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/busco/
+
+module load busco
+module load python3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/actinopterygii_odb9
+my_genome=/home/eoziolor/phgenome/data/genome/phgenome_arks.fasta
+my_out=arks_busco_actino
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m genome \
+-c 16 \
+-sp zebrafish
+```
+
