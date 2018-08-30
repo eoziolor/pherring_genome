@@ -2225,6 +2225,7 @@ cp -r /share/apps/augustus-3.2.3/config /home/eoziolor/phgenome/data/busco/
 
 module load busco
 module load python3
+module load bio3
 export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
 
 my_run=/share/apps/busco-v2/BUSCO.py
@@ -2266,6 +2267,7 @@ tar -xvzf metazoa_odb9.tar.gz
 
 module load busco
 module load python3
+module load bio3
 export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
 
 my_run=/share/apps/busco-v2/BUSCO.py
@@ -2282,3 +2284,84 @@ python $my_run \
 -c 16 \
 -sp zebrafish
 ```
+
+
+Aug 30, 2018
+===
+* Downloaded the transcriptome from Tony to run for busco
+* need to remove all forward slashes
+
+```
+cat isoseq_flnc.fasta | sed 's/\//\_/g' > flnc_new.fasta
+```
+
+* running on both the full length transcripts and full transcriptome
+
+```
+#!/bin/bash -l
+
+#SBATCH -J arks_busco_trall_met
+#SBATCH -o arks_busco_trall_met-%j.o
+#SBATCH -e arks_busco_trall_met-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/transcriptome/
+
+module load busco
+module load python3
+module load bio3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
+my_genome=/home/eoziolor/phgenome/data/transcriptome/draft_new.fasta
+my_out=arks_busco_trall_met
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m transcriptome \
+-c 16 \
+-sp zebrafish
+```
+
+```
+#!/bin/bash -l
+
+#SBATCH -J arks_busco_flnc_met
+#SBATCH -o arks_busco_flnc_met-%j.o
+#SBATCH -e arks_busco_flnc_met-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/transcriptome/
+
+module load busco
+module load python3
+module load bio3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
+my_genome=/home/eoziolor/phgenome/data/transcriptome/flnc_new.fasta
+my_out=arks_busco_flnc_met
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m transcriptome \
+-c 16 \
+-sp zebrafish
+```
+

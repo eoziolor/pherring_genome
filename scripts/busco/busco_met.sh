@@ -6,13 +6,14 @@
 #SBATCH -N 1
 #SBATCH -n 16
 #SBATCH --mem=60000
-#SBATCH --time=2-00:00
+#SBATCH --time=1-00:00
 #SBATCH --no-requeue
 #SBATCH -p high
 #SBATCH -D /home/eoziolor/phgenome/data/busco/
 
 module load busco
 module load python3
+module load bio3
 export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
 
 my_run=/share/apps/busco-v2/BUSCO.py
