@@ -2365,3 +2365,118 @@ python $my_run \
 -sp zebrafish
 ```
 
+Sept. 4, 2018
+===
+* Trying out blobology
+
+```
+git clone git://github.com/blaxterlab/blobology.git
+nano ~/.bashrc
+export PATH=/home/eoziolor/program/blobology:$PATH
+```
+
+* Ok not that's bullshit for metagenome stuff - never mind
+
+## RepeatMasker
+* Was giving me issues for a second, so I had to install Text::Soundex module from cpan
+
+```
+cpan install Text::Soundex
+export PERL5LIB=/home/eoziolor/perl5/lib/perl5/x86_64-linux-gnu-thread-multi
+```
+
+* So apparently the sequence ID is not allowed to be over 50 characters for repeat masker, so I have to shorten the ids for the genome
+
+```
+cat /home/eoziolor/phgenome/data/genome/phgenome_arks.fasta | sed "s/,[f|r].*//g" > phgenome_arks_shortid.fasta
+```
+
+* Running RepeatMasker
+
+```
+#!/bin/bash -l
+
+#SBATCH -J ph_masker
+#SBATCH -o ph_masker-%j.o
+#SBATCH -e ph_masker-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+my_masker=/home/eoziolor/program/RepeatMasker/RepeatMasker
+my_genome=/home/eoziolor/phgenome/data/genome/phgenome_arks_shortid.fasta
+my_out=/home/eoziolor/phgenome/data/genome/
+
+$my_masker \
+-s \
+-species "Clupea pallasii" \
+-nolow \
+-div $my_out \
+$my_genome
+```
+
+Sept 5, 2018
+===
+
+## Repeat Modeler
+
+* RepeatMasker masked very few things in the genome (just repeats and no transposable elements).
+* Now it's the job for RepeatModeler to find regions that look like they are insertions.
+
+* Creating a database for cpallasii
+
+```
+#!/bin/bash -l
+
+#SBATCH -J ph_db
+#SBATCH -o ph_db-%j.o
+#SBATCH -e ph_db-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/repeat/
+
+source ~/.bashrc
+
+my_db=/home/eoziolor/program/RepeatModeler-open-1.0.11/BuildDatabase
+my_phgenome=/home/eoziolor/phgenome/data/genome/phgenome_arks_masked.fasta
+
+$my_db \
+-name cpallasii \
+-engine ncbi \
+$my_phgenome
+```
+
+* Running RepeatModeler
+
+```#!/bin/bash -l
+
+#SBATCH -J ph_model
+#SBATCH -o ph_model-%j.o
+#SBATCH -e ph_model-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/repeat/
+
+source ~/.bashrc
+
+my_model=/home/eoziolor/program/RepeatModeler-open-1.0.11/RepeatModeler
+my_db=/home/eoziolor/phgenome/data/repeat/cpallasii
+
+$my_model \
+-engine ncbi \
+-pa 15 \
+-database $my_db
+```
