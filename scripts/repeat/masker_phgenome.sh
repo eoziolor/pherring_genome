@@ -20,7 +20,7 @@ my_lib=/home/eoziolor/phgenome/data/repeat/RM_27835.WedSep51440122018/consensi.f
 
 $my_masker \
 -s \
+-pa 15 \
 -lib $my_lib \
--nolow \
 -div $my_out \
 $my_genome
