@@ -1,0 +1,69 @@
+==========================================
+SLURM_JOB_ID = 7021214
+SLURM_NODELIST = c9-88
+==========================================
+Module bio3/1.0 loaded 
+Started analysis of herring_hic_1.fq.gz
+Started analysis of herring_hic_2.fq.gz
+Approx 5% complete for herring_hic_1.fq.gz
+Approx 5% complete for herring_hic_2.fq.gz
+Approx 10% complete for herring_hic_1.fq.gz
+Approx 10% complete for herring_hic_2.fq.gz
+Approx 15% complete for herring_hic_1.fq.gz
+Approx 15% complete for herring_hic_2.fq.gz
+Approx 20% complete for herring_hic_1.fq.gz
+Approx 20% complete for herring_hic_2.fq.gz
+Approx 25% complete for herring_hic_1.fq.gz
+Approx 25% complete for herring_hic_2.fq.gz
+Approx 30% complete for herring_hic_1.fq.gz
+Approx 30% complete for herring_hic_2.fq.gz
+Approx 35% complete for herring_hic_1.fq.gz
+Approx 35% complete for herring_hic_2.fq.gz
+Approx 40% complete for herring_hic_1.fq.gz
+Approx 40% complete for herring_hic_2.fq.gz
+Approx 45% complete for herring_hic_1.fq.gz
+Approx 45% complete for herring_hic_2.fq.gz
+Approx 50% complete for herring_hic_1.fq.gz
+Approx 55% complete for herring_hic_1.fq.gz
+Approx 50% complete for herring_hic_2.fq.gz
+Approx 60% complete for herring_hic_1.fq.gz
+Approx 55% complete for herring_hic_2.fq.gz
+Approx 65% complete for herring_hic_1.fq.gz
+Approx 60% complete for herring_hic_2.fq.gz
+Approx 70% complete for herring_hic_1.fq.gz
+Approx 65% complete for herring_hic_2.fq.gz
+Approx 75% complete for herring_hic_1.fq.gz
+Approx 70% complete for herring_hic_2.fq.gz
+Approx 80% complete for herring_hic_1.fq.gz
+Approx 75% complete for herring_hic_2.fq.gz
+Approx 85% complete for herring_hic_1.fq.gz
+Approx 80% complete for herring_hic_2.fq.gz
+Approx 90% complete for herring_hic_1.fq.gz
+Approx 85% complete for herring_hic_2.fq.gz
+Approx 95% complete for herring_hic_1.fq.gz
+Analysis complete for herring_hic_1.fq.gz
+Approx 90% complete for herring_hic_2.fq.gz
+Approx 95% complete for herring_hic_2.fq.gz
+Analysis complete for herring_hic_2.fq.gz
+
+===========================================================================
+Job Finished
+
+Name                : fastqc-hic
+User                : eoziolor
+Partition           : high
+Nodes               : c9-88
+Cores               : 24
+State               : COMPLETED
+Submit              : 2018-11-09T15:46:24
+Start               : 2018-11-09T16:08:39
+End                 : 2018-11-09T16:43:30
+Reserved walltime   : 1-00:00:00
+Used walltime       :   00:34:51
+Used CPU time       : 4-12:36:12
+% User (Computation): 96.26%
+% System (I/O)      :  3.74%
+Mem reserved        : 60G/node
+Max Mem used        : 1.53G (c9-88)
+Max Disk Write      : 10.24K (c9-88)
+Max Disk Read       : 1.56M (c9-88)
