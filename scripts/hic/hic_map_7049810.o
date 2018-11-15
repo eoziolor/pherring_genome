@@ -1,0 +1,327 @@
+==========================================
+SLURM_JOB_ID = 7049810
+SLURM_NODELIST = c11-73
+==========================================
+### Step 0: Check output directories exist & create them as needed
+### Step 1.A: FASTQ to BAM (1st)
+### Step 1.B: FASTQ to BAM (2nd)
+### Step 2.A: Filter 5' end (1st)
+### Step 2.B: Filter 5' end (2nd)
+### Step 3A: Pair reads & mapping quality filter
+1000000
+2000000
+3000000
+4000000
+5000000
+6000000
+7000000
+8000000
+9000000
+10000000
+11000000
+12000000
+13000000
+14000000
+15000000
+16000000
+17000000
+18000000
+19000000
+20000000
+21000000
+22000000
+23000000
+24000000
+25000000
+26000000
+27000000
+28000000
+29000000
+30000000
+31000000
+32000000
+33000000
+34000000
+35000000
+36000000
+37000000
+38000000
+39000000
+40000000
+41000000
+42000000
+43000000
+44000000
+45000000
+46000000
+47000000
+48000000
+49000000
+50000000
+51000000
+52000000
+53000000
+54000000
+55000000
+56000000
+57000000
+58000000
+59000000
+60000000
+61000000
+62000000
+63000000
+64000000
+65000000
+66000000
+67000000
+68000000
+69000000
+70000000
+71000000
+72000000
+73000000
+74000000
+75000000
+76000000
+77000000
+78000000
+79000000
+80000000
+81000000
+82000000
+83000000
+84000000
+85000000
+86000000
+87000000
+88000000
+89000000
+90000000
+91000000
+92000000
+93000000
+94000000
+95000000
+96000000
+97000000
+98000000
+99000000
+100000000
+101000000
+102000000
+103000000
+104000000
+105000000
+106000000
+107000000
+108000000
+109000000
+110000000
+111000000
+112000000
+113000000
+114000000
+115000000
+116000000
+117000000
+118000000
+119000000
+120000000
+121000000
+122000000
+123000000
+124000000
+125000000
+126000000
+127000000
+128000000
+129000000
+130000000
+131000000
+132000000
+133000000
+134000000
+135000000
+136000000
+137000000
+138000000
+139000000
+140000000
+141000000
+142000000
+[bam_sort_core] merging from 15 files and 1 in-memory blocks...
+### Step 3.B: Add read group
+11:22:39.207 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/eoziolor/program/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 14 11:22:39 PST 2018] AddOrReplaceReadGroups INPUT=/home/eoziolor/phgenome/data/hic/temp//herring_hic.bam OUTPUT=/home/eoziolor/phgenome/data/hic/pair/herring_hic.bam RGID=herring_hic RGLB=herring_hic RGPL=ILLUMINA RGPU=none RGSM=herring_genome    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Wed Nov 14 11:22:39 PST 2018] Executing as eoziolor@c11-73 on Linux 4.15.0-36-generic amd64; OpenJDK 64-Bit Server VM 10.0.2+13-Ubuntu-1ubuntu0.18.04.3; Deflater: Intel; Inflater: Intel; Picard version: 2.12.1-SNAPSHOT
+INFO	2018-11-14 11:22:39	AddOrReplaceReadGroups	Created read group ID=herring_hic PL=ILLUMINA LB=herring_hic SM=herring_genome
+
+INFO	2018-11-14 11:22:56	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:   15s.  Last read position: scaffold2,9862169:5,405,409
+INFO	2018-11-14 11:23:11	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:30s.  Time for last 1,000,000:   15s.  Last read position: scaffold4,6867522:1,451,698
+INFO	2018-11-14 11:23:26	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:45s.  Time for last 1,000,000:   15s.  Last read position: scaffold6,6455492:5,967,052
+INFO	2018-11-14 11:23:41	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:01:00s.  Time for last 1,000,000:   15s.  Last read position: scaffold9,5373196:4,901,243
+INFO	2018-11-14 11:23:56	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:01:16s.  Time for last 1,000,000:   15s.  Last read position: scaffold13,5108051:1,650,573
+INFO	2018-11-14 11:24:11	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:01:30s.  Time for last 1,000,000:   14s.  Last read position: scaffold16,4659220:3,317,971
+INFO	2018-11-14 11:24:26	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:01:46s.  Time for last 1,000,000:   15s.  Last read position: scaffold21,3818602:609,219
+INFO	2018-11-14 11:24:42	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:02:01s.  Time for last 1,000,000:   15s.  Last read position: scaffold25,3581754:3,365,154
+INFO	2018-11-14 11:24:57	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:02:16s.  Time for last 1,000,000:   15s.  Last read position: scaffold31,2985838:1,820,242
+INFO	2018-11-14 11:25:12	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:02:31s.  Time for last 1,000,000:   15s.  Last read position: scaffold37,2719555:2,200,777
+INFO	2018-11-14 11:25:27	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:02:47s.  Time for last 1,000,000:   15s.  Last read position: scaffold44,2599123:770,358
+INFO	2018-11-14 11:25:42	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:03:02s.  Time for last 1,000,000:   15s.  Last read position: scaffold51,2516116:25,586
+INFO	2018-11-14 11:25:58	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:03:17s.  Time for last 1,000,000:   15s.  Last read position: scaffold58,2086867:1,354,042
+INFO	2018-11-14 11:26:13	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:03:32s.  Time for last 1,000,000:   15s.  Last read position: scaffold66,3235699:1,705,669
+INFO	2018-11-14 11:26:29	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:03:48s.  Time for last 1,000,000:   15s.  Last read position: scaffold76,1605428:1,412,461
+INFO	2018-11-14 11:26:44	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:04:03s.  Time for last 1,000,000:   14s.  Last read position: scaffold89,1406340:1,028,902
+INFO	2018-11-14 11:26:59	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:04:18s.  Time for last 1,000,000:   15s.  Last read position: scaffold103,1296137:718,079
+INFO	2018-11-14 11:27:14	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:04:33s.  Time for last 1,000,000:   15s.  Last read position: scaffold119,1085841:104,097
+INFO	2018-11-14 11:27:29	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:04:49s.  Time for last 1,000,000:   15s.  Last read position: scaffold139,870034:262,616
+INFO	2018-11-14 11:27:45	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:05:04s.  Time for last 1,000,000:   15s.  Last read position: scaffold165,680339:600,817
+INFO	2018-11-14 11:28:00	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:05:19s.  Time for last 1,000,000:   15s.  Last read position: scaffold196,541881:108,038
+INFO	2018-11-14 11:28:15	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:05:35s.  Time for last 1,000,000:   15s.  Last read position: scaffold234,431219:348,893
+INFO	2018-11-14 11:28:31	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:05:50s.  Time for last 1,000,000:   15s.  Last read position: scaffold282,332937:304,327
+INFO	2018-11-14 11:28:46	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:06:05s.  Time for last 1,000,000:   15s.  Last read position: scaffold360,215277:41,931
+INFO	2018-11-14 11:29:02	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:06:21s.  Time for last 1,000,000:   15s.  Last read position: scaffold491,130310:47,715
+INFO	2018-11-14 11:29:17	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:06:36s.  Time for last 1,000,000:   15s.  Last read position: scaffold1101,44250:23,187
+INFO	2018-11-14 11:29:33	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:06:52s.  Time for last 1,000,000:   15s.  Last read position: scaffold3713,16539:12,321
+INFO	2018-11-14 11:29:48	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:07:07s.  Time for last 1,000,000:   15s.  Last read position: scaffold8398,7677:563
+INFO	2018-11-14 11:30:04	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:07:23s.  Time for last 1,000,000:   15s.  Last read position: scaffold13233,5192:343
+INFO	2018-11-14 11:30:19	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:07:38s.  Time for last 1,000,000:   15s.  Last read position: scaffold19255,3912:594
+INFO	2018-11-14 11:30:34	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:07:54s.  Time for last 1,000,000:   15s.  Last read position: scaffold26396,3129:3,020
+INFO	2018-11-14 11:30:50	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:08:09s.  Time for last 1,000,000:   15s.  Last read position: scaffold35402,2392:728
+INFO	2018-11-14 11:31:06	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:08:25s.  Time for last 1,000,000:   15s.  Last read position: scaffold48726,1673:1,389
+INFO	2018-11-14 11:31:21	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:08:41s.  Time for last 1,000,000:   15s.  Last read position: scaffold67388,1182:741
+[Wed Nov 14 11:31:30 PST 2018] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 8.85 minutes.
+Runtime.totalMemory()=1832910848
+### Step 4: Mark duplicates
+11:31:31.351 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/eoziolor/program/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 14 11:31:31 PST 2018] MarkDuplicates INPUT=[/home/eoziolor/phgenome/data/hic/pair//herring_hic.bam] OUTPUT=/home/eoziolor/phgenome/data/hic/dedup/.bam METRICS_FILE=/home/eoziolor/phgenome/data/hic/dedup/metrics..txt REMOVE_DUPLICATES=true ASSUME_SORTED=true TMP_DIR=[/home/eoziolor/phgenome/data/hic/temp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 ADD_PG_TAG_TO_READS=true VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Wed Nov 14 11:31:31 PST 2018] Executing as eoziolor@c11-73 on Linux 4.15.0-36-generic amd64; OpenJDK 64-Bit Server VM 10.0.2+13-Ubuntu-1ubuntu0.18.04.3; Deflater: Intel; Inflater: Intel; Picard version: 2.12.1-SNAPSHOT
+INFO	2018-11-14 11:31:31	MarkDuplicates	Start of doWork freeMemory: 64409283536; totalMemory: 64424509440; maxMemory: 64424509440
+INFO	2018-11-14 11:31:31	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2018-11-14 11:31:31	MarkDuplicates	Will retain up to 233422135 data points before spilling to disk.
+INFO	2018-11-14 11:31:49	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:   15s.  Last read position: scaffold2,9862169:5,405,409
+INFO	2018-11-14 11:31:49	MarkDuplicates	Tracking 804670 as yet unmatched pairs. 6319 records in RAM.
+INFO	2018-11-14 11:32:02	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:28s.  Time for last 1,000,000:   13s.  Last read position: scaffold4,6867522:1,451,698
+INFO	2018-11-14 11:32:02	MarkDuplicates	Tracking 1557056 as yet unmatched pairs. 14129 records in RAM.
+INFO	2018-11-14 11:34:05	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:02:31s.  Time for last 1,000,000:  122s.  Last read position: scaffold6,6455492:5,967,052
+INFO	2018-11-14 11:34:05	MarkDuplicates	Tracking 2266818 as yet unmatched pairs. 1956 records in RAM.
+INFO	2018-11-14 11:39:59	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:08:25s.  Time for last 1,000,000:  353s.  Last read position: scaffold9,5373196:4,901,243
+INFO	2018-11-14 11:39:59	MarkDuplicates	Tracking 2930084 as yet unmatched pairs. 2655 records in RAM.
+INFO	2018-11-14 11:44:47	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:13:13s.  Time for last 1,000,000:  288s.  Last read position: scaffold13,5108051:1,650,573
+INFO	2018-11-14 11:44:47	MarkDuplicates	Tracking 3548052 as yet unmatched pairs. 24875 records in RAM.
+INFO	2018-11-14 11:48:57	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:17:23s.  Time for last 1,000,000:  250s.  Last read position: scaffold16,4659220:3,317,971
+INFO	2018-11-14 11:48:57	MarkDuplicates	Tracking 4113948 as yet unmatched pairs. 10305 records in RAM.
+INFO	2018-11-14 11:52:31	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:20:56s.  Time for last 1,000,000:  213s.  Last read position: scaffold21,3818602:609,219
+INFO	2018-11-14 11:52:31	MarkDuplicates	Tracking 4634770 as yet unmatched pairs. 31886 records in RAM.
+INFO	2018-11-14 11:56:03	MarkDuplicates	Read     8,000,000 records.  Elapsed time: 00:24:28s.  Time for last 1,000,000:  212s.  Last read position: scaffold25,3581754:3,365,154
+INFO	2018-11-14 11:56:03	MarkDuplicates	Tracking 5108386 as yet unmatched pairs. 1762 records in RAM.
+INFO	2018-11-14 12:00:14	MarkDuplicates	Read     9,000,000 records.  Elapsed time: 00:28:40s.  Time for last 1,000,000:  251s.  Last read position: scaffold31,2985838:1,820,242
+INFO	2018-11-14 12:00:14	MarkDuplicates	Tracking 5534536 as yet unmatched pairs. 14519 records in RAM.
+INFO	2018-11-14 12:04:22	MarkDuplicates	Read    10,000,000 records.  Elapsed time: 00:32:47s.  Time for last 1,000,000:  247s.  Last read position: scaffold37,2719555:2,200,777
+INFO	2018-11-14 12:04:22	MarkDuplicates	Tracking 5912368 as yet unmatched pairs. 6789 records in RAM.
+INFO	2018-11-14 12:06:26	MarkDuplicates	Read    11,000,000 records.  Elapsed time: 00:34:51s.  Time for last 1,000,000:  124s.  Last read position: scaffold44,2599123:770,358
+INFO	2018-11-14 12:06:26	MarkDuplicates	Tracking 6241598 as yet unmatched pairs. 26217 records in RAM.
+INFO	2018-11-14 12:07:41	MarkDuplicates	Read    12,000,000 records.  Elapsed time: 00:36:06s.  Time for last 1,000,000:   75s.  Last read position: scaffold51,2516116:25,586
+INFO	2018-11-14 12:07:41	MarkDuplicates	Tracking 6523064 as yet unmatched pairs. 41904 records in RAM.
+INFO	2018-11-14 12:09:05	MarkDuplicates	Read    13,000,000 records.  Elapsed time: 00:37:30s.  Time for last 1,000,000:   83s.  Last read position: scaffold58,2086867:1,354,042
+INFO	2018-11-14 12:09:05	MarkDuplicates	Tracking 6758792 as yet unmatched pairs. 24866 records in RAM.
+INFO	2018-11-14 12:11:42	MarkDuplicates	Read    14,000,000 records.  Elapsed time: 00:40:08s.  Time for last 1,000,000:  157s.  Last read position: scaffold66,3235699:1,705,669
+INFO	2018-11-14 12:11:42	MarkDuplicates	Tracking 6947298 as yet unmatched pairs. 28235 records in RAM.
+INFO	2018-11-14 12:13:57	MarkDuplicates	Read    15,000,000 records.  Elapsed time: 00:42:22s.  Time for last 1,000,000:  134s.  Last read position: scaffold76,1605428:1,412,461
+INFO	2018-11-14 12:13:57	MarkDuplicates	Tracking 7085228 as yet unmatched pairs. 3764 records in RAM.
+INFO	2018-11-14 12:15:26	MarkDuplicates	Read    16,000,000 records.  Elapsed time: 00:43:52s.  Time for last 1,000,000:   89s.  Last read position: scaffold89,1406340:1,028,902
+INFO	2018-11-14 12:15:26	MarkDuplicates	Tracking 7177166 as yet unmatched pairs. 9399 records in RAM.
+INFO	2018-11-14 12:16:54	MarkDuplicates	Read    17,000,000 records.  Elapsed time: 00:45:20s.  Time for last 1,000,000:   87s.  Last read position: scaffold103,1296137:718,079
+INFO	2018-11-14 12:16:54	MarkDuplicates	Tracking 7219420 as yet unmatched pairs. 14759 records in RAM.
+INFO	2018-11-14 12:18:09	MarkDuplicates	Read    18,000,000 records.  Elapsed time: 00:46:34s.  Time for last 1,000,000:   74s.  Last read position: scaffold119,1085841:104,097
+INFO	2018-11-14 12:18:09	MarkDuplicates	Tracking 7214078 as yet unmatched pairs. 23956 records in RAM.
+INFO	2018-11-14 12:19:25	MarkDuplicates	Read    19,000,000 records.  Elapsed time: 00:47:51s.  Time for last 1,000,000:   76s.  Last read position: scaffold139,870034:262,616
+INFO	2018-11-14 12:19:25	MarkDuplicates	Tracking 7159376 as yet unmatched pairs. 14435 records in RAM.
+INFO	2018-11-14 12:20:47	MarkDuplicates	Read    20,000,000 records.  Elapsed time: 00:49:13s.  Time for last 1,000,000:   81s.  Last read position: scaffold165,680339:600,817
+INFO	2018-11-14 12:20:47	MarkDuplicates	Tracking 7057040 as yet unmatched pairs. 1922 records in RAM.
+INFO	2018-11-14 12:22:06	MarkDuplicates	Read    21,000,000 records.  Elapsed time: 00:50:31s.  Time for last 1,000,000:   78s.  Last read position: scaffold196,541881:108,038
+INFO	2018-11-14 12:22:06	MarkDuplicates	Tracking 6905452 as yet unmatched pairs. 11327 records in RAM.
+INFO	2018-11-14 12:23:28	MarkDuplicates	Read    22,000,000 records.  Elapsed time: 00:51:54s.  Time for last 1,000,000:   82s.  Last read position: scaffold234,431219:348,893
+INFO	2018-11-14 12:23:28	MarkDuplicates	Tracking 6704916 as yet unmatched pairs. 3254 records in RAM.
+INFO	2018-11-14 12:24:44	MarkDuplicates	Read    23,000,000 records.  Elapsed time: 00:53:09s.  Time for last 1,000,000:   75s.  Last read position: scaffold282,332937:304,327
+INFO	2018-11-14 12:24:44	MarkDuplicates	Tracking 6458080 as yet unmatched pairs. 919 records in RAM.
+INFO	2018-11-14 12:25:57	MarkDuplicates	Read    24,000,000 records.  Elapsed time: 00:54:23s.  Time for last 1,000,000:   73s.  Last read position: scaffold360,215277:41,931
+INFO	2018-11-14 12:25:57	MarkDuplicates	Tracking 6163132 as yet unmatched pairs. 5698 records in RAM.
+INFO	2018-11-14 12:27:22	MarkDuplicates	Read    25,000,000 records.  Elapsed time: 00:55:48s.  Time for last 1,000,000:   84s.  Last read position: scaffold491,130310:47,715
+INFO	2018-11-14 12:27:22	MarkDuplicates	Tracking 5818886 as yet unmatched pairs. 2648 records in RAM.
+INFO	2018-11-14 12:28:43	MarkDuplicates	Read    26,000,000 records.  Elapsed time: 00:57:08s.  Time for last 1,000,000:   80s.  Last read position: scaffold1101,44250:23,187
+INFO	2018-11-14 12:28:43	MarkDuplicates	Tracking 5424166 as yet unmatched pairs. 715 records in RAM.
+INFO	2018-11-14 12:30:27	MarkDuplicates	Read    27,000,000 records.  Elapsed time: 00:58:53s.  Time for last 1,000,000:  104s.  Last read position: scaffold3713,16539:12,321
+INFO	2018-11-14 12:30:27	MarkDuplicates	Tracking 4980768 as yet unmatched pairs. 185 records in RAM.
+INFO	2018-11-14 12:33:00	MarkDuplicates	Read    28,000,000 records.  Elapsed time: 01:01:25s.  Time for last 1,000,000:  152s.  Last read position: scaffold8398,7677:563
+INFO	2018-11-14 12:33:00	MarkDuplicates	Tracking 4486900 as yet unmatched pairs. 291 records in RAM.
+INFO	2018-11-14 12:35:26	MarkDuplicates	Read    29,000,000 records.  Elapsed time: 01:03:52s.  Time for last 1,000,000:  146s.  Last read position: scaffold13233,5192:343
+INFO	2018-11-14 12:35:26	MarkDuplicates	Tracking 3942682 as yet unmatched pairs. 234 records in RAM.
+INFO	2018-11-14 12:37:43	MarkDuplicates	Read    30,000,000 records.  Elapsed time: 01:06:08s.  Time for last 1,000,000:  136s.  Last read position: scaffold19255,3912:594
+INFO	2018-11-14 12:37:43	MarkDuplicates	Tracking 3348792 as yet unmatched pairs. 115 records in RAM.
+INFO	2018-11-14 12:39:38	MarkDuplicates	Read    31,000,000 records.  Elapsed time: 01:08:03s.  Time for last 1,000,000:  115s.  Last read position: scaffold26396,3129:3,020
+INFO	2018-11-14 12:39:38	MarkDuplicates	Tracking 2703882 as yet unmatched pairs. 5 records in RAM.
+INFO	2018-11-14 12:41:29	MarkDuplicates	Read    32,000,000 records.  Elapsed time: 01:09:55s.  Time for last 1,000,000:  111s.  Last read position: scaffold35402,2392:728
+INFO	2018-11-14 12:41:29	MarkDuplicates	Tracking 2006196 as yet unmatched pairs. 101 records in RAM.
+INFO	2018-11-14 12:43:36	MarkDuplicates	Read    33,000,000 records.  Elapsed time: 01:12:02s.  Time for last 1,000,000:  126s.  Last read position: scaffold48726,1673:1,389
+INFO	2018-11-14 12:43:36	MarkDuplicates	Tracking 1252310 as yet unmatched pairs. 14 records in RAM.
+INFO	2018-11-14 12:44:23	MarkDuplicates	Read    34,000,000 records.  Elapsed time: 01:12:48s.  Time for last 1,000,000:   46s.  Last read position: scaffold67388,1182:741
+INFO	2018-11-14 12:44:23	MarkDuplicates	Tracking 438132 as yet unmatched pairs. 1438 records in RAM.
+INFO	2018-11-14 12:44:42	MarkDuplicates	Read 34507772 records. 0 pairs never matched.
+INFO	2018-11-14 12:45:04	MarkDuplicates	After buildSortedReadEndLists freeMemory: 56476147872; totalMemory: 64424509440; maxMemory: 64424509440
+INFO	2018-11-14 12:45:04	MarkDuplicates	Will retain up to 2013265920 duplicate indices before spilling to disk.
+INFO	2018-11-14 12:45:11	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2018-11-14 12:45:28	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2018-11-14 12:45:32	MarkDuplicates	Sorting list of duplicate records.
+INFO	2018-11-14 12:45:33	MarkDuplicates	After generateDuplicateIndexes freeMemory: 48252270464; totalMemory: 64424509440; maxMemory: 64424509440
+INFO	2018-11-14 12:45:33	MarkDuplicates	Marking 4821556 records as duplicates.
+INFO	2018-11-14 12:45:33	MarkDuplicates	Found 233146 optical duplicate clusters.
+INFO	2018-11-14 12:45:34	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2018-11-14 12:48:19	MarkDuplicates	Written    10,000,000 records.  Elapsed time: 00:02:44s.  Time for last 10,000,000:  164s.  Last read position: scaffold48,2424895:2,273,274
+INFO	2018-11-14 12:51:06	MarkDuplicates	Written    20,000,000 records.  Elapsed time: 00:05:31s.  Time for last 10,000,000:  166s.  Last read position: scaffold302,579092:217,707
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000014f1b7e19d5d, pid=29685, tid=29691
+#
+# JRE version: OpenJDK Runtime Environment (10.0.2+13) (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.3)
+# Java VM: OpenJDK 64-Bit Server VM (10.0.2+13-Ubuntu-1ubuntu0.18.04.3, mixed mode, tiered, g1 gc, linux-amd64)
+# Problematic frame:
+# V  [libjvm.so+0x764d5d]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/eoziolor/phgenome/scripts/hic/hs_err_pid29685.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+/var/spool/slurmd/job7049810/slurm_script: line 72: 29685 Aborted                 java -Xms60G -XX:-UseGCOverheadLimit -Xmx60G -jar $PICARD MarkDuplicates INPUT=$PAIR_DIR/$SRA.bam OUTPUT=$REP_DIR/$REP_LABEL.bam METRICS_FILE=$REP_DIR/metrics.$REP_LABEL.txt TMP_DIR=$TMP_DIR ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT REMOVE_DUPLICATES=TRUE
+[W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+[E::bgzf_read] Read block operation failed with error 4 after 25 of 326 bytes
+samtools index: failed to create index for "/home/eoziolor/phgenome/data/hic/dedup//.bam": No such file or directory
+Finished Mapping Pipeline through Duplicate Removal
+
+===========================================================================
+Job Finished
+
+Name                : hic_map
+User                : eoziolor
+Partition           : high
+Nodes               : c11-73
+Cores               : 23
+State               : RUNNING
+Submit              : 2018-11-14T10:37:04
+Start               : 2018-11-14T10:37:06
+End                 : --
+Reserved walltime   : 2-00:00:00
+Used walltime       :   02:16:21
+Used CPU time       : 9-11:04:21
+% User (Computation): 91.16%
+% System (I/O)      :  8.84%
+Mem reserved        : 60000M/node
+Max Mem used        : 53.73G (,c11-73)
+Max Disk Write      : 147.07G (,c11-73)
+Max Disk Read       : 182.59G (,c11-73)

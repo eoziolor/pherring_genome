@@ -27,33 +27,33 @@ TMP_DIR="/home/eoziolor/phgenome/data/hic/temp/"
 PAIR_DIR="/home/eoziolor/phgenome/data/hic/pair/"
 REP_DIR="/home/eoziolor/phgenome/data/hic/dedup/"
 MERGE_DIR="/home/eoziolor/phgenome/data/hic/merged/"
-MAPQ_FILTER=10
+MAPQ_FILTER=30
 
 echo "### Step 0: Check output directories exist & create them as needed"
-[ -d $RAW_DIR ] || mkdir -p $RAW_DIR
-[ -d $FILT_DIR ] || mkdir -p $FILT_DIR
-[ -d $TMP_DIR ] || mkdir -p $TMP_DIR
-[ -d $PAIR_DIR ] || mkdir -p $PAIR_DIR
-[ -d $REP_DIR ] || mkdir -p $REP_DIR
-[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
+#[ -d $RAW_DIR ] || mkdir -p $RAW_DIR
+#[ -d $FILT_DIR ] || mkdir -p $FILT_DIR
+#[ -d $TMP_DIR ] || mkdir -p $TMP_DIR
+#[ -d $PAIR_DIR ] || mkdir -p $PAIR_DIR
+#[ -d $REP_DIR ] || mkdir -p $REP_DIR
+#[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
 
 echo "### Step 1.A: FASTQ to BAM (1st)"
-$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
+#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
 
 echo "### Step 1.B: FASTQ to BAM (2nd)"
-$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
+#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
 
 echo "### Step 2.A: Filter 5' end (1st)"
-$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
+#$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
 
 echo "### Step 2.B: Filter 5' end (2nd)"
-$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
+#$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
 
 echo "### Step 3A: Pair reads & mapping quality filter"
-perl $COMBINER $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam $SAMTOOLS $MAPQ_FILTER | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -
+#perl $COMBINER $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam $SAMTOOLS $MAPQ_FILTER | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -
 
 echo "### Step 3.B: Add read group"
-java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$TMP_DIR/$SRA.bam OUTPUT=$PAIR_DIR/$SRA.bam ID=$SRA LB=$SRA SM=$LABEL PL=ILLUMINA PU=none
+#java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$TMP_DIR/$SRA.bam OUTPUT=$PAIR_DIR/$SRA.bam ID=$SRA LB=$SRA SM=$LABEL PL=ILLUMINA PU=none
 
 ###############################################################################################################################################################
 ###                                           How to Accommodate Technical Replicates                                                                       ###
@@ -69,10 +69,10 @@ java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$TMP_DIR/$SRA.bam OUTPUT=
 #	java -Xms4G -Xmx4G -jar $PICARD MergeSamFiles $INPUTS_TECH_REPS OUTPUT=$TMP_DIR/$REP_LABEL.bam USE_THREADING=TRUE ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT
 
 echo "### Step 4: Mark duplicates"
-java -Xms60G -XX:-UseGCOverheadLimit -Xmx60G -jar $PICARD MarkDuplicates INPUT=$PAIR_DIR/$SRA.bam OUTPUT=$REP_DIR/$REP_LABEL.bam METRICS_FILE=$REP_DIR/metrics.$REP_LABEL.txt TMP_DIR=$TMP_DIR ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT REMOVE_DUPLICATES=TRUE
+java -Xms12G -XX:-UseGCOverheadLimit -Xmx12G -jar $PICARD MarkDuplicates INPUT=$PAIR_DIR/$SRA.bam OUTPUT=$REP_DIR/$LABEL.bam METRICS_FILE=$REP_DIR/metrics.$LABEL.txt TMP_DIR=$TMP_DIR ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT REMOVE_DUPLICATES=TRUE
 
-$SAMTOOLS index $REP_DIR/$REP_LABEL.bam 
+$SAMTOOLS index $REP_DIR/$LABEL.bam 
 
-perl $STATS $REP_DIR/$REP_LABEL.bam > $REP_DIR/$REP_LABEL.bam.stats
+perl $STATS $REP_DIR/$LABEL.bam > $REP_DIR/$LABEL.bam.stats
 
 echo "Finished Mapping Pipeline through Duplicate Removal"
