@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -J hic_map
-#SBATCH -o hic_map_%j.o
-#SBATCH -e hic_map_%j.o
+#SBATCH -J arima_hic_map
+#SBATCH -o arima_hic_map_%j.o
+#SBATCH -e arima_hic_map_%j.o
 #SBATCH --mem=60000
 #SBATCH -t 2-00:00
 #SBATCH -N 1
@@ -11,22 +11,22 @@
 #SBATCH --no-requeue
 
 SRA="herring_hic"
-LABEL="herring_genome"
+LABEL="herring_genome_arima"
 BWA="/home/eoziolor/program/bwa-0.7.17/bwa"
 SAMTOOLS="/home/eoziolor/program/samtools-1.9/samtools"
 IN_DIR="/home/eoziolor/phgenome/data/hic/raw/"
 REF="/home/eoziolor/phgenome/data/genome/phgenome_arks_shortid.fasta"
 FAIDX="$REF.fai"
-RAW_DIR="/home/eoziolor/phgenome/data/hic/align/"
-FILT_DIR="/home/eoziolor/phgenome/data/hic/align/filter/"
+RAW_DIR="/home/eoziolor/phgenome/data/hic_arima/align/"
+FILT_DIR="/home/eoziolor/phgenome/data/hic_arima/align/filter/"
 FILTER="/home/eoziolor/phgenome/scripts/hic/filter_five_end.pl"
 COMBINER="/home/eoziolor/phgenome/scripts/hic/two_read_bam_combiner.pl"
 STATS="/home/eoziolor/phgenome/scripts/hic/get_stats.pl"
 PICARD="/home/eoziolor/program/picard.jar"
-TMP_DIR="/home/eoziolor/phgenome/data/hic/temp/"
-PAIR_DIR="/home/eoziolor/phgenome/data/hic/pair/"
-REP_DIR="/home/eoziolor/phgenome/data/hic/dedup/"
-MERGE_DIR="/home/eoziolor/phgenome/data/hic/merged/"
+TMP_DIR="/home/eoziolor/phgenome/data/hic_arima/temp/"
+PAIR_DIR="/home/eoziolor/phgenome/data/hic_arima/pair/"
+REP_DIR="/home/eoziolor/phgenome/data/hic_arima/dedup/"
+MERGE_DIR="/home/eoziolor/phgenome/data/hic_arima/merged/"
 MAPQ_FILTER=10
 
 echo "### Step 0: Check output directories exist & create them as needed"
@@ -38,16 +38,16 @@ echo "### Step 0: Check output directories exist & create them as needed"
 #[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
 
 echo "### Step 1.A: FASTQ to BAM (1st)"
-#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
 
 echo "### Step 1.B: FASTQ to BAM (2nd)"
-#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
 
 echo "### Step 2.A: Filter 5' end (1st)"
-#$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
+$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
 
 echo "### Step 2.B: Filter 5' end (2nd)"
-#$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
+$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
 
 echo "### Step 3A: Pair reads & mapping quality filter"
 perl $COMBINER $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam $SAMTOOLS $MAPQ_FILTER | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -

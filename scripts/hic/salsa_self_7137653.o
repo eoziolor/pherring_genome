@@ -1,0 +1,28 @@
+==========================================
+SLURM_JOB_ID = 7137653
+SLURM_NODELIST = c9-68
+==========================================
+cp: cannot stat '/home/eoziolor/phgenome/data/phgenome_arks_shortid.fasta.fai': No such file or directory
+
+
+===========================================================================
+Job Finished
+
+Name                : salsa_self
+User                : eoziolor
+Partition           : high
+Nodes               : c9-68
+Cores               : 23
+State               : FAILED
+Submit              : 2018-11-16T14:48:15
+Start               : 2018-11-16T14:48:17
+End                 : 2018-11-16T14:48:19
+Reserved walltime   : 6-00:00:00
+Used walltime       :   00:00:02
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  (,c9-68)
+Max Disk Write      : 0.00  (,c9-68)
+Max Disk Read       : 0.00  (,c9-68)
