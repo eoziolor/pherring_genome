@@ -37,23 +37,31 @@ echo "### Step 0: Check output directories exist & create them as needed"
 #[ -d $REP_DIR ] || mkdir -p $REP_DIR
 #[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
 
-echo "### Step 1.A: FASTQ to BAM (1st)"
-#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
+echo "### Step 1.A: FASTQ to BAM"
+paste <(zcat $IN_DIR/$SRA\_1.fq.gz | paste - - - -) \
+      <(zcat $IN_DIR/$SRA\_2.fq.gz | paste - - - -) |\
+tr '\t' '\n' |\
+cutadapt -j 8 --interleaved -a CTGTCTCTTATA -A CTGTCTCTTATA -u 10 -U 10 -q 30 --trim-n --minimum-length 36 - |\
+$BWA mem -t 23 -B 8 $REF - | $SAMTOOLS view -Sbq $MAPQ_FILTER |\
+$SAMTOOLS view -bS -t $FAIDX - |\
+$SAMTOOLS sort -o $RAW_DIR/$SRA\_merged.bam -
 
-echo "### Step 1.B: FASTQ to BAM (2nd)"
-#$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
-
-echo "### Step 2.A: Filter 5' end (1st)"
+#echo "### Step 2.A: Filter 5' end (1st)"
 #$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
 
-echo "### Step 2.B: Filter 5' end (2nd)"
+#echo "### Step 2.B: Filter 5' end (2nd)"
 #$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
 
-echo "### Step 3A: Pair reads & mapping quality filter"
-perl $COMBINER $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam $SAMTOOLS $MAPQ_FILTER | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -
+#echo "### Step 3.A: Generate new alignment"
+#$BWA aln -t 23 $REF -b1 $FILT_DIR/$SRA\_1.bam > $FILT_DIR/$SRA\_1.sai
+#$BWA aln -t 23 $REF -b2 $FILT_DIR/$SRA\_2.bam > $FILT_DIR/$SRA\_2.sai
+
+#echo "### Step 3A: Pair reads & mapping quality filter"
+#$BWA sampe $REF $FILT_DIR/$SRA\_1.sai $FILT_DIR/$SRA\_2.sai $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam |\
+#$SAMTOOLS view -Sq $MAPQ_FILTER - | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -
 
 echo "### Step 3.B: Add read group"
-java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$TMP_DIR/$SRA.bam OUTPUT=$PAIR_DIR/$SRA.bam ID=$SRA LB=$SRA SM=$LABEL PL=ILLUMINA PU=none
+java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$RAW_DIR/$SRA\_merged.bam OUTPUT=$PAIR_DIR/$SRA.bam ID=$SRA LB=$SRA SM=$LABEL PL=ILLUMINA PU=none
 
 ###############################################################################################################################################################
 ###                                           How to Accommodate Technical Replicates                                                                       ###

@@ -2480,3 +2480,373 @@ $my_model \
 -pa 15 \
 -database $my_db
 ```
+Sept 6, 2018
+===
+
+* I have to re-run RepeatModeler as it timed out
+
+```
+#!/bin/bash -l
+
+#SBATCH -J ph_model
+#SBATCH -o ph_model-%j.o
+#SBATCH -e ph_model-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=2-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/repeat/
+
+source ~/.bashrc
+
+my_model=/home/eoziolor/program/RepeatModeler-open-1.0.11/RepeatModeler
+my_db=/home/eoziolor/phgenome/data/repeat/cpallasii
+my_olddir=/home/eoziolor/phgenome/data/repeat/RM_27835.WedSep51440122018/
+
+$my_model \
+-engine ncbi \
+-pa 15 \
+-recoverDir $my_olddir \
+-database $my_db
+```
+
+Sept 12, 2018
+===
+* Re-running RepeatMasker with -lib from the RepeatModeler run
+* Can't use -species tag with lib
+* found these direcitons [here](https://github.com/umd-byob/presentations/tree/master/2015/0324-RepeatMasker-RepeatModeler)
+
+```
+#!/bin/bash -l
+
+#SBATCH -J ph_masker
+#SBATCH -o ph_masker-%j.o
+#SBATCH -e ph_masker-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+
+source ~/.bashrc
+
+my_masker=/home/eoziolor/program/RepeatMasker/RepeatMasker
+my_genome=/home/eoziolor/phgenome/data/genome/phgenome_arks_shortid.fasta
+my_out=/home/eoziolor/phgenome/data/genome/
+my_lib=/home/eoziolor/phgenome/data/repeat/RM_27835.WedSep51440122018/consensi.fa.classified
+
+
+$my_masker \
+-s \
+-lib $my_lib \
+-nolow \
+-div $my_out \
+$my_genome
+```
+
+Oct 18, 2018
+===
+
+# Busco on Tony's new transcriptome
+
+* Removing forward slashes from file
+
+```{bash}
+cat all.hq.fasta | sed 's/\//\_/g' > all.hq.new.fasta
+```
+
+* running job
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J busco_all_met
+#SBATCH -o busco_all_met-%j.o
+#SBATCH -e busco_all_met-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/transcriptome/
+
+module load busco
+module load python3
+module load bio3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
+my_genome=/home/eoziolor/phgenome/data/transcriptome/all.hq.new.fasta
+my_out=busco_all_met
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m transcriptome \
+-c 16 \
+-sp zebrafish
+```
+
+* Combining hq and lq transcripts and running busco
+
+```{bash}
+cat all.hq.fasta all.lq.fasta | sed 's/\//\_/g' > combined.tr.fasta
+```
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J busco_combo_met
+#SBATCH -o busco_combo_met-%j.o
+#SBATCH -e busco_combo_met-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/transcriptome/
+
+module load busco
+module load python3
+module load bio3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
+my_genome=/home/eoziolor/phgenome/data/transcriptome/combined.tr.fasta
+my_out=busco_combo_met
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m transcriptome \
+-c 16 \
+-sp zebrafish
+```
+
+Nov 9, 2018
+===
+
+## HiC reads
+* Moved HiC reads from Tony's hard drive with
+
+```{bash}
+scp -P 2022 /Volumes/HerringProjectTG/HiC_raw_data/Cp_HiC/* farm:/group/awhitehegrp/HiC_seq/Herring_raw_data/
+```
+
+* Creating soft link
+
+```{bash}
+ln -s /group/awhitehegrp/HiC_seq/Herring_raw_data/Cp_HiC_USPD16090393_HT7WTCCXY_L7_1.fq.gz /home/eoziolor/phgenome/data/hic/raw/herring_hic_1.fastq.gz
+ln -s /group/awhitehegrp/HiC_seq/Herring_raw_data/Cp_HiC_USPD16090393_HT7WTCCXY_L7_2.fq.gz /home/eoziolor/phgenome/data/hic/raw/herring_hic_2.fastq.gz
+
+ln -s /group/awhitehegrp/HiC_seq/Herring_raw_data/MD5.txt /home/eoziolor/phgenome/data/hic/raw/MD5.txt
+```
+
+* Checking MD5sum
+
+```
+cat MD5.txt | md5sum -c - > checkmd5.txt
+```
+
+* Running fastqc on reads
+
+```
+module load bio3
+fastqc *.fq.gz
+```
+
+Nov 13, 2018
+===
+
+* Ran multiqc on files
+
+```
+multiqc .
+```
+
+* Moving Arima pipeline files into farm
+
+```
+scp -P 2022 ~/phgenome_post/scripts/*.pl farm:/home/eoziolor/phgenome/scripts/hic/
+```
+
+## Mapping HiC reads
+
+About to use a pipeline adapted from [Arima](https://github.com/ArimaGenomics/mapping_pipeline/blob/master/Arima_Mapping_UserGuide_A160146_v00.pdf) to map HiC reads to the genome produced from 10x + ARKS
+
+Code:
+
+```{bash}
+#!/bin/bash
+
+#SBATCH -J hic_map
+#SBATCH -o hic_map_%j.o
+#SBATCH -e hic_map_%j.o
+#SBATCH --mem=60000
+#SBATCH -t 2-00:00
+#SBATCH -N 1
+#SBATCH -n 23
+#SBATCH -p high
+#SBATCH --no-requeue
+
+SRA="herring_hic"
+LABEL="herring_genome"
+BWA="/home/eoziolor/program/bwa-0.7.17/bwa"
+SAMTOOLS="/home/eoziolor/program/samtools-1.9/samtools"
+IN_DIR="/home/eoziolor/phgenome/data/hic/raw/"
+REF="/home/eoziolor/phgenome/genome/phgenome_arks_shortid.fasta"
+FAIDX="$REF.fai"
+RAW_DIR="/home/eoziolor/phgenome/data/hic/align/"
+FILT_DIR="/home/eoziolor/phgenome/data/hic/align/filter/"
+FILTER="/home/eoziolor/phgenome/scripts/hic/filter_five_end.pl"
+COMBINER="/home/eoziolor/phgenome/scripts/hic/two_read_bam_combiner.pl"
+STATS="/home/eoziolor/phgenome/scripts/hic/get_stats.pl"
+PICARD="/home/eoziolor/program/picard.jar"
+TMP_DIR="/home/eoziolor/phgenome/data/hic/temp/"
+PAIR_DIR="/home/eoziolor/phgenome/data/hic/pair/"
+REP_DIR="/home/eoziolor/phgenome/data/hic/dedup/"
+MERGE_DIR="/home/eoziolor/phgenome/data/hic/merged/"
+MAPQ_FILTER=10
+
+echo "### Step 0: Check output directories exist & create them as needed"
+[ -d $RAW_DIR ] || mkdir -p $RAW_DIR
+[ -d $FILT_DIR ] || mkdir -p $FILT_DIR
+[ -d $TMP_DIR ] || mkdir -p $TMP_DIR
+[ -d $PAIR_DIR ] || mkdir -p $PAIR_DIR
+[ -d $REP_DIR ] || mkdir -p $REP_DIR
+[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
+
+echo "### Step 1.A: FASTQ to BAM (1st)"
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
+
+echo "### Step 1.B: FASTQ to BAM (2nd)"
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
+
+echo "### Step 2.A: Filter 5' end (1st)"
+$SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
+
+echo "### Step 2.B: Filter 5' end (2nd)"
+$SAMTOOLS view -h $RAW_DIR/$SRA\_2.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_2.bam
+
+echo "### Step 3A: Pair reads & mapping quality filter"
+perl $COMBINER $FILT_DIR/$SRA\_1.bam $FILT_DIR/$SRA\_2.bam $SAMTOOLS $MAPQ_FILTER | $SAMTOOLS view -bS -t $FAIDX - | $SAMTOOLS sort -o $TMP_DIR/$SRA.bam -
+
+echo "### Step 3.B: Add read group"
+java -Xmx20g -jar $PICARD AddOrReplaceReadGroups INPUT=$TMP_DIR/$SRA.bam OUTPUT=$PAIR_DIR/$SRA.bam ID=$SRA LB=$SRA SM=$LABEL PL=ILLUMINA PU=none
+
+###############################################################################################################################################################
+###                                           How to Accommodate Technical Replicates                                                                       ###
+### This pipeline is currently built for processing a single sample with one read1 and read2 fastq file.                                                    ###
+### Technical replicates (eg. one library split across multiple lanes) should be merged before running the MarkDuplicates command.                          ###
+### If this step is run, the names and locations of input files to subsequent steps will need to be modified in order for subsequent steps to run correctly.###          
+### The code below is an example of how to merge technical replicates.                                                                                      ###
+###############################################################################################################################################################
+#	REP_NUM=X #number of the technical replicate set e.g. 1
+#	REP_LABEL=$LABEL\_rep$REP_NUM
+#	INPUTS_TECH_REPS=('bash' 'array' 'of' 'bams' 'from' 'replicates') #BAM files you want combined as technical replicates
+#   example bash array - INPUTS_TECH_REPS=('INPUT=A.L1.bam' 'INPUT=A.L2.bam' 'INPUT=A.L3.bam')
+#	java -Xms4G -Xmx4G -jar $PICARD MergeSamFiles $INPUTS_TECH_REPS OUTPUT=$TMP_DIR/$REP_LABEL.bam USE_THREADING=TRUE ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT
+
+echo "### Step 4: Mark duplicates"
+java -Xms60G -XX:-UseGCOverheadLimit -Xmx60G -jar $PICARD MarkDuplicates INPUT=$PAIR_DIR/$SRA.bam OUTPUT=$REP_DIR/$REP_LABEL.bam METRICS_FILE=$REP_DIR/metrics.$REP_LABEL.txt TMP_DIR=$TMP_DIR ASSUME_SORTED=TRUE VALIDATION_STRINGENCY=LENIENT REMOVE_DUPLICATES=TRUE
+
+$SAMTOOLS index $REP_DIR/$REP_LABEL.bam 
+
+perl $STATS $REP_DIR/$REP_LABEL.bam > $REP_DIR/$REP_LABEL.bam.stats
+
+echo "Finished Mapping Pipeline through Duplicate Removal"
+```
+
+* Indexing genome
+
+```
+/home/eoziolor/program/samtools-1.9/samtools faidx phgenome_arks_shortid.fasta
+```
+
+* More indexing with BWA
+
+```
+/home/eoziolor/program/bwa-0.7.17/bwa index phgenome_arks_shortid.fasta
+```
+* Created a counts file to override dummy enzyme cut site
+	* since we used DNase, we will just estimate that the number of cut sites we expect per scaffold are proportional to the length of each scaffold. This file will give the lengths of the scaffolds divided by 2 in two columns
+
+```
+cat phgenome_arks_shortid.fasta.fai | awk '{OFS="\t"}{s=$2/2}{print $1,s,s}' > re_counts_iteration_1
+```
+
+## Downloading SALSA
+
+* Downloaded scripts
+
+```
+git clone https://github.com/machinegun/SALSA.git
+```
+
+Nov 14, 2018
+===
+
+## Re-running mapping portion
+* Step 4 canceled due to node failure, rerunning script from there.
+* So EOF marker missing. I think what's happening is that my job got screwed at Step3, which is combining the mapped reads as the combined file is only 4Gb and the total reads are 40Gb. 
+	* So I will re-run Steps 3 and 4. 
+	* If that fails, I'll rerun everything.
+* Changing MapQ filter to 30 to avoid the loss of tons of data
+* So the data shows no reads mapped within scaffolds which worries me. I will try with the HiCUP pipeline
+
+HiCUP
+===
+
+* Moving program to farm:
+
+```{bash}
+scp -P 2022 ~/Downloads/hicup_v0.7.1.tar.gz farm:/home/eoziolor/program/
+```
+* Unzip
+
+```{bash}
+tar -xvzf hicup_v0.7.1.tar.gz
+cd hicup_v0.7.1
+chmod a+x *
+```
+
+Nov 15, 2018
+===
+
+# HiCUP cont'd
+
+* Downloaded bowtie2 from [here](https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.3/bowtie2-2.3.4.3-source.zip/download), then:
+
+```{bash}
+scp -P 2022 ~/Downloads/bowtie2-2.3.4.3-source.zip farm:/home/eoziolor/program/
+
+unzip bowtie2-2.3.4.3-source.zip
+cd bowtie2-2.3.4.3
+make
+```
+
+* Building index for the genome file
+
+```{bash}
+bowtie2-build phgenome_arks_shortid.fasta phgenome_arks_shortid
+```
+## Created a csv for Tony's transcriptome
+
+```{bash}
+cat all.hq.fasta | grep "^>" | tr ' ' '\t' | tr ';' '\t' | sed 's/>//g' | sed 's/full_length_coverage=//g' | sed 's/length=//g' | awk '$1=(FNR FS $1)' | awk '{OFS="\t"}{print$2,$1,$4,$2,$2,$3}' | sed 1i'pbid\tpbgene\tlength\trefisoform\trefgene\tfl\_count' | tr '\t' ',' | sed 's/\///g' > all_info.csv
+```
+
+Nov 16, 2018
+===
+
