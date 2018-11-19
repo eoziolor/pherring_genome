@@ -1,0 +1,6 @@
+==========================================
+SLURM_JOB_ID = 7192918
+SLURM_NODELIST = c9-72
+==========================================
+ln: failed to create symbolic link '/home/eoziolor/phgenome/data/salsa/selfmap_genome/pherring_hic_self/assembly.cleaned.fasta': File exists
+bedfile loaded

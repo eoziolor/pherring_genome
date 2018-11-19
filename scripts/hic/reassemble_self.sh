@@ -10,6 +10,8 @@
 #SBATCH -p high
 #SBATCH --no-requeue
 
+module load python
+
 genome=/home/eoziolor/phgenome/data/genome/phgenome_arks_shortid.fasta
 fai=/home/eoziolor/phgenome/data/genome/phgenome_arks_shortid.fasta.fai
 hic=/home/eoziolor/phgenome/data/hic/final/selfmap_herring.bam

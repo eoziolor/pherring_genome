@@ -30,18 +30,18 @@ MERGE_DIR="/home/eoziolor/phgenome/data/hic_arima/merged/"
 MAPQ_FILTER=10
 
 echo "### Step 0: Check output directories exist & create them as needed"
-#[ -d $RAW_DIR ] || mkdir -p $RAW_DIR
-#[ -d $FILT_DIR ] || mkdir -p $FILT_DIR
-#[ -d $TMP_DIR ] || mkdir -p $TMP_DIR
-#[ -d $PAIR_DIR ] || mkdir -p $PAIR_DIR
-#[ -d $REP_DIR ] || mkdir -p $REP_DIR
-#[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
+[ -d $RAW_DIR ] || mkdir -p $RAW_DIR
+[ -d $FILT_DIR ] || mkdir -p $FILT_DIR
+[ -d $TMP_DIR ] || mkdir -p $TMP_DIR
+[ -d $PAIR_DIR ] || mkdir -p $PAIR_DIR
+[ -d $REP_DIR ] || mkdir -p $REP_DIR
+[ -d $MERGE_DIR ] || mkdir -p $MERGE_DIR
 
 echo "### Step 1.A: FASTQ to BAM (1st)"
-$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_1.fq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_1.bam
 
 echo "### Step 1.B: FASTQ to BAM (2nd)"
-$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fastq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
+$BWA mem -t 23 -B 8 $REF $IN_DIR/$SRA\_2.fq.gz | $SAMTOOLS view -Sb - > $RAW_DIR/$SRA\_2.bam
 
 echo "### Step 2.A: Filter 5' end (1st)"
 $SAMTOOLS view -h $RAW_DIR/$SRA\_1.bam | perl $FILTER | $SAMTOOLS view -Sb - > $FILT_DIR/$SRA\_1.bam
