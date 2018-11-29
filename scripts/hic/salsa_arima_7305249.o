@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 7305249
+SLURM_NODELIST = c10-91
+==========================================
+Module python/2.7.14 loaded 
+bedfile loaded
+Starting Iteration 1
+bedfile started
+Traceback (most recent call last):
+  File "/home/eoziolor/program/SALSA/make_links.py", line 179, in <module>
+    main()
+  File "/home/eoziolor/program/SALSA/make_links.py", line 112, in main
+    norm_score[key] = RF_counts_left[first]*r1 + RF_counts_left[second]*r2
+KeyError: 'scaffold84_2'
+
+python /home/eoziolor/program/SALSA/make_links.py -b /home/eoziolor/phgenome/data/salsa/arima_genome//alignment_iteration_1.bed -d /home/eoziolor/phgenome/data/salsa/arima_genome/ -i 1 -x abc
+
+===========================================================================
+Job Finished
+
+Name                : salsa_arima
+User                : eoziolor
+Partition           : high
+Nodes               : c10-91
+Cores               : 23
+State               : FAILED
+Submit              : 2018-11-26T10:02:47
+Start               : 2018-11-26T10:02:47
+End                 : 2018-11-26T10:06:13
+Reserved walltime   : 6-00:00:00
+Used walltime       :   00:03:26
+Used CPU time       :   04:51:36
+% User (Computation): 92.71%
+% System (I/O)      :  7.29%
+Mem reserved        : 60000M/node
+Max Mem used        : 1.42G (c10-91)
+Max Disk Write      : 0.00  (c10-91)
+Max Disk Read       : 798.72K (c10-91)
