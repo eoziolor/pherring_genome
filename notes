@@ -3471,6 +3471,55 @@ bcftools view -c - |\
 vcfutils.pl vcf2fq -d 10 -D 100 |\
 gzip > $my_out
 ```
+Dec 10, 2018
+===
 
+# Running maker
 
+* using the phgenome_arks_shortid_2.fasta
+	* it has simple scaffold names
+
+* Cleaning up any scaffolds that have Ns in them
+
+```{bash}
+cd ~/phgenome/data/maker/
+sed '/^[^>]/ s/[^AGTC]/N/gi' ../genome/phgenome_arks_shortid_2.fasta >> phgenome_cleanN.fasta
+```
+
+* Installing maker
+
+```{bash}
+scp -P 2022 ~/Documents/UCD/Projects/Herring\ genome/maker-2.31.10.tgz farm:~/program/
+tar -xvzf maker-2.31.10.tgz
+cd maker/src/
+perl Build.PL
+```
+
+* Have to install SNAP manually
+
+```{bash}
+curl -O http://korflab.ucdavis.edu/Software/snap-2013-11-29.tar.gz
+tar -xvzf snap-2013-11-29.tar.gz
+cd snap
+sed -i 's/-Werror//g' Makefile*
+cd Zoe
+sed -i 's/-Werror//g' Makefile*
+make
+cd ../maker/src/
+./Build installdeps
+```
+
+* Getting an error
+
+```
+Rechecking dependencies to see if installation was successful
+Checking prerequisites...
+  requires:
+    !  Bit::Vector is not installed
+    !  Want is not installed
+  build_requires:
+    !  DBI is not installed
+  recommends:
+    *  DBD::Pg is not installed
+```
 

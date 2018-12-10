@@ -19,10 +19,10 @@ fq2=$my_dir/PH-Sitka-93_S1_L008_R2_001.fastq.gz
 my_bwa=/home/eoziolor/program/bwa-0.7.17/bwa
 my_sbl=/home/eoziolor/program/samblaster/samblaster
 my_sam=/home/eoziolor/program/samtools-1.9/samtools
-my_out=/home/eoziolor/phgenome/align/
+my_out=/home/eoziolor/phgenome/data/align
 my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked.fasta
 rg=$(echo \@RG\\tID:pws-og\\tPL:Illumina\\tPU:x\\tLB:combined\\tSM:pws-og)
-outroot=aligned_pws_og.bam
+outroot=aligned_pws_og
 
 #Code
 paste <(zcat $fq1 | paste - - - -) \
@@ -31,5 +31,5 @@ tr '\t' '\n' |\
 cutadapt -j 22 --interleaved -a CTGTCTCTTATA -A CTGTCTCTTATA -u 10 -U 10 -q 30 --trim-n --minimum-length 36 - |\
 $my_bwa mem $my_gen -p -R $rg -t 22 - |\
 $my_sam view -S -h -u - | \
-$my_sam sort -T $my_out/$outroot > $my_out/$outroot
+$my_sam sort -T $my_out/$outroot > $my_out/$outroot\.bam
 
