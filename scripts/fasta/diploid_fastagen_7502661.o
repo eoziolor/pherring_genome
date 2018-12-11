@@ -1,0 +1,22 @@
+
+===========================================================================
+Job Finished
+
+Name                : diploid_fastagen
+User                : eoziolor
+Partition           : high
+Nodes               : c10-18
+Cores               : 23
+State               : CANCELLED,CANCELLED by 1391591
+Submit              : 2018-12-11T09:47:23
+Start               : 2018-12-11T09:47:23
+End                 : 2018-12-11T09:59:35
+Reserved walltime   : 6-00:00:00
+Used walltime       :   00:12:12
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60000M/node
+Max Mem used        : 0.00  ()
+Max Disk Write      : 0.00  ()
+Max Disk Read       : 0.00  ()
