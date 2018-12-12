@@ -3701,3 +3701,134 @@ gzip > $my_out
 ```
 
 * And it runs properly!
+
+Dec 12, 2018
+===
+
+# PSMC
+
+* I will start by running one estimation of demography over time and then when I work that out, I will bootstrap it!
+
+* linking consensus sequence to new directory
+
+```{bash}
+#In ~/phgenome/data/psmc/
+cp ../align/consensus_ss.fq.gz .
+```
+
+* Step 1
+
+```{bash}
+~/program/psmc/utils/fq2psmcfa -q20 consensus_ss.fq.gz > diploid.psmcfa
+```
+
+* Step 2
+
+```{bash}
+~/program/psmc/psmc -N25 -t15 -r5 -p "4+25*2+4+6" -o diploid.psmc diploid.psmcfa
+```
+
+* Step 3
+
+```{bash}
+~/program/psmc/utils/psmc2history.pl diploid.psmc | ~/program/psmc/utils/history2ms.pl > ms-cmd.sh
+```
+
+* Step 4
+
+```{bash}
+~/program/psmc/utils/psmc_plot.pl diploid diploid.psmc
+```
+
+* Damn, that actually worked!!
+
+## Scaling population size with time
+
+* Finding mutation rate for atlantic herring [here](https://elifesciences.org/articles/23907)
+	* 2.0 x 10^-9
+* Theta calculated by the algorithm is 0.208700, but I don't know the units of it
+* Using 3 years/generation
+
+```{bash}
+~/program/psmc/utils/psmc_plot.pl \
+-u 2.0e-9 \
+-g 3 \
+-T "Sitka Sound demography" \
+diploid diploid.psmc
+```
+
+## Running PSMC with bootstrap
+
+* Ok now that this looks like it's running properly let's try the bootstrap.
+
+* No need to repeat Step 1&2
+
+```{bash}
+ ln -s /home/eoziolor/phgenome/data/psmc/consensus_ss.fq.gz bootstrap/
+ diploid.psmcfa -> /home/eoziolor/phgenome/data/psmc/diploid.psmcfa
+ ln -s /home/eoziolor/phgenome/data/psmc/diploid.psmc bootstrap/
+ ```
+
+* Step 2boot
+
+```{bash}
+~/program/psmc/utils/splitfa diploid.psmcfa > split.psmcfa
+```
+* that didn't really do anything because I don't have large chromosomes. I will use the unsplit fasta file
+
+* Step 3boot, going to modify as array
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J boot_psmc
+#SBATCH --array=1-100
+#SBATCH -e boot_psmc%A-%a.o
+#SBATCH -o boot_psmc%A-%a.o
+#SBATCH -t 01-00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=8G
+#SBATCH -p med
+#SBATCH --no-requeue
+
+cd ~/phgenome/data/psmc/bootstrap/
+
+#files and programs
+crap=$(echo $SLURM_ARRAY_TASK_ID)
+my_psmc=/home/eoziolor/program/psmc/psmc
+my_dir=/home/eoziolor/phgenome/data/psmc/bootstrap
+
+#code
+$my_psmc -N25 -t15 -r5 -b -p "4+25*2+4+6" \
+-o $my_dir/round-$crap.psmc $my_dir/diploid.psmcfa
+```
+
+* Step 4boot, combining bootstraps
+
+```{bash}
+ cat diploid.psmc round-*.psmc > combined.psmc
+```
+ 
+* Step 5boot plotting (3 year generation turnover)
+
+```{bash}
+~/program/psmc/utils/psmc_plot.pl \
+-u 2.0e-9 \
+-g 3 \
+-T "Sitka Sound demography" \
+combined combined.psmc
+```
+
+* So you can see a dip ~ 250 000 years ago, which coinsides with [Wolstonian Glaciacion event](https://en.wikipedia.org/wiki/Wolstonian_Stage). Could be something with the [Pleistocene](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-294X.2011.05213.x).
+![](https://i.imgur.com/G664CfX.jpg)
+
+# Working on reference genome a bit
+
+* The NCBI assembly came back with contamination of 2 sorts
+	* Adaptors found in some sequences
+	* And duplication of a bunch of sequences.
+
+* NCBI was able to trim some adaptors, but I have to take care of the rest.
+
+* One thing that I'd do is take out any scaffolds that are smaller than 5kb
+

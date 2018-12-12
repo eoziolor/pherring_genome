@@ -1,0 +1,22 @@
+
+===========================================================================
+Job Finished
+
+Name                : boot_psmc
+User                : eoziolor
+Partition           : med
+Nodes               : c11-89
+Cores               : 4
+State               : COMPLETED
+Submit              : 2018-12-12T11:39:50
+Start               : 2018-12-12T11:39:50
+End                 : 2018-12-12T12:06:05
+Reserved walltime   : 1-00:00:00
+Used walltime       :   00:26:15
+Used CPU time       : 1-19:19:56
+% User (Computation): 99.27%
+% System (I/O)      :  0.73%
+Mem reserved        : 8G/node
+Max Mem used        : 108.75M (c11-89)
+Max Disk Write      : 10.24K (c11-89)
+Max Disk Read       : 1.30M (c11-89)
