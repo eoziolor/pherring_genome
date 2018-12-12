@@ -10602,3 +10602,25 @@ length	count	expect	max.err	error counts
 [main] CMD: /home/eoziolor/program/bwa-0.7.17/bwa mem -p -R @RG\tID:pws-og\tPL:Illumina\tPU:x\tLB:combined\tSM:pws-og -t 22 /home/eoziolor/phgenome/data/genome/phgenome_masked.fasta -
 [main] Real time: 52669.448 sec; CPU: 1089885.321 sec
 [bam_sort_core] merging from 321 files and 1 in-memory blocks...
+
+===========================================================================
+Job Finished
+
+Name                : combo_trimalign
+User                : eoziolor
+Partition           : high
+Nodes               : c10-70
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-12-10T09:30:01
+Start               : 2018-12-10T09:43:30
+End                 : 2018-12-11T12:58:06
+Reserved walltime   :   6-00:00:00
+Used walltime       :   1-03:14:36
+Used CPU time       : 1368-11:11:36
+% User (Computation): 98.92%
+% System (I/O)      :  1.08%
+Mem reserved        : 60000M/node
+Max Mem used        : 10.45G (c10-70)
+Max Disk Write      : 1.62T (c10-70)
+Max Disk Read       : 1.66T (c10-70)

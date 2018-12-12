@@ -1,0 +1,25 @@
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[warning] samtools mpileup option `u` is functional, but deprecated. Please switch to using bcftools mpileup in future.
+[mpileup] 1 samples in 1 input files
+
+===========================================================================
+Job Finished
+
+Name                : seq_consensus
+User                : eoziolor
+Partition           : high
+Nodes               : c11-71
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-12-11T16:01:33
+Start               : 2018-12-11T16:01:33
+End                 : 2018-12-12T05:59:19
+Reserved walltime   : 6-00:00:00
+Used walltime       :    13:57:46
+Used CPU time       : 78-16:16:29
+% User (Computation): 99.22%
+% System (I/O)      :  0.78%
+Mem reserved        : 60000M/node
+Max Mem used        : 226.60M (c11-71)
+Max Disk Write      : 10.24K (c11-71)
+Max Disk Read       : 1.54M (c11-71)

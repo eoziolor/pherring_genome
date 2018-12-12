@@ -10,18 +10,18 @@
 #SBATCH -p high
 #SBATCH --no-requeue
 
-load module bio3
+module load bio3
 
 #program
 my_sam=/home/eoziolor/program/samtools-1.9/samtools
 
 #files
-my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked.fasta
-my_align=/home/eoziolor/phgenome/data/align/aligned_pws_og.bam
-my_out=/home/eoziolor/phgenome/data/align/consensus_pws_og.fq.gz
+my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked_nocomma.fasta
+my_align=/home/eoziolor/phgenome/data/align/aligned_ss.bam
+my_out=/home/eoziolor/phgenome/data/align/consensus_ss.fq.gz
 
 #code
 $my_sam mpileup -C50 -uf $my_gen $my_align |\
-bcftools view -c - |\
+bcftools call -c - |\
 vcfutils.pl vcf2fq -d 10 -D 100 |\
 gzip > $my_out

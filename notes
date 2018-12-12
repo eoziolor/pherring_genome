@@ -3574,12 +3574,20 @@ __SUB4906111__
 cat phgenome_arks_shortid_2.fasta | sed 's/>/>Clupea_pallasii_/gi' > phgenome_arks_ncbi.fasta
 ```
 
+* Well that didn't pass validation because I have 680 scaffolds that are below 200 bases. Let me cut those out.
+
+```{bash}
+cat phgenome_arks_ncbi.fasta | head -n -1360 > phgenome_ncbi_long.fasta
+cat phgenome_ncbi_long.fasta | tail -n 1 | wc -m
+```
+
 * Re-doing the cleanup from yesterday for maker
 
 ```{bash}
-sed '/^[^>]/ s/[^AGTC]/N/gi' ../genome/phgenome_arks_ncbi.fasta >> phgenome_clean.fasta
+sed '/^[^>]/ s/[^AGTC]/N/gi' ../genome/phgenome_ncbi_long.fasta >> phgenome_clean.fasta
 ```
 
+## Maker
 * Figured out that maker is already installed on module "bio", so I will just use that.
 * Of course it's not as easy as that. It doesn't work:
 
@@ -3599,9 +3607,97 @@ module load maker
 mv phgenome_cleanN.fasta phgenome_clean.fasta
 ```
 
-* Now editing maker_opts.ctl file in order to set up the run
+Starting a 3rd hackmd for this project. This one is becoming slow.
+===
 
-Contents
+Dec 11, 2018 (cont'd)
+===
 
+* ok, so apparently maker is really happy working with fasta files for ESTs so I will use those.
+
+```{bash}
+cp /group/awhitehegrp/rnaseq/herring/HerringTesticularTranscriptome31545contigs.fasta herring_testes_rna.fasta
+cp /group/awhitehegrp/rnaseq/herring/all.hq.fasta herring_pacbio_hq.fasta
+cp /group/awhitehegrp/rnaseq/herring/all.lq.fasta herring_pacbio_lq.fasta
+ln -s /group/awhitehegrp/rnaseq/herring/HerringHepaticTranscriptome34300contigs.fa herring_liver_rna.fasta
 ```
 
+## PSMC
+
+* Alignment finished. Now I am running a script to creat a consensus sequence to use for PSMC
+
+```{bash}
+#SBATCH -J seq_consensus
+#SBATCH -e seq_consensus-%j.o
+#SBATCH -o seq_consensus-%j.o
+#SBATCH -N 1
+#SBATCH -n 23
+#SBATCH -t 06-00:00
+#SBATCH --mem=60000
+#SBATCH -p high
+#SBATCH --no-requeue
+
+load module bio3
+
+#program
+my_sam=/home/eoziolor/program/samtools-1.9/samtools
+
+#files
+my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked.fasta
+my_align=/home/eoziolor/phgenome/data/align/aligned_pws_og.bam
+my_out=/home/eoziolor/phgenome/data/align/consensus_pws_og.fq.gz
+
+#code
+$my_sam mpileup -C50 -uf $my_gen $my_align |\
+bcftools view -c - |\
+vcfutils.pl vcf2fq -d 10 -D 100 |\
+gzip > $my_out
+```
+* bcftools throws an error because of the comma in the scaffold name. taking that out.
+
+```{bash}
+samtools view -H aligned_pws_og.bam > header.sam
+cat header.sam | sed 's/,[0-9]*//g' > new_header.sam
+samtools reheader new_header.sam aligned_pws_og.bam > aligned_ss.bam
+```
+
+* Doing the same with the genome
+
+```{bash}
+cat phgenome_masked.fasta | sed 's/,[0-9]*//g' > phgenome_masked_nocomma.fasta
+bwa index phgenome_masked_nocomma.fasta
+```
+
+* Throwing in a different error, so I'm using bcftools call instead of view.
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J seq_consensus
+#SBATCH -e seq_consensus-%j.o
+#SBATCH -o seq_consensus-%j.o
+#SBATCH -N 1
+#SBATCH -n 23
+#SBATCH -t 06-00:00
+#SBATCH --mem=60000
+#SBATCH -p high
+#SBATCH --no-requeue
+
+module load bio3
+
+#program
+my_sam=/home/eoziolor/program/samtools-1.9/samtools
+
+#files
+my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked_nocomma.fasta
+my_align=/home/eoziolor/phgenome/data/align/aligned_ss.bam
+my_out=/home/eoziolor/phgenome/data/align/consensus_ss.fq.gz
+
+#code
+$my_sam mpileup -C50 -uf $my_gen $my_align |\
+bcftools call -c - |\
+vcfutils.pl vcf2fq -d 10 -D 100 |\
+gzip > $my_out
+```
+
+* And it runs properly!
