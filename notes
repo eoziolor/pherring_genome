@@ -3830,5 +3830,69 @@ combined combined.psmc
 
 * NCBI was able to trim some adaptors, but I have to take care of the rest.
 
-* One thing that I'd do is take out any scaffolds that are smaller than 5kb
+* Starting by removing redundant versions of the genome
 
+```{bash}
+rm phgenome_arks_shortid_2.fasta*
+rm phgenome_masked.fasta*
+mv phgenome_arks_shortid.fasta* pre-masking/
+mv *ncbi* ncbi
+```
+
+* I am left with this version right now
+```
+phgenome_ncbi_long.fasta
+```
+
+* this version has all scaffolds above 200bp, the fasta is header is by convention > Clupea_pallasii_scaffold#
+
+## To do on the genome
+- [x] Arrange scaffolds by size
+- [x] Remove contamination and break scaffolds that had adapters in the middle of them
+- [ ] Remove duplication
+- [ ] re-name scaffolds
+
+### Rearranging scaffolds
+
+* Using bash
+
+```
+awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}'  phgenome_ncbi_long.fasta  |\
+awk -F '\t' '{printf("%d\t%s\n",length($2),$0);}' |\
+sort -nrk 1,1 | cut -f 2- | tr "\t" "\n" > phgenome_ncbi_sorted.fasta
+```
+
+### Removing contamination and breaking scaffolds
+
+* Ok NCBI gave me regions of the scaffolds that contain adapters. I will use those regions to mask them to become X character. Then those X characters I will replace with a new line and > Clupea_pallasii_scaffold_new
+
+```{bash}
+~/program/bedtools2/bin/bedtools maskfasta -mc X -fi phgenome_ncbi_sorted.fasta -bed adapters.bed -fo phgenome_ncbi_smasked.fasta
+```
+
+* Removing Xs and putting new scaffolds in their place. Also replacing leading and lagging Ns with nothing
+```{bash}
+cat phgenome_ncbi_smasked.fasta | sed -E 's/[X]+/\n>\ Clupea_pallasii_scaffold_new\n/g' | sed -E 's/[N]+$//g' | sed -E 's/^[N]+//g' > phgenome_ncbi_noadapter.fasta
+```
+
+### Dealing with small scaffolds with duplicated sequences
+
+* This is a general topic and I think my best way to deal with it is to only retain scaffolds that are >10Kb
+	* The points for this is that we will get the majority of the genome from them and those are scaffolds that are not likely containing regions of other scaffolds in them
+
+* To do this, I will do another re-ordering
+
+```{bash}
+awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}'  phgenome_ncbi_noadapter.fasta  |\
+awk -F '\t' '{printf("%d\t%s\n",length($2),$0);}' |\
+sort -nrk 1,1 | cut -f 2- | tr "\t" "\n" > phgenome_ncbi_sortnoadapter.fasta
+```
+
+* Have to rename sequence first for new scaffolds to be re-arranged
+
+* Then I will use samtools to create a fai file for this genome
+
+```{bash}
+module load bio3
+samtools faidx phgenome_ncbi_sortnoadapter.fasta
+```
