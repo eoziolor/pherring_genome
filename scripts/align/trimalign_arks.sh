@@ -20,9 +20,9 @@ my_bwa=/home/eoziolor/program/bwa-0.7.17/bwa
 my_sbl=/home/eoziolor/program/samblaster/samblaster
 my_sam=/home/eoziolor/program/samtools-1.9/samtools
 my_out=/home/eoziolor/phgenome/data/align
-my_gen=/home/eoziolor/phgenome/data/genome/phgenome_masked.fasta
-rg=$(echo \@RG\\tID:pws-og\\tPL:Illumina\\tPU:x\\tLB:combined\\tSM:pws-og)
-outroot=aligned_pws_og
+my_gen=/home/eoziolor/phgenome/data/genome/phgenome_full.fasta
+rg=$(echo \@RG\\tID:pws-og\\tPL:Illumina\\tPU:x\\tLB:combined\\tSM:ss-og)
+outroot=aligned_ss_og
 
 #Code
 paste <(zcat $fq1 | paste - - - -) \

@@ -3896,3 +3896,112 @@ sort -nrk 1,1 | cut -f 2- | tr "\t" "\n" > phgenome_ncbi_sortnoadapter.fasta
 module load bio3
 samtools faidx phgenome_ncbi_sortnoadapter.fasta
 ```
+
+Dec 13, 2018
+===
+
+# Genome assembly tinkering
+
+### Removing contamination and breaking scaffolds
+
+* Ok NCBI gave me regions of the scaffolds that contain adapters. I will use those regions to mask them to become X character. Then those X characters I will replace with a new line and > Clupea_pallasii_scaffold_new
+
+```{bash}
+~/program/bedtools2/bin/bedtools maskfasta -mc X -fi phgenome_ncbi_sorted.fasta -bed adapters.bed -fo phgenome_ncbi_smasked.fasta
+```
+
+* Removing Xs and putting new scaffolds in their place. Also replacing leading and lagging Ns with nothing
+```{bash}
+cat phgenome_ncbi_smasked.fasta | sed -E 's/[X]+/\n>\ Clupea_pallasii_scaffold_new\n/g' | sed -E 's/[N]+$//g' | sed -E 's/^[N]+//g' > phgenome_ncbi_noadapter.fasta
+```
+
+### Dealing with small scaffolds with duplicated sequences
+
+* This is a general topic and I think my best way to deal with it is to only retain scaffolds that are >10Kb
+	* The points for this is that we will get the majority of the genome from them and those are scaffolds that are not likely containing regions of other scaffolds in them
+
+* To do this, I will do another re-ordering
+
+```{bash}
+awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}'  phgenome_ncbi_noadapter.fasta  |\
+awk -F '\t' '{printf("%d\t%s\n",length($2),$0);}' |\
+sort -nrk 1,1 | cut -f 2- | tr "\t" "\n" > phgenome_ncbi_sortnoadapter.fasta
+```
+
+## Renaming scaffolds
+* Have to rename sequence first for new scaffolds to be re-arranged
+
+```{bash}
+cat phgenome_ncbi_sortnoadapter.fasta |  awk '/^>/{print ">" ++i; next}{print}' | sed 's/>/>Clupea\_pallasii\_scaffold\_/g' > phgenome_ncbi_numbered.fasta
+```
+
+## Renaming scaffolds
+* Have to rename sequence first for new scaffolds to be re-arranged
+
+```{bash}
+cat phgenome_ncbi_sortnoadapter.fasta |  awk '/^>/{print ">" ++i; next}{print}' | sed 's/>/>Clupea\_pallasii\_scaffold\_/g' > phgenome_ncbi_numbered.fasta
+```
+
+## Dealing with duplication
+
+* Then I will use samtools to create a fai file for this genome
+
+```{bash}
+module load bio3
+samtools faidx phgenome_ncbi_numbered.fasta
+```
+
+* Checking size of genome represented
+
+```{bash}
+cat phgenome_ncbi_numbered.fasta.fai | awk '$2>5000{print $1,$2}' | awk -F ' ' '{sum += $2} END {print sum}'
+```
+
+* I am choosing to keep the genome as is and the duplicated regions can be one of 2 things
+	* error from assembly
+	* duplication due to - fish GWD
+
+* I figure it's more useful if people have more info, rather than less info with less duplication. I think!
+
+# mtDNA
+
+* time to find the mtDNA scaffolds here
+* Using blast since there is an existing mtDNA genome on [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/148922558)
+
+```{bash}
+makeblastdb -in phgenome_ncbi_numbered.fasta -dbtype nucl
+```
+
+* Linearizing mtDNA
+```{bash}
+sed -e 's/\(^>.*$\)/#\1#/' pherring_mtDNA.fasta | tr -d "\r" | tr -d "\n" | sed -e 's/$/#/' | tr "#" "\n" | sed -e '/^$/d' > new_mtDNA.fasta
+```
+
+* Querying
+```{bash}
+blastn -query /group/awhitehegrp/phgenome/new_mtDNA.fasta -db phgenome_ncbi_numbered.fasta -out mtDNA_match.txt
+```
+
+* Two sequences came up with positive hits
+	* Clupea_pallasii_scaffold_68391
+	* Clupea_pallasii_scaffold_78036
+	* Removing these and including the mtDNA at the end of the genome
+
+
+```{bash}
+awk '{ if ((NR>1)&&($0~/^>/)) { printf("\n%s", $0); } else if (NR==1) { printf("%s", $0); } else { printf("\t%s", $0); } }' phgenome_ncbi_numbered.fasta | \
+grep -v "Clupea_pallasii_scaffold_68391" - | \
+grep -v "Clupea_pallasii_scaffold_78036" - |  \
+tr "\t" "\n" | \
+awk '/^>/{print ">" ++i; next}{print}' | \
+sed 's/>/>Clupea\_pallasii\_scaffold\_/g' | \
+cat - /group/awhitehegrp/phgenome/new_mtDNA.fasta > phgenome_ncbi.fasta
+```
+
+* linking it to use
+
+```{bash}
+ln -s /home/eoziolor/phgenome/data/genome/cleanup/phgenome_ncbi.fasta ../
+```
+
+* Submitting correction to NCBI
