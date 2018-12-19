@@ -1,0 +1,702 @@
+==========================================
+SLURM_JOB_ID = 7219750
+SLURM_NODELIST = c11-90
+==========================================
+### Step 0: Check output directories exist & create them as needed
+### Step 1.A: FASTQ to BAM (1st)
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1846.785 CPU sec, 80.674 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1859.936 CPU sec, 80.868 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1865.224 CPU sec, 81.202 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1867.335 CPU sec, 81.098 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1855.996 CPU sec, 80.607 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1845.170 CPU sec, 80.264 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1850.297 CPU sec, 80.317 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.050 CPU sec, 81.453 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1856.343 CPU sec, 80.785 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1860.992 CPU sec, 80.918 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1858.163 CPU sec, 80.798 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1874.406 CPU sec, 81.627 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1867.051 CPU sec, 81.181 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.950 CPU sec, 81.315 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1871.439 CPU sec, 81.360 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.416 CPU sec, 81.362 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1884.384 CPU sec, 82.177 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.775 CPU sec, 81.492 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.910 CPU sec, 81.591 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1896.737 CPU sec, 82.485 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1876.528 CPU sec, 81.557 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.882 CPU sec, 81.442 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1877.769 CPU sec, 81.687 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1891.064 CPU sec, 82.301 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1866.540 CPU sec, 81.203 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1858.502 CPU sec, 80.820 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1854.724 CPU sec, 80.598 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1840.554 CPU sec, 80.082 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1848.485 CPU sec, 80.347 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1850.960 CPU sec, 80.564 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1855.446 CPU sec, 80.771 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1851.016 CPU sec, 80.399 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1856.280 CPU sec, 80.892 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1861.414 CPU sec, 80.969 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1869.336 CPU sec, 81.453 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1865.999 CPU sec, 81.134 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1865.022 CPU sec, 81.263 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1872.022 CPU sec, 83.075 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1876.373 CPU sec, 84.772 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1876.342 CPU sec, 81.620 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1871.415 CPU sec, 81.368 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1865.634 CPU sec, 81.089 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1879.224 CPU sec, 81.794 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1870.398 CPU sec, 81.387 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1874.288 CPU sec, 81.496 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1873.944 CPU sec, 81.625 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1867.508 CPU sec, 81.182 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1835.365 CPU sec, 79.982 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1844.892 CPU sec, 80.240 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1854.425 CPU sec, 80.703 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1843.174 CPU sec, 80.161 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1913.224 CPU sec, 83.180 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1876.496 CPU sec, 81.610 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1881.753 CPU sec, 81.812 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1857.530 CPU sec, 80.627 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1856.606 CPU sec, 80.619 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1853.162 CPU sec, 80.498 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1920.462 CPU sec, 83.574 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1862.189 CPU sec, 80.986 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1864.353 CPU sec, 81.081 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1868.381 CPU sec, 81.198 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1863.170 CPU sec, 81.251 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1853.272 CPU sec, 80.540 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1848.440 CPU sec, 80.384 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1858.175 CPU sec, 80.723 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1861.025 CPU sec, 81.038 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1914.170 CPU sec, 83.186 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1888.178 CPU sec, 82.116 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1882.604 CPU sec, 81.778 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1877.505 CPU sec, 81.602 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1858.300 CPU sec, 80.751 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1839.416 CPU sec, 80.126 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1832.366 CPU sec, 79.683 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1838.080 CPU sec, 79.863 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1848.320 CPU sec, 80.372 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1922.968 CPU sec, 83.734 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1939.481 CPU sec, 84.491 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1867.925 CPU sec, 81.068 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1854.271 CPU sec, 80.585 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1865.717 CPU sec, 81.043 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1861.890 CPU sec, 81.011 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1899.037 CPU sec, 82.512 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1864.941 CPU sec, 82.971 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1855.601 CPU sec, 84.902 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1855.088 CPU sec, 80.678 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1855.414 CPU sec, 80.810 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1863.143 CPU sec, 81.011 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1855.515 CPU sec, 80.705 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1845.621 CPU sec, 80.293 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1862.432 CPU sec, 80.955 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1868.987 CPU sec, 81.192 real sec
+[M::process] read 1326967 sequences (199045050 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1861.904 CPU sec, 80.913 real sec
+[M::mem_process_seqs] Processed 1326967 reads in 1610.692 CPU sec, 70.248 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: /home/eoziolor/program/bwa-0.7.17/bwa mem -t 23 -B 8 /home/eoziolor/phgenome/data/genome/phgenome_arks_shortid_2.fasta /home/eoziolor/phgenome/data/hic/raw//herring_hic_1.fq.gz
+[main] Real time: 7601.120 sec; CPU: 173330.667 sec
+### Step 1.B: FASTQ to BAM (2nd)
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1925.133 CPU sec, 84.190 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1962.979 CPU sec, 85.440 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1977.989 CPU sec, 86.087 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1985.037 CPU sec, 86.288 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1960.997 CPU sec, 85.484 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1910.840 CPU sec, 83.353 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1965.651 CPU sec, 85.760 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1977.823 CPU sec, 86.121 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1983.104 CPU sec, 86.182 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1985.009 CPU sec, 86.266 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1972.133 CPU sec, 86.034 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1931.134 CPU sec, 84.205 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1980.747 CPU sec, 86.310 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1983.724 CPU sec, 86.265 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1990.877 CPU sec, 86.741 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1980.253 CPU sec, 86.171 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1995.655 CPU sec, 87.151 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1936.768 CPU sec, 84.311 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1984.835 CPU sec, 86.451 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 2002.834 CPU sec, 87.175 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1993.472 CPU sec, 86.874 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1992.373 CPU sec, 86.787 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1991.063 CPU sec, 86.697 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1968.686 CPU sec, 85.610 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1961.518 CPU sec, 85.309 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1970.602 CPU sec, 85.810 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1973.570 CPU sec, 85.981 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1935.627 CPU sec, 84.290 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1964.778 CPU sec, 85.490 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1975.773 CPU sec, 87.565 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1996.722 CPU sec, 90.029 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1970.509 CPU sec, 85.894 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1984.973 CPU sec, 86.335 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1987.079 CPU sec, 86.573 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1994.798 CPU sec, 86.766 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1990.445 CPU sec, 86.618 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1996.781 CPU sec, 86.738 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 2004.338 CPU sec, 87.233 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1990.611 CPU sec, 86.812 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1950.043 CPU sec, 84.722 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1991.348 CPU sec, 86.817 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1985.241 CPU sec, 86.311 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1995.688 CPU sec, 86.942 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1997.724 CPU sec, 87.037 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1991.177 CPU sec, 86.559 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1979.326 CPU sec, 86.226 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1916.695 CPU sec, 83.340 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1932.525 CPU sec, 84.287 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1900.518 CPU sec, 82.581 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1949.519 CPU sec, 85.104 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1906.880 CPU sec, 83.253 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1952.070 CPU sec, 84.970 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1911.481 CPU sec, 83.212 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1964.316 CPU sec, 85.635 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1911.388 CPU sec, 83.359 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1973.839 CPU sec, 85.933 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1966.848 CPU sec, 85.688 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1983.744 CPU sec, 86.378 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1921.766 CPU sec, 83.698 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1971.072 CPU sec, 85.865 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1982.795 CPU sec, 86.291 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1989.742 CPU sec, 86.499 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1967.227 CPU sec, 85.652 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1981.894 CPU sec, 86.150 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1983.969 CPU sec, 86.239 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1974.612 CPU sec, 85.995 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 2000.186 CPU sec, 87.068 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 2003.195 CPU sec, 87.041 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1989.883 CPU sec, 86.546 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1959.538 CPU sec, 89.823 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1939.356 CPU sec, 87.123 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1909.492 CPU sec, 83.092 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1929.933 CPU sec, 84.030 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1922.250 CPU sec, 83.725 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1961.439 CPU sec, 85.456 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1926.632 CPU sec, 83.786 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1948.491 CPU sec, 84.748 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1952.101 CPU sec, 84.989 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1970.493 CPU sec, 86.015 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1932.378 CPU sec, 84.142 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1967.114 CPU sec, 85.536 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1989.541 CPU sec, 86.663 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1974.645 CPU sec, 85.899 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1986.306 CPU sec, 86.398 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1978.325 CPU sec, 86.007 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1968.154 CPU sec, 85.601 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1979.500 CPU sec, 86.072 real sec
+[M::mem_process_seqs] Processed 1533334 reads in 1995.219 CPU sec, 87.043 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1912.325 CPU sec, 83.381 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1976.753 CPU sec, 85.923 real sec
+[M::process] read 1533334 sequences (230000100 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1984.815 CPU sec, 86.252 real sec
+[M::process] read 1326967 sequences (199045050 bp)...
+[M::mem_process_seqs] Processed 1533334 reads in 1976.756 CPU sec, 86.027 real sec
+[M::mem_process_seqs] Processed 1326967 reads in 1708.842 CPU sec, 74.517 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: /home/eoziolor/program/bwa-0.7.17/bwa mem -t 23 -B 8 /home/eoziolor/phgenome/data/genome/phgenome_arks_shortid_2.fasta /home/eoziolor/phgenome/data/hic/raw//herring_hic_2.fq.gz
+[main] Real time: 8633.415 sec; CPU: 182816.360 sec
+### Step 2.A: Filter 5' end (1st)
+### Step 2.B: Filter 5' end (2nd)
+### Step 3A: Pair reads & mapping quality filter
+1000000
+2000000
+3000000
+4000000
+5000000
+6000000
+7000000
+8000000
+9000000
+10000000
+11000000
+12000000
+13000000
+14000000
+15000000
+16000000
+17000000
+18000000
+19000000
+20000000
+21000000
+22000000
+23000000
+24000000
+25000000
+26000000
+27000000
+28000000
+29000000
+30000000
+31000000
+32000000
+33000000
+34000000
+35000000
+36000000
+37000000
+38000000
+39000000
+40000000
+41000000
+42000000
+43000000
+44000000
+45000000
+46000000
+47000000
+48000000
+49000000
+50000000
+51000000
+52000000
+53000000
+54000000
+55000000
+56000000
+57000000
+58000000
+59000000
+60000000
+61000000
+62000000
+63000000
+64000000
+65000000
+66000000
+67000000
+68000000
+69000000
+70000000
+71000000
+72000000
+73000000
+74000000
+75000000
+76000000
+77000000
+78000000
+79000000
+80000000
+81000000
+82000000
+83000000
+84000000
+85000000
+86000000
+87000000
+88000000
+89000000
+90000000
+91000000
+92000000
+93000000
+94000000
+95000000
+96000000
+97000000
+98000000
+99000000
+100000000
+101000000
+102000000
+103000000
+104000000
+105000000
+106000000
+107000000
+108000000
+109000000
+110000000
+111000000
+112000000
+113000000
+114000000
+115000000
+116000000
+117000000
+118000000
+119000000
+120000000
+121000000
+122000000
+123000000
+124000000
+125000000
+126000000
+127000000
+128000000
+129000000
+130000000
+131000000
+132000000
+133000000
+134000000
+135000000
+136000000
+137000000
+138000000
+139000000
+140000000
+141000000
+142000000
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+### Step 3.B: Add read group
+02:58:52.726 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/eoziolor/program/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 21 02:58:52 PST 2018] AddOrReplaceReadGroups INPUT=/home/eoziolor/phgenome/data/hic_arima/temp//herring_hic.bam OUTPUT=/home/eoziolor/phgenome/data/hic_arima/pair/herring_hic.bam RGID=herring_hic RGLB=herring_hic RGPL=ILLUMINA RGPU=none RGSM=herring_genome_arima    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Wed Nov 21 02:58:52 PST 2018] Executing as eoziolor@c11-90 on Linux 4.15.0-36-generic amd64; OpenJDK 64-Bit Server VM 10.0.2+13-Ubuntu-1ubuntu0.18.04.3; Deflater: Intel; Inflater: Intel; Picard version: 2.12.1-SNAPSHOT
+INFO	2018-11-21 02:58:53	AddOrReplaceReadGroups	Created read group ID=herring_hic PL=ILLUMINA LB=herring_hic SM=herring_genome_arima
+
+INFO	2018-11-21 02:59:09	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:   15s.  Last read position: scaffold2:4,354,377
+INFO	2018-11-21 02:59:24	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:30s.  Time for last 1,000,000:   14s.  Last read position: scaffold4:651,453
+INFO	2018-11-21 02:59:39	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:45s.  Time for last 1,000,000:   14s.  Last read position: scaffold6:2,426,905
+INFO	2018-11-21 02:59:53	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:00:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold8:5,954,093
+INFO	2018-11-21 03:00:08	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:01:15s.  Time for last 1,000,000:   15s.  Last read position: scaffold12:394,946
+INFO	2018-11-21 03:00:23	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:01:29s.  Time for last 1,000,000:   14s.  Last read position: scaffold15:686,336
+INFO	2018-11-21 03:00:38	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:01:44s.  Time for last 1,000,000:   14s.  Last read position: scaffold18:3,733,871
+INFO	2018-11-21 03:00:53	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:01:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold23:515,260
+INFO	2018-11-21 03:01:08	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:02:14s.  Time for last 1,000,000:   15s.  Last read position: scaffold27:3,117,504
+INFO	2018-11-21 03:01:23	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:02:29s.  Time for last 1,000,000:   15s.  Last read position: scaffold33:1,164,986
+INFO	2018-11-21 03:01:38	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:02:44s.  Time for last 1,000,000:   15s.  Last read position: scaffold39:1,034,373
+INFO	2018-11-21 03:01:53	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:02:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold45:1,043,281
+INFO	2018-11-21 03:02:08	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:03:14s.  Time for last 1,000,000:   14s.  Last read position: scaffold51:1,461,290
+INFO	2018-11-21 03:02:23	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:03:29s.  Time for last 1,000,000:   14s.  Last read position: scaffold58:1,627,286
+INFO	2018-11-21 03:02:38	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:03:44s.  Time for last 1,000,000:   15s.  Last read position: scaffold66:661,142
+INFO	2018-11-21 03:02:53	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:03:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold75:680,223
+INFO	2018-11-21 03:03:08	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:04:14s.  Time for last 1,000,000:   15s.  Last read position: scaffold87:365,419
+INFO	2018-11-21 03:03:23	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:04:29s.  Time for last 1,000,000:   14s.  Last read position: scaffold100:73,925
+INFO	2018-11-21 03:03:38	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:04:44s.  Time for last 1,000,000:   15s.  Last read position: scaffold112:810,838
+INFO	2018-11-21 03:03:53	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:04:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold130:226,361
+INFO	2018-11-21 03:04:08	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:05:14s.  Time for last 1,000,000:   15s.  Last read position: scaffold152:159,434
+INFO	2018-11-21 03:04:23	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:05:29s.  Time for last 1,000,000:   14s.  Last read position: scaffold178:182,412
+INFO	2018-11-21 03:04:38	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:05:44s.  Time for last 1,000,000:   15s.  Last read position: scaffold207:428,881
+INFO	2018-11-21 03:04:53	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:05:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold245:231,705
+INFO	2018-11-21 03:05:08	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:06:14s.  Time for last 1,000,000:   15s.  Last read position: scaffold295:134,760
+INFO	2018-11-21 03:05:23	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:06:29s.  Time for last 1,000,000:   14s.  Last read position: scaffold368:33,180
+INFO	2018-11-21 03:05:38	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:06:44s.  Time for last 1,000,000:   15s.  Last read position: scaffold489:34,879
+INFO	2018-11-21 03:05:53	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:06:59s.  Time for last 1,000,000:   14s.  Last read position: scaffold913:10,574
+INFO	2018-11-21 03:06:08	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:07:14s.  Time for last 1,000,000:   15s.  Last read position: scaffold2959:15,572
+INFO	2018-11-21 03:06:23	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:07:30s.  Time for last 1,000,000:   15s.  Last read position: scaffold6472:1,935
+INFO	2018-11-21 03:06:39	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:07:45s.  Time for last 1,000,000:   15s.  Last read position: scaffold10664:2,139
+INFO	2018-11-21 03:06:54	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:08:00s.  Time for last 1,000,000:   15s.  Last read position: scaffold15091:1,464
+INFO	2018-11-21 03:07:09	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:08:16s.  Time for last 1,000,000:   15s.  Last read position: scaffold20646:1,891
+INFO	2018-11-21 03:07:25	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:08:31s.  Time for last 1,000,000:   15s.  Last read position: scaffold26921:1,173
+INFO	2018-11-21 03:07:40	AddOrReplaceReadGroups	Processed    35,000,000 records.  Elapsed time: 00:08:46s.  Time for last 1,000,000:   15s.  Last read position: scaffold34570:1,842
+INFO	2018-11-21 03:07:55	AddOrReplaceReadGroups	Processed    36,000,000 records.  Elapsed time: 00:09:01s.  Time for last 1,000,000:   15s.  Last read position: scaffold45187:5
+INFO	2018-11-21 03:08:11	AddOrReplaceReadGroups	Processed    37,000,000 records.  Elapsed time: 00:09:17s.  Time for last 1,000,000:   15s.  Last read position: scaffold59596:561
+INFO	2018-11-21 03:08:26	AddOrReplaceReadGroups	Processed    38,000,000 records.  Elapsed time: 00:09:32s.  Time for last 1,000,000:   15s.  Last read position: scaffold78012:445
+[Wed Nov 21 03:08:27 PST 2018] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 9.59 minutes.
+Runtime.totalMemory()=2390753280
+### Step 4: Mark duplicates
+03:08:29.005 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/eoziolor/program/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Nov 21 03:08:29 PST 2018] MarkDuplicates INPUT=[/home/eoziolor/phgenome/data/hic_arima/pair//herring_hic.bam] OUTPUT=/home/eoziolor/phgenome/data/hic_arima/dedup/herring_genome_arima.bam METRICS_FILE=/home/eoziolor/phgenome/data/hic_arima/dedup/metrics.herring_genome_arima.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true TMP_DIR=[/home/eoziolor/phgenome/data/hic_arima/temp] VALIDATION_STRINGENCY=LENIENT    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 ADD_PG_TAG_TO_READS=true VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Wed Nov 21 03:08:29 PST 2018] Executing as eoziolor@c11-90 on Linux 4.15.0-36-generic amd64; OpenJDK 64-Bit Server VM 10.0.2+13-Ubuntu-1ubuntu0.18.04.3; Deflater: Intel; Inflater: Intel; Picard version: 2.12.1-SNAPSHOT
+INFO	2018-11-21 03:08:29	MarkDuplicates	Start of doWork freeMemory: 12877803104; totalMemory: 12884901888; maxMemory: 12884901888
+INFO	2018-11-21 03:08:29	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2018-11-21 03:08:29	MarkDuplicates	Will retain up to 46684427 data points before spilling to disk.
+INFO	2018-11-21 03:09:02	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:32s.  Time for last 1,000,000:   32s.  Last read position: scaffold2:4,354,377
+INFO	2018-11-21 03:09:02	MarkDuplicates	Tracking 814698 as yet unmatched pairs. 7759 records in RAM.
+INFO	2018-11-21 03:11:57	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:03:28s.  Time for last 1,000,000:  175s.  Last read position: scaffold4:651,453
+INFO	2018-11-21 03:11:57	MarkDuplicates	Tracking 1586562 as yet unmatched pairs. 20856 records in RAM.
+INFO	2018-11-21 03:17:40	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:09:10s.  Time for last 1,000,000:  342s.  Last read position: scaffold6:2,426,905
+INFO	2018-11-21 03:17:40	MarkDuplicates	Tracking 2308506 as yet unmatched pairs. 16682 records in RAM.
+INFO	2018-11-21 03:23:00	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:14:31s.  Time for last 1,000,000:  320s.  Last read position: scaffold8:5,954,093
+INFO	2018-11-21 03:23:00	MarkDuplicates	Tracking 2994142 as yet unmatched pairs. 1262 records in RAM.
+INFO	2018-11-21 03:27:56	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:19:26s.  Time for last 1,000,000:  295s.  Last read position: scaffold12:394,946
+INFO	2018-11-21 03:27:56	MarkDuplicates	Tracking 3637776 as yet unmatched pairs. 31336 records in RAM.
+INFO	2018-11-21 03:32:32	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:24:02s.  Time for last 1,000,000:  275s.  Last read position: scaffold15:686,336
+INFO	2018-11-21 03:32:32	MarkDuplicates	Tracking 4234254 as yet unmatched pairs. 33319 records in RAM.
+INFO	2018-11-21 03:36:51	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:28:22s.  Time for last 1,000,000:  259s.  Last read position: scaffold18:3,733,871
+INFO	2018-11-21 03:36:51	MarkDuplicates	Tracking 4790044 as yet unmatched pairs. 2259 records in RAM.
+INFO	2018-11-21 03:40:12	MarkDuplicates	Read     8,000,000 records.  Elapsed time: 00:31:43s.  Time for last 1,000,000:  200s.  Last read position: scaffold23:515,260
+INFO	2018-11-21 03:40:12	MarkDuplicates	Tracking 5299634 as yet unmatched pairs. 29893 records in RAM.
+INFO	2018-11-21 03:43:04	MarkDuplicates	Read     9,000,000 records.  Elapsed time: 00:34:34s.  Time for last 1,000,000:  171s.  Last read position: scaffold27:3,117,504
+INFO	2018-11-21 03:43:04	MarkDuplicates	Tracking 5768526 as yet unmatched pairs. 1722 records in RAM.
+INFO	2018-11-21 03:45:44	MarkDuplicates	Read    10,000,000 records.  Elapsed time: 00:37:14s.  Time for last 1,000,000:  160s.  Last read position: scaffold33:1,164,986
+INFO	2018-11-21 03:45:44	MarkDuplicates	Tracking 6194752 as yet unmatched pairs. 23498 records in RAM.
+INFO	2018-11-21 03:48:10	MarkDuplicates	Read    11,000,000 records.  Elapsed time: 00:39:40s.  Time for last 1,000,000:  145s.  Last read position: scaffold39:1,034,373
+INFO	2018-11-21 03:48:10	MarkDuplicates	Tracking 6574750 as yet unmatched pairs. 24122 records in RAM.
+INFO	2018-11-21 03:50:32	MarkDuplicates	Read    12,000,000 records.  Elapsed time: 00:42:02s.  Time for last 1,000,000:  142s.  Last read position: scaffold45:1,043,281
+INFO	2018-11-21 03:50:32	MarkDuplicates	Tracking 6911824 as yet unmatched pairs. 23043 records in RAM.
+INFO	2018-11-21 03:52:45	MarkDuplicates	Read    13,000,000 records.  Elapsed time: 00:44:16s.  Time for last 1,000,000:  133s.  Last read position: scaffold51:1,461,290
+INFO	2018-11-21 03:52:45	MarkDuplicates	Tracking 7204260 as yet unmatched pairs. 18099 records in RAM.
+INFO	2018-11-21 03:54:57	MarkDuplicates	Read    14,000,000 records.  Elapsed time: 00:46:27s.  Time for last 1,000,000:  131s.  Last read position: scaffold58:1,627,286
+INFO	2018-11-21 03:54:57	MarkDuplicates	Tracking 7455148 as yet unmatched pairs. 19930 records in RAM.
+INFO	2018-11-21 03:57:11	MarkDuplicates	Read    15,000,000 records.  Elapsed time: 00:48:41s.  Time for last 1,000,000:  134s.  Last read position: scaffold66:661,142
+INFO	2018-11-21 03:57:11	MarkDuplicates	Tracking 7663226 as yet unmatched pairs. 48836 records in RAM.
+INFO	2018-11-21 03:59:20	MarkDuplicates	Read    16,000,000 records.  Elapsed time: 00:50:51s.  Time for last 1,000,000:  129s.  Last read position: scaffold75:680,223
+INFO	2018-11-21 03:59:20	MarkDuplicates	Tracking 7825296 as yet unmatched pairs. 20555 records in RAM.
+INFO	2018-11-21 04:01:31	MarkDuplicates	Read    17,000,000 records.  Elapsed time: 00:53:01s.  Time for last 1,000,000:  130s.  Last read position: scaffold87:365,419
+INFO	2018-11-21 04:01:31	MarkDuplicates	Tracking 7944696 as yet unmatched pairs. 25200 records in RAM.
+INFO	2018-11-21 04:03:33	MarkDuplicates	Read    18,000,000 records.  Elapsed time: 00:55:03s.  Time for last 1,000,000:  122s.  Last read position: scaffold100:73,925
+INFO	2018-11-21 04:03:33	MarkDuplicates	Tracking 8019142 as yet unmatched pairs. 44990 records in RAM.
+INFO	2018-11-21 04:05:20	MarkDuplicates	Read    19,000,000 records.  Elapsed time: 00:56:51s.  Time for last 1,000,000:  107s.  Last read position: scaffold112:810,838
+INFO	2018-11-21 04:05:20	MarkDuplicates	Tracking 8049104 as yet unmatched pairs. 7268 records in RAM.
+INFO	2018-11-21 04:07:05	MarkDuplicates	Read    20,000,000 records.  Elapsed time: 00:58:35s.  Time for last 1,000,000:  104s.  Last read position: scaffold130:226,361
+INFO	2018-11-21 04:07:05	MarkDuplicates	Tracking 8035740 as yet unmatched pairs. 17484 records in RAM.
+INFO	2018-11-21 04:08:39	MarkDuplicates	Read    21,000,000 records.  Elapsed time: 01:00:09s.  Time for last 1,000,000:   93s.  Last read position: scaffold152:159,434
+INFO	2018-11-21 04:08:39	MarkDuplicates	Tracking 7976864 as yet unmatched pairs. 16391 records in RAM.
+INFO	2018-11-21 04:09:56	MarkDuplicates	Read    22,000,000 records.  Elapsed time: 01:01:26s.  Time for last 1,000,000:   77s.  Last read position: scaffold178:182,412
+INFO	2018-11-21 04:09:56	MarkDuplicates	Tracking 7875166 as yet unmatched pairs. 9647 records in RAM.
+INFO	2018-11-21 04:11:08	MarkDuplicates	Read    23,000,000 records.  Elapsed time: 01:02:38s.  Time for last 1,000,000:   72s.  Last read position: scaffold207:428,881
+INFO	2018-11-21 04:11:08	MarkDuplicates	Tracking 7726918 as yet unmatched pairs. 2032 records in RAM.
+INFO	2018-11-21 04:12:24	MarkDuplicates	Read    24,000,000 records.  Elapsed time: 01:03:54s.  Time for last 1,000,000:   75s.  Last read position: scaffold245:231,705
+INFO	2018-11-21 04:12:24	MarkDuplicates	Tracking 7534912 as yet unmatched pairs. 3222 records in RAM.
+INFO	2018-11-21 04:13:30	MarkDuplicates	Read    25,000,000 records.  Elapsed time: 01:05:00s.  Time for last 1,000,000:   66s.  Last read position: scaffold295:134,760
+INFO	2018-11-21 04:13:30	MarkDuplicates	Tracking 7301472 as yet unmatched pairs. 5574 records in RAM.
+INFO	2018-11-21 04:14:26	MarkDuplicates	Read    26,000,000 records.  Elapsed time: 01:05:56s.  Time for last 1,000,000:   55s.  Last read position: scaffold368:33,180
+INFO	2018-11-21 04:14:26	MarkDuplicates	Tracking 7022752 as yet unmatched pairs. 5236 records in RAM.
+INFO	2018-11-21 04:15:19	MarkDuplicates	Read    27,000,000 records.  Elapsed time: 01:06:49s.  Time for last 1,000,000:   53s.  Last read position: scaffold489:34,879
+INFO	2018-11-21 04:15:19	MarkDuplicates	Tracking 6699706 as yet unmatched pairs. 3602 records in RAM.
+INFO	2018-11-21 04:16:06	MarkDuplicates	Read    28,000,000 records.  Elapsed time: 01:07:37s.  Time for last 1,000,000:   47s.  Last read position: scaffold913:10,574
+INFO	2018-11-21 04:16:06	MarkDuplicates	Tracking 6331024 as yet unmatched pairs. 1622 records in RAM.
+INFO	2018-11-21 04:17:07	MarkDuplicates	Read    29,000,000 records.  Elapsed time: 01:08:37s.  Time for last 1,000,000:   60s.  Last read position: scaffold2959:15,572
+INFO	2018-11-21 04:17:07	MarkDuplicates	Tracking 5915960 as yet unmatched pairs. 217 records in RAM.
+INFO	2018-11-21 04:19:00	MarkDuplicates	Read    30,000,000 records.  Elapsed time: 01:10:30s.  Time for last 1,000,000:  113s.  Last read position: scaffold6472:1,935
+INFO	2018-11-21 04:19:00	MarkDuplicates	Tracking 5456160 as yet unmatched pairs. 87 records in RAM.
+INFO	2018-11-21 04:21:21	MarkDuplicates	Read    31,000,000 records.  Elapsed time: 01:12:51s.  Time for last 1,000,000:  140s.  Last read position: scaffold10664:2,139
+INFO	2018-11-21 04:21:21	MarkDuplicates	Tracking 4949742 as yet unmatched pairs. 37 records in RAM.
+INFO	2018-11-21 04:24:09	MarkDuplicates	Read    32,000,000 records.  Elapsed time: 01:15:39s.  Time for last 1,000,000:  168s.  Last read position: scaffold15091:1,464
+INFO	2018-11-21 04:24:09	MarkDuplicates	Tracking 4397904 as yet unmatched pairs. 170 records in RAM.
+INFO	2018-11-21 04:26:25	MarkDuplicates	Read    33,000,000 records.  Elapsed time: 01:17:55s.  Time for last 1,000,000:  135s.  Last read position: scaffold20646:1,891
+INFO	2018-11-21 04:26:25	MarkDuplicates	Tracking 3799610 as yet unmatched pairs. 112 records in RAM.
+INFO	2018-11-21 04:28:06	MarkDuplicates	Read    34,000,000 records.  Elapsed time: 01:19:36s.  Time for last 1,000,000:  101s.  Last read position: scaffold26921:1,173
+INFO	2018-11-21 04:28:06	MarkDuplicates	Tracking 3154680 as yet unmatched pairs. 147 records in RAM.
+INFO	2018-11-21 04:29:43	MarkDuplicates	Read    35,000,000 records.  Elapsed time: 01:21:13s.  Time for last 1,000,000:   96s.  Last read position: scaffold34570:1,842
+INFO	2018-11-21 04:29:43	MarkDuplicates	Tracking 2461702 as yet unmatched pairs. 11 records in RAM.
+INFO	2018-11-21 04:31:25	MarkDuplicates	Read    36,000,000 records.  Elapsed time: 01:22:55s.  Time for last 1,000,000:  102s.  Last read position: scaffold45187:5
+INFO	2018-11-21 04:31:25	MarkDuplicates	Tracking 1717350 as yet unmatched pairs. 131 records in RAM.
+INFO	2018-11-21 04:32:29	MarkDuplicates	Read    37,000,000 records.  Elapsed time: 01:23:59s.  Time for last 1,000,000:   63s.  Last read position: scaffold59596:561
+INFO	2018-11-21 04:32:29	MarkDuplicates	Tracking 920570 as yet unmatched pairs. 34 records in RAM.
+INFO	2018-11-21 04:33:06	MarkDuplicates	Read    38,000,000 records.  Elapsed time: 01:24:36s.  Time for last 1,000,000:   37s.  Last read position: scaffold78012:445
+INFO	2018-11-21 04:33:06	MarkDuplicates	Tracking 66612 as yet unmatched pairs. 50 records in RAM.
+INFO	2018-11-21 04:33:08	MarkDuplicates	Read 38075222 records. 0 pairs never matched.
+INFO	2018-11-21 04:33:11	MarkDuplicates	After buildSortedReadEndLists freeMemory: 8364805416; totalMemory: 12884901888; maxMemory: 12884901888
+INFO	2018-11-21 04:33:11	MarkDuplicates	Will retain up to 402653184 duplicate indices before spilling to disk.
+INFO	2018-11-21 04:33:12	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2018-11-21 04:33:31	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2018-11-21 04:33:35	MarkDuplicates	Sorting list of duplicate records.
+INFO	2018-11-21 04:33:35	MarkDuplicates	After generateDuplicateIndexes freeMemory: 9628994256; totalMemory: 12884901888; maxMemory: 12884901888
+INFO	2018-11-21 04:33:35	MarkDuplicates	Marking 5300692 records as duplicates.
+INFO	2018-11-21 04:33:35	MarkDuplicates	Found 256454 optical duplicate clusters.
+INFO	2018-11-21 04:33:36	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2018-11-21 04:36:17	MarkDuplicates	Written    10,000,000 records.  Elapsed time: 00:02:40s.  Time for last 10,000,000:  160s.  Last read position: scaffold42:3,645,644
+INFO	2018-11-21 04:39:03	MarkDuplicates	Written    20,000,000 records.  Elapsed time: 00:05:26s.  Time for last 10,000,000:  165s.  Last read position: scaffold216:142,609
+INFO	2018-11-21 04:41:48	MarkDuplicates	Written    30,000,000 records.  Elapsed time: 00:08:11s.  Time for last 10,000,000:  165s.  Last read position: scaffold33296:965
+INFO	2018-11-21 04:42:34	MarkDuplicates	Before output close freeMemory: 12829998016; totalMemory: 12884901888; maxMemory: 12884901888
+INFO	2018-11-21 04:42:34	MarkDuplicates	After output close freeMemory: 12829988744; totalMemory: 12884901888; maxMemory: 12884901888
+[Wed Nov 21 04:42:34 PST 2018] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 94.10 minutes.
+Runtime.totalMemory()=12884901888
+Finished Mapping Pipeline through Duplicate Removal
+
+===========================================================================
+Job Finished
+
+Name                : arima_hic_map
+User                : eoziolor
+Partition           : high
+Nodes               : c11-90
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-11-20T16:42:34
+Start               : 2018-11-20T16:42:34
+End                 : 2018-11-21T04:43:41
+Reserved walltime   :  2-00:00:00
+Used walltime       :     12:01:07
+Used CPU time       : 452-02:00:27
+% User (Computation): 98.90%
+% System (I/O)      :  1.10%
+Mem reserved        : 60000M/node
+Max Mem used        : 12.67G (c11-90)
+Max Disk Write      : 628.31G (c11-90)
+Max Disk Read       : 657.15G (c11-90)
