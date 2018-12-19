@@ -1,0 +1,29 @@
+==========================================
+SLURM_JOB_ID = 7638638
+SLURM_NODELIST = c10-74
+==========================================
+INFO: RUNNING: /home/eoziolor/program/matlock/bin/matlock -i /home/eoziolor/phgenome/data/hic_juice/align/ph_hic_aligned.bam -o /home/eoziolor/phgenome/data/hic_juice/align/ph_hic_filtered.bam bamfilt 
+INFO: detected bam filetype
+/var/spool/slurmd/job7638638/slurm_script: line 35:  2134 Segmentation fault      $my_mat bamfilt -i $align_dir/$my_out -o $align_dir/$my_filt
+
+===========================================================================
+Job Finished
+
+Name                : allocation
+User                : eoziolor
+Partition           : 
+Nodes               : c10-74
+Cores               : 23
+State               : FAILED
+Submit              : 2018-12-18T19:32:26
+Start               : 2018-12-18T19:32:26
+End                 : 2018-12-18T19:32:27
+Reserved walltime   : --
+Used walltime       : 00:00:01
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 0/node
+Max Mem used        : 0.00  (,c10-74)
+Max Disk Write      : 0.00  (,c10-74)
+Max Disk Read       : 0.00  (,c10-74)
