@@ -18,7 +18,7 @@ export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
 
 my_run=/share/apps/busco-v2/BUSCO.py
 my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
-my_genome=/home/eoziolor/phgenome/data/genome/phgenome_arks.fasta
+my_genome=/home/eoziolor/phgenome/data/genome/arks1.fasta
 my_out=arks_busco_met
 
 

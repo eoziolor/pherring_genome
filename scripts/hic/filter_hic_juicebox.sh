@@ -29,8 +29,7 @@ my_qc="/home/eoziolor/program/bam_to_mate_hist/bam_to_mate_hist.py"
 #$BWA mem -t 22 -5SP $REF $hic1 $hic2 | $SAMBLASTER | samtools view -S -h -b -F 2316 > $align_dir/$my_out &&
 
 #filtering of aligned reads
-$my_mat bamfilt -i $align_dir/$my_out -o $align_dir/$my_filt 
+#$my_mat bamfilt -i $align_dir/$my_out -o $align_dir/$my_filt 
 
 #QC of aligned reads
-#$my_qc -b $align_dir/$my_filt -r -o $my_qc_file
-
+$my_qc -b $align_dir/$my_filt -r -o $my_qc_file
