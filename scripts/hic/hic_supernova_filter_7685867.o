@@ -1,0 +1,213 @@
+==========================================
+SLURM_JOB_ID = 7685867
+SLURM_NODELIST = c8-91
+==========================================
+INFO: RUNNING: /home/eoziolor/program/matlock/bin/matlock -i /home/eoziolor/phgenome/data/hic_juice/align/ph_supernova_aligned.bam -o /home/eoziolor/phgenome/data/hic_juice/align/ph_supernova_filtered.bam bamfilt 
+INFO: detected bam filetype
+INFO: parsed 0 read pairs
+INFO: parsed 1000000 read pairs
+INFO: parsed 2000000 read pairs
+INFO: parsed 3000000 read pairs
+INFO: parsed 4000000 read pairs
+INFO: parsed 5000000 read pairs
+INFO: parsed 6000000 read pairs
+INFO: parsed 7000000 read pairs
+INFO: parsed 8000000 read pairs
+INFO: parsed 9000000 read pairs
+INFO: parsed 10000000 read pairs
+INFO: parsed 11000000 read pairs
+INFO: parsed 12000000 read pairs
+INFO: parsed 13000000 read pairs
+INFO: parsed 14000000 read pairs
+INFO: parsed 15000000 read pairs
+INFO: parsed 16000000 read pairs
+INFO: parsed 17000000 read pairs
+INFO: parsed 18000000 read pairs
+INFO: parsed 19000000 read pairs
+INFO: parsed 20000000 read pairs
+INFO: parsed 21000000 read pairs
+INFO: parsed 22000000 read pairs
+INFO: parsed 23000000 read pairs
+INFO: parsed 24000000 read pairs
+INFO: parsed 25000000 read pairs
+INFO: parsed 26000000 read pairs
+INFO: parsed 27000000 read pairs
+INFO: parsed 28000000 read pairs
+INFO: parsed 29000000 read pairs
+INFO: parsed 30000000 read pairs
+INFO: parsed 31000000 read pairs
+INFO: parsed 32000000 read pairs
+INFO: parsed 33000000 read pairs
+INFO: parsed 34000000 read pairs
+INFO: parsed 35000000 read pairs
+INFO: parsed 36000000 read pairs
+INFO: parsed 37000000 read pairs
+INFO: parsed 38000000 read pairs
+INFO: parsed 39000000 read pairs
+INFO: parsed 40000000 read pairs
+INFO: parsed 41000000 read pairs
+INFO: parsed 42000000 read pairs
+INFO: parsed 43000000 read pairs
+INFO: parsed 44000000 read pairs
+INFO: parsed 45000000 read pairs
+INFO: parsed 46000000 read pairs
+INFO: parsed 47000000 read pairs
+INFO: parsed 48000000 read pairs
+INFO: parsed 49000000 read pairs
+INFO: parsed 50000000 read pairs
+INFO: parsed 51000000 read pairs
+INFO: parsed 52000000 read pairs
+INFO: parsed 53000000 read pairs
+INFO: parsed 54000000 read pairs
+INFO: parsed 55000000 read pairs
+INFO: parsed 56000000 read pairs
+INFO: parsed 57000000 read pairs
+INFO: parsed 58000000 read pairs
+INFO: parsed 59000000 read pairs
+INFO: parsed 60000000 read pairs
+INFO: parsed 61000000 read pairs
+INFO: parsed 62000000 read pairs
+INFO: parsed 63000000 read pairs
+INFO: parsed 64000000 read pairs
+INFO: parsed 65000000 read pairs
+INFO: parsed 66000000 read pairs
+INFO: parsed 67000000 read pairs
+INFO: parsed 68000000 read pairs
+INFO: parsed 69000000 read pairs
+INFO: parsed 70000000 read pairs
+INFO: parsed 71000000 read pairs
+INFO: parsed 72000000 read pairs
+INFO: parsed 73000000 read pairs
+INFO: parsed 74000000 read pairs
+INFO: parsed 75000000 read pairs
+INFO: parsed 76000000 read pairs
+INFO: parsed 77000000 read pairs
+INFO: parsed 78000000 read pairs
+INFO: parsed 79000000 read pairs
+INFO: parsed 80000000 read pairs
+INFO: parsed 81000000 read pairs
+INFO: parsed 82000000 read pairs
+INFO: parsed 83000000 read pairs
+INFO: parsed 84000000 read pairs
+INFO: parsed 85000000 read pairs
+INFO: parsed 86000000 read pairs
+INFO: parsed 87000000 read pairs
+INFO: parsed 88000000 read pairs
+INFO: parsed 89000000 read pairs
+INFO: parsed 90000000 read pairs
+INFO: parsed 91000000 read pairs
+INFO: parsed 92000000 read pairs
+INFO: parsed 93000000 read pairs
+INFO: parsed 94000000 read pairs
+INFO: parsed 95000000 read pairs
+INFO: parsed 96000000 read pairs
+INFO: parsed 97000000 read pairs
+INFO: parsed 98000000 read pairs
+INFO: parsed 99000000 read pairs
+INFO: parsed 100000000 read pairs
+INFO: parsed 101000000 read pairs
+INFO: parsed 102000000 read pairs
+INFO: parsed 103000000 read pairs
+INFO: parsed 104000000 read pairs
+INFO: parsed 105000000 read pairs
+INFO: parsed 106000000 read pairs
+INFO: parsed 107000000 read pairs
+INFO: parsed 108000000 read pairs
+INFO: parsed 109000000 read pairs
+INFO: parsed 110000000 read pairs
+INFO: parsed 111000000 read pairs
+INFO: parsed 112000000 read pairs
+INFO: parsed 113000000 read pairs
+INFO: parsed 114000000 read pairs
+INFO: parsed 115000000 read pairs
+INFO: parsed 116000000 read pairs
+INFO: parsed 117000000 read pairs
+INFO: parsed 118000000 read pairs
+INFO: parsed 119000000 read pairs
+INFO: parsed 120000000 read pairs
+INFO: parsed 121000000 read pairs
+INFO: parsed 122000000 read pairs
+INFO: parsed 123000000 read pairs
+INFO: parsed 124000000 read pairs
+INFO: parsed 125000000 read pairs
+INFO: parsed 126000000 read pairs
+INFO: parsed 127000000 read pairs
+INFO: parsed 128000000 read pairs
+INFO: parsed 129000000 read pairs
+INFO: parsed 130000000 read pairs
+STATS: mate pair that passed filtering:...... 51264251 39.269929%
+STATS: mate pair that are not mapped:........ 0 0.000000%
+STATS: mate pair with low mapq (20):......... 64555009 49.451042%
+STATS: mate pair with XA or SA tag:.......... 94245870 72.195117%
+STATS: mate pair with same seqid:............ 21748422 16.659933%
+STATS: mate pair with NM > 5:................ 17364123 13.301431%
+STATS: mate pair on target sequences < 0 Bp:. 0 0.000000%
+STATS: mate pair in exclude list:............ 0 0.000000%
+STATS: mate pair with only SA tag:........... 82331097 63.068050%
+STATS: mate pair with a DUPLICATE flag:...... 12327645 9.443340%
+STATS: Total mate pair:...................... 130543274
+STATS: Total reads:.......................... 261086548
+parsing the first 1000000 read pairs in bam file /home/eoziolor/phgenome/data/hic_juice/align/ph_supernova_filtered.bam to QC Hi-C library quality
+At 100000000 reads, estimated 99999994 non-dup reads
+True non-dup reads: None
+Best V = 1.55036464395e+15, best K = 1.55036464245e+15
+Histograms written to: ph_supernova_filt_qc_long.png ph_supernova_filt_qc_short.png ph_supernova_filt_qc_log_log.png
+Duplicate saturation curve written to: ph_supernova_filt_qc.dup_saturation.png
+Number of contigs (more is harder):
+89,767
+Number of contigs greater than 10KB (longer contigs are better):
+8,511
+N50 of input assembly (longer contigs are better):
+85,244
+Length of input assembly (bigger is harder):
+799,254,960
+Counts of zero distances (many is a sign of bad prep):
+73,818 of total 1,000,001 7.38%
+Count of same-contig read pairs with distance > 10KB (many is a sign of good prep):
+1,280 of total 1,000,001 0.13%
+Proportion of reads mapping to contigs > 10 Kbp with inserts > 10 Kbp:
+1,280 of total 201,187 0.64%
+Count of read pairs with mates mapping to different chromosomes/contigs (sign of good prep IF same genome):
+719,096 of total 1,000,001 71.91%
+Count of split reads (more is usually good, as indicates presence of Hi-C junction in read):
+396,613 of total 2000002 39.66%
+Count of MAPQ zero reads (bad, ambiguously mapped):
+0 of total 2,000,002 0.00%
+Count of duplicate reads (-1 if insufficient to estimate; duplicates are bad; WILL ALWAYS BE ZERO UNLESS BAM FILE IS PREPROCESSED TO SET THE DUPLICATES FLAG):
+0 of total 2,000,002 0.00%
+Percent duplicated at 100,000,000 reads: 0.00% (-1 if insufficient to estimate)
+Traceback (most recent call last):
+  File "/home/eoziolor/program/bam_to_mate_hist/bam_to_mate_hist.py", line 908, in <module>
+    QC.write_pdf_report()
+  File "/home/eoziolor/program/bam_to_mate_hist/bam_to_mate_hist.py", line 847, in write_pdf_report
+    pdfkit.from_string(html, self.paths['outfile_prefix'] + "_qc_report.pdf", options=options, css=style_path)
+  File "/home/eoziolor/.local/lib/python2.7/site-packages/pdfkit/api.py", line 70, in from_string
+    configuration=configuration, cover_first=cover_first)
+  File "/home/eoziolor/.local/lib/python2.7/site-packages/pdfkit/pdfkit.py", line 42, in __init__
+    self.configuration = (Configuration() if configuration is None
+  File "/home/eoziolor/.local/lib/python2.7/site-packages/pdfkit/configuration.py", line 27, in __init__
+    'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
+IOError: No wkhtmltopdf executable found: ""
+If this file exists please check that this process can read it. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
+
+===========================================================================
+Job Finished
+
+Name                : hic_supernova_filter
+User                : eoziolor
+Partition           : high
+Nodes               : c8-91
+Cores               : 23
+State               : FAILED
+Submit              : 2018-12-20T14:12:40
+Start               : 2018-12-20T14:12:40
+End                 : 2018-12-20T15:11:42
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:59:02
+Used CPU time       : 4-01:02:42
+% User (Computation): 97.80%
+% System (I/O)      :  2.20%
+Mem reserved        : 60000M/node
+Max Mem used        : 130.56M (c8-91)
+Max Disk Write      : 12.86G (c8-91)
+Max Disk Read       : 34.71G (c8-91)

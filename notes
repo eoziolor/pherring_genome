@@ -4317,3 +4317,208 @@ $my_qc -b $align_dir/$my_out -r -o $my_qc_file
 
 * In addition, filtering the HiC reads.
 
+Dec 20, 2018
+===
+
+# HiC library passed when aligned to Supernova assembly
+
+* That's interesting. It also means that ARKS didn't do a great job. Maybe it was the tons of iterations. What I will try to do is to use the strict version of the ARKS genome. Not much better than the supernova, but maybe it's a pass
+
+* I will try to align to arks1 - this has gone through Tigmint, ARKS and LINKs
+
+* it has lower N50, but by a little bit. This will be improved after HiC (hopefully)
+
+```{bash}
+#!/bin/bash
+
+#SBATCH -J hic_juice_align
+#SBATCH -o hic_juice_align_%j.o
+#SBATCH -e hic_juice_align_%j.o
+#SBATCH --mem=60000
+#SBATCH -t 2-00:00
+#SBATCH -N 1
+#SBATCH -n 23
+#SBATCH -p high
+#SBATCH --no-requeue
+
+#files and programs
+BWA="/home/eoziolor/program/bwa-0.7.17/bwa"
+SAMTOOLS="/home/eoziolor/program/samtools-1.9/samtools"
+SAMBLASTER="/home/eoziolor/program/samblaster/samblaster"
+hic1="/home/eoziolor/phgenome/data/hic_juice/ph_hic_R1.fq.gz"
+hic2="/home/eoziolor/phgenome/data/hic_juice/ph_hic_R2.fq.gz"
+REF="/home/eoziolor/phgenome/data/genome/arks1.fasta"
+align_dir="/home/eoziolor/phgenome/data/hic_juice/align"
+my_out="ph_arks1_aligned.bam"
+my_mat="/home/eoziolor/program/matlock/bin/matlock"
+my_qc_file="ph_arks1_qc"
+my_filt="ph_arks1_filtered.bam"
+my_qc="/home/eoziolor/program/bam_to_mate_hist/bam_to_mate_hist.py"
+
+
+#alignment and deduplication
+$BWA mem -t 22 -5SP $REF $hic1 $hic2 | $SAMBLASTER | samtools view -S -h -b -F 2316 > $align_dir/$my_out &&
+
+#QC of aligned reads
+$my_qc -b $align_dir/$my_out -r -o $my_qc_file
+
+#filtering of aligned reads
+#$my_mat bamfilt -i $align_dir/$my_out -o $align_dir/$my_filt
+```
+
+## Genome repeat masking and modeling
+
+* will re-run both for the supernova and arks1 genomes after they are re-assembled
+
+* See Sept. 4 and 5 from [Pacific herring genome (Part 2)](/8rPL68s3RRKyAC_6OBGAQQ)
+
+* Let's run BUSCO metazoa real quick to see what's happening
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J arks_busco_met
+#SBATCH -o arks_busco_met-%j.o
+#SBATCH -e arks_busco_met-%j.o
+#SBATCH -N 1
+#SBATCH -n 16
+#SBATCH --mem=60000
+#SBATCH --time=1-00:00
+#SBATCH --no-requeue
+#SBATCH -p high
+#SBATCH -D /home/eoziolor/phgenome/data/busco/
+
+module load busco
+module load python3
+module load bio3
+export AUGUSTUS_CONFIG_PATH=/home/eoziolor/phgenome/data/busco/config/
+
+my_run=/share/apps/busco-v2/BUSCO.py
+my_lineage=/home/eoziolor/phgenome/data/busco/metazoa_odb9
+my_genome=/home/eoziolor/phgenome/data/genome/arks1.fasta
+my_out=arks_busco_met
+
+
+python $my_run \
+-i $my_genome \
+-o $my_out \
+-l $my_lineage \
+-m genome \
+-c 16 \
+-sp zebrafish
+```
+
+# Back to HiC
+
+## Converting to .hic format
+
+* Will use matlock to convert the bam file to a .hic file that can be used for re-assembly
+* Let's filter reads first
+
+```{bash}
+#!/bin/bash
+
+#SBATCH -J hic_supernova_filter
+#SBATCH -o hic_supernova_filter_%j.o
+#SBATCH -e hic_supernova_filter_%j.o
+#SBATCH --mem=60000
+#SBATCH -t 2-00:00
+#SBATCH -N 1
+#SBATCH -n 23
+#SBATCH -p high
+#SBATCH --no-requeue
+
+#files and programs
+BWA="/home/eoziolor/program/bwa-0.7.17/bwa"
+SAMTOOLS="/home/eoziolor/program/samtools-1.9/samtools"
+SAMBLASTER="/home/eoziolor/program/samblaster/samblaster"
+#hic1="/home/eoziolor/phgenome/data/hic_juice/ph_hic_R1.fq.gz"
+#hic2="/home/eoziolor/phgenome/data/hic_juice/ph_hic_R2.fq.gz"
+align_dir="/home/eoziolor/phgenome/data/hic_juice/align"
+my_out="ph_supernova_aligned.bam"
+my_mat="/home/eoziolor/program/matlock/bin/matlock"
+my_qc_file="ph_supernova_filt_qc"
+my_filt="ph_supernova_filtered.bam"
+my_qc="/home/eoziolor/program/bam_to_mate_hist/bam_to_mate_hist.py"
+
+
+#alignment and deduplication
+#$BWA mem -t 22 -5SP $REF $hic1 $hic2 | $SAMBLASTER | samtools view -S -h -b -F 2316 > $align_dir/$my_out &&
+
+#filtering of aligned reads
+$my_mat bamfilt -i $align_dir/$my_out -o $align_dir/$my_filt &&
+
+#QC of aligned reads
+$my_qc -b $align_dir/$my_filt -r -o $my_qc_file
+```
+
+* Next thing is converting the filtered reads into .hic format for juicebox
+
+* Turns out in order to run juicer though, I need to run my genome through 3d-dna...and before I can run it through 3d-dna I need to generate files from juicebox...fantastic! Why not make me run 5 laps as well. Just fucking accept a .bam file please!
+
+# Let's get back on juicer
+
+## Troubleshooting juicer
+
+* Running Juicer (last position)
+
+```{bash}
+module load bio3
+my_dir=/home/eoziolor/phgenome/data/juicer_hic
+$my_dir/scripts/juicer.sh \
+-D $my_dir \
+-s none \
+-q med \
+-l med \
+-z $my_dir/references/phgenome.hap.fa \
+-p $my_dir/references/chrom_sizes.txt
+```
+
+* Putting all of the new genome files in there
+
+```{bash}
+ln -s ~/phgenome/data/assembly3/fasta/phgenome.hap.fa* .
+```
+
+* The split files timed out, so I have to give them more than a day!
+* Creating a chromosome sizes file
+
+```{bash}
+cat phgenome.hap.fa.fai | awk '{OFS="\t"}{print $1,$2}' > chrom_sizes.txt
+```
+
+* Downloading juicer tools - in order to create .hic file from current output
+
+
+
+## SAMPLE JUICER
+
+```{bash}
+cd /home/eoziolor/phgenome/data/sample
+mkdir references; cd references
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta.amb
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta.ann
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta.bwt
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta.pac
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/references/Homo_sapiens_assembly19.fasta.sa
+mkdir ../restriction_sites; cd ../restriction_sites
+wget https://s3.amazonaws.com/juicerawsmirror/opt/juicer/restriction_sites/hg19_MboI.txt
+cd ..
+git clone https://github.com/theaidenlab/juicer.git
+ln -s juicer/SLURM/scripts/ scripts
+cd scripts
+wget http://hicfiles.tc4ga.com.s3.amazonaws.com/public/juicer/juicer_tools.1.7.6_jcuda.0.8.jar
+ln -s juicer_tools.1.7.6_jcuda.0.8.jar juicer_tools.jar
+cd ..
+mkdir HIC003; cd HIC003
+mkdir fastq; cd fastq
+wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R1_001.fastq.gz
+wget http://juicerawsmirror.s3.amazonaws.com/opt/juicer/work/HIC003/fastq/HIC003_S2_L001_R2_001.fastq.gz
+cd ..
+/home/eoziolor/phgenome/data/sample/scripts/juicer.sh -D /home/eoziolor/phgenome/data/sample \
+-q med \
+-l med 
+```
+
+* Had to edit the #SBATCH portions of juicer.sh, but it is running now.
