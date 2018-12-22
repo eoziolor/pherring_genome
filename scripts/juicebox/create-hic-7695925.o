@@ -1,0 +1,55 @@
+==========================================
+SLURM_JOB_ID = 7695925
+SLURM_NODELIST = c9-67
+==========================================
+:) -p flag was triggered. Running with GNU Parallel support parameter set to false.
+...Remapping contact data from the original contig set to assembly
+...Building track files
+...Building the hic file
+Dec 22, 2018 12:38:51 AM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+..
+Writing footer
+
+Finished preprocess
+HiC file version: 8
+
+Calculating norms for zoom BP_2500000
+Calculating norms for zoom BP_1000000
+Calculating norms for zoom BP_500000
+Calculating norms for zoom BP_250000
+Calculating norms for zoom BP_100000
+Calculating norms for zoom BP_50000
+Calculating norms for zoom BP_25000
+Calculating norms for zoom BP_10000
+Calculating norms for zoom BP_5000
+Calculating norms for zoom BP_1000
+Writing expected
+Writing norms
+Finished writing norms
+
+===========================================================================
+Job Finished
+
+Name                : create-hic
+User                : eoziolor
+Partition           : high
+Nodes               : c9-67
+Cores               : 23
+State               : FAILED
+Submit              : 2018-12-21T16:37:13
+Start               : 2018-12-21T16:37:13
+End                 : 2018-12-21T16:48:52
+Reserved walltime   : 6-00:00:00
+Used walltime       :   00:11:39
+Used CPU time       : 1-01:32:41
+% User (Computation): 94.96%
+% System (I/O)      :  5.04%
+Mem reserved        : 60000M/node
+Max Mem used        : 23.52G (c9-67)
+Max Disk Write      : 10.24K (c9-67)
+Max Disk Read       : 1.30M (c9-67)

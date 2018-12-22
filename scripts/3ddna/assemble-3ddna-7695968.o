@@ -1,0 +1,17 @@
+==========================================
+SLURM_JOB_ID = 7695968
+SLURM_NODELIST = c10-18
+==========================================
+/home/eoziolor/program/3d-dna/run-asm-pipeline.sh -i 1000 /home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fa /home/eoziolor/phgenome/data/hic_juice/align/ph_super_ordered.links
+version: 180922
+ -i|--input flag was triggered, filtering draft contigs/scaffolds smaller than 1000.
+###############
+Starting iterating scaffolding with editing:
+...starting round 0 of scaffolding:
+:) -p flag was triggered. Running LIGer with GNU Parallel support parameter set to true.
+:) -s flag was triggered, starting calculations with 1000 threshold starting contig/scaffold size
+:) -q flag was triggered, starting calculations with 1 threshold mapping quality
+...Using cprops file: phgenome.hap.0.cprops
+...Using merged_nodups file: phgenome.hap.mnd.0.txt
+...Scaffolding all scaffolds and contigs greater or equal to 1000 bp.
+...Starting iteration # 1

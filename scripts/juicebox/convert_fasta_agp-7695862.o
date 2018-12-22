@@ -1,0 +1,26 @@
+==========================================
+SLURM_JOB_ID = 7695862
+SLURM_NODELIST = c8-66
+==========================================
+
+===========================================================================
+Job Finished
+
+Name                : convert_fasta_agp
+User                : eoziolor
+Partition           : high
+Nodes               : c8-66
+Cores               : 23
+State               : COMPLETED
+Submit              : 2018-12-21T15:56:41
+Start               : 2018-12-21T15:56:42
+End                 : 2018-12-21T15:57:45
+Reserved walltime   : 6-00:00:00
+Used walltime       :   00:01:03
+Used CPU time       :   01:39:38
+% User (Computation): 99.77%
+% System (I/O)      :  0.24%
+Mem reserved        : 60000M/node
+Max Mem used        : 35.49M (,c8-66)
+Max Disk Write      : 0.00  (,c8-66)
+Max Disk Read       : 1.30M (,c8-66)

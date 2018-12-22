@@ -1,6 +1,6 @@
 ==========================================
-SLURM_JOB_ID = 7685867
-SLURM_NODELIST = c8-91
+SLURM_JOB_ID = 7695868
+SLURM_NODELIST = c10-18
 ==========================================
 INFO: RUNNING: /home/eoziolor/program/matlock/bin/matlock -i /home/eoziolor/phgenome/data/hic_juice/align/ph_supernova_aligned.bam -o /home/eoziolor/phgenome/data/hic_juice/align/ph_supernova_filtered.bam bamfilt 
 INFO: detected bam filetype
@@ -196,18 +196,18 @@ Job Finished
 Name                : hic_supernova_filter
 User                : eoziolor
 Partition           : high
-Nodes               : c8-91
+Nodes               : c10-18
 Cores               : 23
 State               : FAILED
-Submit              : 2018-12-20T14:12:40
-Start               : 2018-12-20T14:12:40
-End                 : 2018-12-20T15:11:42
+Submit              : 2018-12-21T16:32:05
+Start               : 2018-12-21T16:32:06
+End                 : 2018-12-21T17:13:10
 Reserved walltime   : 2-00:00:00
-Used walltime       :   00:59:02
-Used CPU time       : 4-01:02:42
-% User (Computation): 97.80%
-% System (I/O)      :  2.20%
+Used walltime       :   00:41:04
+Used CPU time       : 2-19:02:24
+% User (Computation): 98.09%
+% System (I/O)      :  1.91%
 Mem reserved        : 60000M/node
-Max Mem used        : 130.56M (c8-91)
-Max Disk Write      : 12.86G (c8-91)
-Max Disk Read       : 34.71G (c8-91)
+Max Mem used        : 7.01M (c10-18)
+Max Disk Write      : 0.00  (c10-18)
+Max Disk Read       : 532.48K (c10-18)

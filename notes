@@ -4522,3 +4522,132 @@ cd ..
 ```
 
 * Had to edit the #SBATCH portions of juicer.sh, but it is running now.
+
+Dec 21, 2018
+===
+
+# Juicer
+
+* Let's try running it with the new code
+
+```{bash}
+module load bio3
+my_dir=/home/eoziolor/phgenome/data/juicer_hic
+$my_dir/scripts/juicer.sh \
+-D $my_dir \
+-s none \
+-q med \
+-l med \
+-z $my_dir/references/phgenome.hap.fa \
+-p $my_dir/references/chrom_sizes.txt
+```
+* Let's let it run
+
+## Juicebox scripts from PG
+
+* Copying juicebox scripts directory that might allow me to get a .hic file from fasta [here](https://github.com/phasegenomics/juicebox_scripts)
+
+```{bash}
+git clone https://github.com/phasegenomics/juicebox_scripts.git
+```
+
+* Now to create a .assembly file from the fasta that the hic reads were aligned to.
+	* I first have to get an agp file from the fasta file.
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J convert_fasta_agp
+#SBATCH -e convert_fasta_agp-%j.o
+#SBATCH -o convert_fasta_agp-%j.o
+#SBATCH -t 6-00:00
+#SBATCH -n 23
+#SBATCH --mem=60000
+#SBATCH -p high
+#SBATCH --no-requeue
+
+source ~/.bashrc
+
+#files
+my_ref=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fa
+my_out=/home/eoziolor/phgenome/data/hic_juice/align
+my_agp="ph_supernova.agp"
+my_assembly="ph_supernova.assembly"
+
+#program
+my_conv=/home/eoziolor/program/juicebox_scripts/juicebox_scripts/makeAgpFromFasta.py
+my_conv2=/home/eoziolor/program/juicebox_scripts/juicebox_scripts/agp2assembly.py
+
+python $my_conv $my_ref $my_out/$my_agp &&
+
+python $my_conv2 $my_out/$my_agp $my_out/$my_assembly
+```
+
+* Now we have to get the links file created from matlock bam2 juice in order
+
+```{bash}
+sort -k2,2 -k6,6 ph_super.links > ph_super_ordered.links
+```
+
+* Creating a .hic file
+	* seems to work, exits with an error, but creates a correct file and there is no real error message
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J create-hic
+#SBATCH -e create-hic-%j.o
+#SBATCH -o create-hic-%j.o
+#SBATCH -t 6-00:00
+#SBATCH -n 23
+#SBATCH --mem=60000
+#SBATCH -p high
+#SBATCH --no-requeue
+
+source ~/.bashrc
+
+#program
+my_run=/home/eoziolor/program/3d-dna/visualize/run-assembly-visualizer.sh
+
+#files
+my_dir=/home/eoziolor/phgenome/data/hic_juice/align/
+my_ass="ph_supernova.assembly"
+my_links="ph_super_ordered.links"
+#my_out="ph_supernova.hic"
+
+cd $my_dir
+
+$my_run -p false $my_ass $my_links
+```
+
+## Running 3D-dna
+
+* Not entirely sure if this will work, but I think the file produced from matlock is the mnd format they talk about, so I will try with that.
+
+* this one runs...
+
+```{bash}
+#!/bin/bash -l
+
+#SBATCH -J assemble-3ddna
+#SBATCH -e assemble-3ddna-%j.o
+#SBATCH -o assemble-3ddna-%j.o
+#SBATCH -t 6-00:00
+#SBATCH -n 23
+#SBATCH --mem=60000
+#SBATCH -p high
+#SBATCH --no-requeue
+
+source ~/.bashrc
+
+my_ref=/home/eoziolor/phgenome/data/assembly3/fasta/phgenome.hap.fa
+my_mnd=/home/eoziolor/phgenome/data/hic_juice/align/ph_super_ordered.links
+my_out=/home/eoziolor/phgenome/data/hic_juice/assembly/
+
+cd $my_out
+
+run-asm-pipeline.sh \
+-i 1000 \
+$my_ref $my_mnd
+```
+
